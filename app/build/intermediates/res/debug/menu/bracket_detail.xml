@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mgriffin.listviewex.OpponentsMainActivity" >
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_arrow_forward_white_48dp"/>
+</menu>
+<!-- From: file:/C:/Users/mgriffin/AndroidstudioProjects/ListViewEx/app/src/main/res/menu/bracket_detail.xml -->

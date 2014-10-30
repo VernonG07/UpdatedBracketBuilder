@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res" >
+            <file
+                name="ic_add_white_48dp"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\drawable-hdpi\ic_add_white_48dp.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\drawable-hdpi\ic_launcher.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\drawable-mdpi\ic_launcher.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\drawable-xhdpi\ic_launcher.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\drawable-xxhdpi\ic_launcher.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="bracket_detail"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\menu\bracket_detail.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="my"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\menu\my.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\values\dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\values\strings.xml"
+                qualifiers="" >
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="title_activity_bracket_detail" >BracketDetailActivity
+                </string>
+                <string name="hello_blank_fragment" >Hello blank fragment
+                </string>
+                <string name="title_activity_detailed_bracket" >DetailedBracket
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="app_name" >ListViewEx
+                </string>
+            </file>
+            <file
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\values\styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- Customize your theme here. -->
+                </style>
+            </file>
+            <file
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\values-v21\styles.xml"
+                qualifiers="v21" >
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Material.Light" >
+                </style>
+            </file>
+            <file
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\values-w820dp\dimens.xml"
+                qualifiers="w820dp-v13" >
+                <dimen name="activity_horizontal_margin" >64dp
+                </dimen>
+            </file>
+            <file
+                name="ic_add_circle_outline_grey600_48dp"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\drawable-hdpi\ic_add_circle_outline_grey600_48dp.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="fragment_opponents_list"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\layout\fragment_opponents_list.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="matchup_list_view"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\layout\matchup_list_view.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="dialogfragment_add_bracket"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\layout\dialogfragment_add_bracket.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_starting_bracket"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\layout\activity_starting_bracket.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_opponents_main"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\layout\activity_opponents_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="dialogfragment_assign_opponents"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\layout\dialogfragment_assign_opponents.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="ic_arrow_forward_white_48dp"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\drawable-hdpi\ic_arrow_forward_white_48dp.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="fragment_choose_winner_dialog"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\layout\fragment_choose_winner_dialog.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="main_button_style"
+                path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\main\res\drawable\main_button_style.xml"
+                qualifiers=""
+                type="drawable" />
+        </source>
+        <source path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\build\generated\res\rs\debug" />
+        <source path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\build\generated\res\generated\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\mgriffin\AndroidstudioProjects\ListViewEx\app\src\debug\res" />
+    </dataSet>
+
+</merger>
