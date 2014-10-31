@@ -25,6 +25,7 @@ public class StartingBracketActivity extends Activity implements AddBracketDialo
     ArrayAdapter<String> bracketAdapter;
     List<String> bracketList;
     Set<String> bracketSet = new HashSet<String>();
+    SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,7 @@ public class StartingBracketActivity extends Activity implements AddBracketDialo
         bracketView = (ListView) findViewById(R.id.lv_items);
         bracketList = new ArrayList<String>();
 
-        SharedPreferences sp = getSharedPreferences(PublicVars.SP_MAIN_KEY, Context.MODE_PRIVATE);
+        sp = getSharedPreferences(PublicVars.SP_MAIN_KEY, Context.MODE_PRIVATE);
         Set<String> s = sp.getStringSet("BRACKET_SET", null);
 
         if (s != null) {
@@ -51,6 +52,12 @@ public class StartingBracketActivity extends Activity implements AddBracketDialo
 
                 bracketList.remove((int)l);
                 bracketAdapter.notifyDataSetChanged();
+
+                for (String t : bracketList) {
+                    bracketSet.add(t);
+                }
+
+                sp.edit().putStringSet("BRACKET_SET", bracketSet);
 
                 return true;
             }
@@ -101,7 +108,6 @@ public class StartingBracketActivity extends Activity implements AddBracketDialo
             bracketSet.add(t);
         }
 
-        SharedPreferences sp = getSharedPreferences(PublicVars.SP_MAIN_KEY, Context.MODE_PRIVATE);
         sp.edit().putStringSet("BRACKET_SET", bracketSet).commit();
 
         bracketAdapter.notifyDataSetChanged();
