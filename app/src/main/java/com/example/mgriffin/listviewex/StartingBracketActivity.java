@@ -57,7 +57,7 @@ public class StartingBracketActivity extends Activity implements AddBracketDialo
                     bracketSet.add(t);
                 }
 
-                sp.edit().putStringSet("BRACKET_SET", bracketSet);
+                sp.edit().putStringSet("BRACKET_SET", bracketSet).commit();
 
                 return true;
             }
