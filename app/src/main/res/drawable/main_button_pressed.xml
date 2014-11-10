@@ -4,9 +4,9 @@
 
     <corners android:radius="2dp"/>
 
-    <stroke android:color="#ff000000"
-            android:width="2dp"/>
+    <stroke android:color="#ff353535"
+        android:width="2dp"/>
 
     <solid
-        android:color="#ff596778" />
+        android:color="#ff444859" />
 </shape>

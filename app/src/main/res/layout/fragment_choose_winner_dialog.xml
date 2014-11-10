@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mgriffin.listviewex.ChooseWinnerDialogFragment">
+    tools:context="com.example.mgriffin.dialog_fragments.ChooseWinnerDialogFragment">
 
     <Button
         android:id="@+id/btn_choose_name_one"

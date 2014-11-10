@@ -1,73 +1,79 @@
 package com.example.mgriffin.listviewex;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.mgriffin.adapters.GameAdapter;
+import com.example.mgriffin.db.GameDataSource;
+import com.example.mgriffin.dialog_fragments.AddBracketDialogFragment;
+import com.example.mgriffin.pojos.Game;
+
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 
 public class StartingBracketActivity extends Activity implements AddBracketDialogFragment.Listener {
 
     ListView bracketView;
-    ArrayAdapter<String> bracketAdapter;
-    List<String> bracketList;
-    Set<String> bracketSet = new HashSet<String>();
-    SharedPreferences sp;
+    GameAdapter<Game> bracketAdapter;
+    List<Game> bracketList;
+    private GameDataSource gameDataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting_bracket);
+
+        //TODO: clean up code!
+
+        getActionBar().setTitle("Brackets");
+
         bracketView = (ListView) findViewById(R.id.lv_items);
-        bracketList = new ArrayList<String>();
+        bracketList = new ArrayList<Game>();
 
-        sp = getSharedPreferences(PublicVars.SP_MAIN_KEY, Context.MODE_PRIVATE);
-        Set<String> s = sp.getStringSet("BRACKET_SET", null);
+        gameDataSource = new GameDataSource(this);
 
-        if (s != null) {
-            for (String a : s) {
-                bracketList.add(a);
-            }
+        try {
+            gameDataSource.open();
+        } catch (Exception e) {
+            Toast.makeText(this, "could not open", Toast.LENGTH_SHORT).show();
         }
 
-        bracketAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, bracketList);
+        bracketList = gameDataSource.getAllGames();
+
+        bracketAdapter = new GameAdapter<Game>(this, R.layout.game_list_view, bracketList);
         bracketView.setAdapter(bracketAdapter);
+
+        final Context context = this;
+
         bracketView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //TODO: remove item;
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, final long l) {
 
-                bracketList.remove((int)l);
-                bracketAdapter.notifyDataSetChanged();
-
-                for (String t : bracketList) {
-                    bracketSet.add(t);
-                }
-
-                sp.edit().putStringSet("BRACKET_SET", bracketSet).commit();
+                handleGameLongClick(l, context);
 
                 return true;
             }
         });
+
         bracketView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(getApplicationContext(), OpponentsMainActivity.class);
-                String selectedBracketName = bracketList.get((int)l);
-                intent.putExtra("BRACKET_NAME", selectedBracketName);
+
+                long gameId = bracketList.get((int)l).getGameId();
+                intent.putExtra("GAME_ID", gameId);
+
                 startActivity(intent);
             }
         });
@@ -102,15 +108,46 @@ public class StartingBracketActivity extends Activity implements AddBracketDialo
 
     @Override
     public void returnData(String name) {
-        bracketList.add(name);
 
-        for (String t : bracketList) {
-            bracketSet.add(t);
-        }
-
-        sp.edit().putStringSet("BRACKET_SET", bracketSet).commit();
-
+        Game g = gameDataSource.createGame(name);
+        bracketList.add(g);
         bracketAdapter.notifyDataSetChanged();
+    }
+
+    private void handleGameLongClick(long position, Context context) {
+
+        final long clickedGamePos = position;
+        final Game clickedGame = bracketList.get((int)clickedGamePos);
+
+        AlertDialog.Builder alert = new AlertDialog.Builder(context);
+        alert.setTitle("Modify Game");
+        alert.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                gameDataSource.deleteGame(clickedGame);
+                bracketList.remove((int)clickedGamePos);
+                bracketAdapter.notifyDataSetChanged();
+            }
+        });
+        alert.setNegativeButton("Edit", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                AddBracketDialogFragment addBracketDialogFragment= new AddBracketDialogFragment(clickedGame.getGameName());
+                addBracketDialogFragment.show(getFragmentManager(), null);
+                addBracketDialogFragment.setListener(new AddBracketDialogFragment.Listener() {
+                    @Override
+                    public void returnData(String d) {
+                        gameDataSource.editGameName(clickedGame, d);
+                        bracketList.set((int)clickedGamePos, clickedGame);
+                        bracketAdapter.notifyDataSetChanged();
+                    }
+                });
+            }
+        });
+
+        AlertDialog dialog = alert.create();
+        dialog.show();
+
     }
 }
 

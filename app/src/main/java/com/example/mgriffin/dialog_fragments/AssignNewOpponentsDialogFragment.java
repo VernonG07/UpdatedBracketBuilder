@@ -1,4 +1,4 @@
-package com.example.mgriffin.listviewex;
+package com.example.mgriffin.dialog_fragments;
 
 
 
@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.mgriffin.listviewex.R;
 
 
 /**
@@ -30,6 +32,16 @@ public class AssignNewOpponentsDialogFragment extends DialogFragment implements 
         void returnOpponents(String oName1, String oName2);
     }
 
+    private String editNameOne = null;
+    private String editNameTwo = null;
+
+    public AssignNewOpponentsDialogFragment () {}
+
+    public AssignNewOpponentsDialogFragment (String editNameOne, String editNameTwo) {
+        this.editNameOne = editNameOne;
+        this.editNameTwo = editNameTwo;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -39,6 +51,12 @@ public class AssignNewOpponentsDialogFragment extends DialogFragment implements 
         nameTwo = (EditText) rootView.findViewById(R.id.et_name2);
         addOpponentDialogFragment = (Button) rootView.findViewById(R.id.btn_add_opponents);
         addOpponentDialogFragment.setOnClickListener(this);
+
+        if (editNameOne != null && editNameTwo != null) {
+            nameOne.setText(editNameOne);
+            nameTwo.setText(editNameTwo);
+            addOpponentDialogFragment.setText("Update");
+        }
 
         getDialog().setTitle("Add Opponents");
 

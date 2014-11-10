@@ -10,12 +10,22 @@
         android:textSize="25sp"/>
 
     <TextView
+        android:id="@+id/tv_name1_w"
+        android:layout_toRightOf="@id/tv_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#ff18af20"
+        android:textSize="15sp"/>
+
+    <TextView
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="VS"
-        android:textSize="20sp"/>
+        android:textColor="#FF0000"
+        android:textSize="15sp"/>
 
     <TextView
         android:id="@+id/tv_name2"
@@ -24,5 +34,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tv_name2_w"
+        android:layout_toLeftOf="@id/tv_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#ff18af20"
+        android:textSize="15sp"/>
 
 </RelativeLayout>

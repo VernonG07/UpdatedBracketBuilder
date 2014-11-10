@@ -1,4 +1,4 @@
-package com.example.mgriffin.listviewex;
+package com.example.mgriffin.dialog_fragments;
 
 
 
@@ -10,6 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.mgriffin.db.MatchUpDataSource;
+import com.example.mgriffin.pojos.MatchUp;
+import com.example.mgriffin.public_references.PublicVars;
+import com.example.mgriffin.listviewex.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -17,10 +22,12 @@ import android.widget.Button;
  */
 public class ChooseWinnerDialogFragment extends DialogFragment implements View.OnClickListener{
 
-    private GameMatchUp gmu;
+    private MatchUp selectedWinnerMatchUp;
+    private MatchUpDataSource matchUpDataSource;
+    private long matchUpId;
 
     public interface WinnerListener {
-        void returnWinner(GameMatchUp gameMatchUp);
+        void returnWinner(MatchUp matchUp);
     }
 
     private WinnerListener mListener;
@@ -41,16 +48,22 @@ public class ChooseWinnerDialogFragment extends DialogFragment implements View.O
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_choose_winner_dialog, container, false);
 
+        matchUpDataSource = new MatchUpDataSource(getActivity());
+        try {
+            matchUpDataSource.open();
+        } catch ( Exception e){
+
+        }
         getDialog().setTitle("Choose Winner");
 
-        gmu = (GameMatchUp) getArguments().getSerializable(PublicVars.SP_GAME_MATCH_UP);
-
+        matchUpId = getArguments().getLong(PublicVars.SP_GAME_MATCH_UP);
+        selectedWinnerMatchUp = matchUpDataSource.getMatchUpById(matchUpId);
         chooseNameOne = (Button) rootView.findViewById(R.id.btn_choose_name_one);
         chooseNameOne.setOnClickListener(this);
-        chooseNameOne.setText(gmu.getTeamOne().getTeamName());
+        chooseNameOne.setText(selectedWinnerMatchUp.getTeamOneName());
         chooseNameTwo = (Button) rootView.findViewById(R.id.btn_choose_name_two);
         chooseNameTwo.setOnClickListener(this);
-        chooseNameTwo.setText(gmu.getTeamTwo().getTeamName());
+        chooseNameTwo.setText(selectedWinnerMatchUp.getTeamTwoName());
 
         return rootView;
     }
@@ -58,21 +71,24 @@ public class ChooseWinnerDialogFragment extends DialogFragment implements View.O
     @Override
     public void onClick(View view) {
 
+        MatchUp winner = null;
+
         switch (view.getId()) {
             case R.id.btn_choose_name_one:
-                gmu.getTeamOne().setWinner(true);
-                gmu.getTeamTwo().setWinner(false);
+                winner = matchUpDataSource.assignMatchUpWinner(matchUpId, selectedWinnerMatchUp.getTeamOneId(), selectedWinnerMatchUp.getTeamOneName());
                 getDialog().dismiss();
                 break;
             case R.id.btn_choose_name_two:
-                gmu.getTeamTwo().setWinner(true);
-                gmu.getTeamOne().setWinner(false);
+                winner = matchUpDataSource.assignMatchUpWinner(matchUpId, selectedWinnerMatchUp.getTeamTwoId(), selectedWinnerMatchUp.getTeamTwoName());
                 getDialog().dismiss();
                 break;
             default:
                 break;
         }
 
-        mListener.returnWinner(gmu);
+        selectedWinnerMatchUp.setWinnerId(winner.getWinnerId());
+        selectedWinnerMatchUp.setWinnerName(winner.getWinnerName());
+
+        mListener.returnWinner(selectedWinnerMatchUp);
     }
 }

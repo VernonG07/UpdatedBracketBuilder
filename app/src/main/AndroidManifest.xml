@@ -18,10 +18,12 @@
         </activity>
         <activity
             android:name=".OpponentsFragment"
+            android:windowSoftInputMode="adjustPan"
             android:label="@string/title_activity_detailed_bracket" >
         </activity>
         <activity
             android:name=".OpponentsMainActivity"
+            android:windowSoftInputMode="adjustPan"
             android:label="@string/title_activity_bracket_detail" >
         </activity>
     </application>

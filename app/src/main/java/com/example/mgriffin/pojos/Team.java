@@ -1,4 +1,4 @@
-package com.example.mgriffin.listviewex;
+package com.example.mgriffin.pojos;
 
 /**
  * Created by mgriffin on 10/27/2014.
@@ -6,12 +6,23 @@ package com.example.mgriffin.listviewex;
 public class Team {
 
     private String teamName;
+    private long teamId;
 
     private boolean is_winner = false;
+
+    public Team () {};
 
     public Team (String teamName) {
         this.teamName = teamName;
         this.is_winner = false;
+    }
+
+    public void setTeamId(long teamId) {
+        this.teamId = teamId;
+    }
+
+    public long getTeamId() {
+        return teamId;
     }
 
     public void setTeamName (String teamName) {
@@ -19,11 +30,5 @@ public class Team {
     }
     public String getTeamName () {
         return teamName;
-    }
-    public void setWinner ( boolean is_winner) {
-        this.is_winner = is_winner;
-    }
-    public boolean getWinner () {
-        return is_winner;
     }
 }
