@@ -25,6 +25,8 @@ import com.example.mgriffin.pojos.MatchUp;
 import com.example.mgriffin.pojos.Team;
 import com.example.mgriffin.public_references.PublicVars;
 
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -81,11 +83,10 @@ public class OpponentsFragment extends Fragment{
 
     private void initializeViews(View rootView) {
 
-        if (PublicVars.lionKingTypeFace == null)
-            PublicVars.lionKingTypeFace = Typeface.createFromAsset(getActivity().getAssets(), "lking.ttf");
+        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "lking.ttf");
 
         bracketTitleView = (TextView) rootView.findViewById(R.id.tv_bracket_title);
-        bracketTitleView.setTypeface(PublicVars.lionKingTypeFace);
+        bracketTitleView.setTypeface(tf);
 
         roundTitleView = (TextView) rootView.findViewById(R.id.tv_round_title);
         addNewMatchUp = (Button) rootView.findViewById(R.id.btn_add_opponents);
@@ -95,7 +96,23 @@ public class OpponentsFragment extends Fragment{
 
     private void initializeData() {
         currentGame = gameDataSource.getExistingGameById(gameId);
-        matchUpData = matchUpDataSource.getAllMatchUps(currentGame.getGameId(), roundNumber);
+
+        matchUpData = new ArrayList<MatchUp>();
+
+        if ( roundNumber == 1) {
+            matchUpData = matchUpDataSource.getAllMatchUps(currentGame.getGameId(), roundNumber);
+        }
+        else {
+            //TODO: Auto-Create MatchUps from previous round
+            List<MatchUp> autoMatchUps = matchUpDataSource.getAllMatchUps(currentGame.getGameId(), roundNumber - 1);
+            for (int i = 0; i < autoMatchUps.size(); i=i+2) {
+                MatchUp matchUpWinnerOne = autoMatchUps.get(i);
+                MatchUp matchUpWinnerTwo = autoMatchUps.get(i+1);
+
+                MatchUp newMatchUp = matchUpDataSource.createMatchUp(matchUpWinnerOne.getWinnerId(), matchUpWinnerTwo.getWinnerId(), currentGame.getGameId(), roundNumber, matchUpWinnerOne.getWinnerName(), matchUpWinnerTwo.getWinnerName());
+                matchUpData.add(newMatchUp);
+            }
+        }
 
         bracketTitleView.setText(currentGame.getGameName());
         roundTitleView.setText("Round: " + roundNumber);
@@ -144,7 +161,7 @@ public class OpponentsFragment extends Fragment{
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
                                 matchUpDataSource.deleteMatchUp(longClickMatchUp);
-                                matchUpData.remove(longClickMatchUp);
+                                matchUpData.remove(longClickPos);
                                 matchUpAdapter.notifyDataSetChanged();
                 }
             });

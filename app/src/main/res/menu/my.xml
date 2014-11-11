@@ -2,9 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MyActivity" >
 
-    <item
-        android:id="@+id/action_add"
-        android:title="Add"
-        android:showAsAction="ifRoom"
-        android:icon="@drawable/ic_add_white_48dp" />
+    <!--<item-->
+        <!--android:id="@+id/action_add"-->
+        <!--android:title="Add"-->
+        <!--android:showAsAction="ifRoom"-->
+        <!--android:icon="@drawable/ic_add_white_48dp" />-->
 </menu>

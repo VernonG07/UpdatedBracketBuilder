@@ -39,13 +39,21 @@
         android:layout_height="fill_parent"
         android:layout_weight="1"/>
 
-    <Button
-        android:id="@+id/btn_add_opponents"
-        android:text="Add Opponents"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/main_button_selector"
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0"/>
+        android:layout_weight="0">
+
+        <Button
+            android:id="@+id/btn_add_opponents"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/red_add_selector"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
 
 </LinearLayout>

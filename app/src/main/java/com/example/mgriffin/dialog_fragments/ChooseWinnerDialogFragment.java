@@ -46,7 +46,7 @@ public class ChooseWinnerDialogFragment extends DialogFragment implements View.O
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_choose_winner_dialog, container, false);
+        View rootView = inflater.inflate(R.layout.dialogfragment_choose_winner, container, false);
 
         matchUpDataSource = new MatchUpDataSource(getActivity());
         try {

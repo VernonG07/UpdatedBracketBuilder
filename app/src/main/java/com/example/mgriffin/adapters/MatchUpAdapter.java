@@ -2,6 +2,7 @@ package com.example.mgriffin.adapters;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,29 +56,36 @@ public class MatchUpAdapter<T> extends ArrayAdapter<MatchUp> {
 
         MatchUp matchUp = data.get(position);
 
-        if (PublicVars.optimusTypeFace == null)
-            PublicVars.optimusTypeFace = Typeface.createFromAsset(context.getAssets(), "OptimusPrinceps.ttf");
+        Typeface tf = Typeface.createFromAsset(context.getAssets(), "OptimusPrinceps.ttf");
 
-        dataHolder.name1Holder.setTypeface(PublicVars.optimusTypeFace);
-        dataHolder.name2Holder.setTypeface(PublicVars.optimusTypeFace);
+        dataHolder.name1Holder.setTypeface(tf);
+        dataHolder.name2Holder.setTypeface(tf);
 
         if (matchUp.getTeamOneId() == matchUp.getWinnerId()) {
             dataHolder.name1Holder.setText(matchUp.getTeamOneName());
             dataHolder.name1Holder.setTextColor(Color.parseColor("#ff18af20"));
 //            dataHolder.name1WinHolder.setText( "(winner)");
             dataHolder.name2Holder.setText(matchUp.getTeamTwoName());
-            dataHolder.name2Holder.setTextColor(Color.parseColor("#000000"));
+            dataHolder.name2Holder.setTextColor(-1979711488);
+            dataHolder.name2Holder.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+            dataHolder.name1Holder.setPaintFlags(dataHolder.name1Holder.getPaintFlags() & (~ Paint.STRIKE_THRU_TEXT_FLAG));
             dataHolder.name2WinHolder.setText("");
         } else if (matchUp.getTeamTwoId() == matchUp.getWinnerId()) {
             dataHolder.name1Holder.setText(matchUp.getTeamOneName());
-            dataHolder.name1Holder.setTextColor(Color.parseColor("#000000"));
+            dataHolder.name1Holder.setTextColor(-1979711488);
+            dataHolder.name1Holder.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
 //            dataHolder.name2WinHolder.setText( "(winner)");
             dataHolder.name2Holder.setText(matchUp.getTeamTwoName());
             dataHolder.name2Holder.setTextColor(Color.parseColor("#ff18af20"));
+            dataHolder.name2Holder.setPaintFlags(dataHolder.name2Holder.getPaintFlags() & (~ Paint.STRIKE_THRU_TEXT_FLAG));
             dataHolder.name1WinHolder.setText("");
         } else {
             dataHolder.name1Holder.setText(matchUp.getTeamOneName());
             dataHolder.name2Holder.setText(matchUp.getTeamTwoName());
+            dataHolder.name1Holder.setTextColor(-1979711488);
+            dataHolder.name2Holder.setTextColor(-1979711488);
+            dataHolder.name1Holder.setPaintFlags(dataHolder.name1Holder.getPaintFlags() & (~ Paint.STRIKE_THRU_TEXT_FLAG));
+            dataHolder.name2Holder.setPaintFlags(dataHolder.name2Holder.getPaintFlags() & (~ Paint.STRIKE_THRU_TEXT_FLAG));
         }
 
 

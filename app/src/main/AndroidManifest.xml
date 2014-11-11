@@ -9,20 +9,21 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".StartingBracketActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".OpponentsFragment"
-            android:windowSoftInputMode="adjustPan"
             android:label="@string/title_activity_detailed_bracket" >
         </activity>
         <activity
             android:name=".OpponentsMainActivity"
+            android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustPan"
             android:label="@string/title_activity_bracket_detail" >
         </activity>

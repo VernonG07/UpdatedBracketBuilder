@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppTheme" parent="android:Theme.Material.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:colorPrimaryDark">@color/name</item>
+        <item name="android:navigationBarColor">@color/name2</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_chevron_left_white_48dp</item>
+        <item name="android:icon">@android:color/transparent</item>
     </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#ff596778</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTextColor</item>
+    </style>
+
+    <style name="MyActionBarTextColor" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <color name="name">#ff525f6d</color>
+    <color name="name2">#c8000000</color>
+
+
 </resources>

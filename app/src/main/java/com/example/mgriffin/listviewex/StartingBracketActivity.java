@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -22,19 +23,39 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class StartingBracketActivity extends Activity implements AddBracketDialogFragment.Listener {
+public class StartingBracketActivity extends Activity {
 
     ListView bracketView;
     GameAdapter<Game> bracketAdapter;
     List<Game> bracketList;
     private GameDataSource gameDataSource;
+    private Button addBracketButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting_bracket);
 
+
+
         //TODO: clean up code!
+
+        addBracketButton = (Button) findViewById(R.id.btn_add);
+        addBracketButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AddBracketDialogFragment df = new AddBracketDialogFragment();
+                df.show(getFragmentManager(), null);
+                df.setListener(new AddBracketDialogFragment.Listener() {
+                    @Override
+                    public void returnData(String name) {
+                        Game g = gameDataSource.createGame(name);
+                        bracketList.add(g);
+                        bracketAdapter.notifyDataSetChanged();
+                    }
+                });
+            }
+        });
 
         getActionBar().setTitle("Brackets");
 
@@ -92,26 +113,7 @@ public class StartingBracketActivity extends Activity implements AddBracketDialo
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        switch (id)
-        {
-            case R.id.action_add:
-                AddBracketDialogFragment df = new AddBracketDialogFragment();
-                df.show(getFragmentManager(), null);
-                df.setListener(this);
-                break;
-            default:
-                break;
-        }
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void returnData(String name) {
-
-        Game g = gameDataSource.createGame(name);
-        bracketList.add(g);
-        bracketAdapter.notifyDataSetChanged();
     }
 
     private void handleGameLongClick(long position, Context context) {
