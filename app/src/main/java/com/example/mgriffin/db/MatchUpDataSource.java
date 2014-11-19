@@ -27,12 +27,15 @@ public class MatchUpDataSource {
             DBHelper.COLUMN_ROUND_NUMBER,
             DBHelper.COLUMN_TEAM_ONE_NAME,
             DBHelper.COLUMN_TEAM_TWO_NAME,
-            DBHelper.COLUMN_WINNER_NAME };
+            DBHelper.COLUMN_WINNER_NAME,
+            DBHelper.COLUMN_WINS_REQUIRED,
+            DBHelper.COLUMN_WINS_TEAM_ONE,
+            DBHelper.COLUMN_WINS_TEAM_TWO};
     private Context context;
 
     public MatchUpDataSource(Context context) {
         this.context = context;
-        dbHelper = new DBHelper(context, DBHelper.DBType.MATCH_UP, 4);
+        dbHelper = new DBHelper(context, DBHelper.DBType.MATCH_UP, 5);
     }
 
     public void open() throws SQLException {
@@ -51,6 +54,7 @@ public class MatchUpDataSource {
         matchUp.setTeamOneName(teamOneName);
         matchUp.setTeamTwoName(teamTwoName);
 
+
         ContentValues values = new ContentValues();
         values.put(DBHelper.COLUMN_TEAM_ONE_ID, teamOneId);
         values.put(DBHelper.COLUMN_TEAM_TWO_ID, teamTwoId);
@@ -61,6 +65,12 @@ public class MatchUpDataSource {
 
         long insertId = database.insert(DBHelper.TABLE_MATCH_UP, null, values);
         matchUp.setId(insertId);
+
+        return matchUp;
+    }
+
+    public MatchUp incrementWinCount(long matchUpId, long currentWinnerId, long currentWinnerName) {
+        MatchUp matchUp = new MatchUp();
 
         return matchUp;
     }

@@ -16,7 +16,7 @@ public class OpponentsMainActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
-
+        getActionBar().setHomeButtonEnabled(true);
         Fragment newFragment;
 
         if (savedInstanceState != null) {
@@ -30,42 +30,15 @@ public class OpponentsMainActivity extends Activity {
         }
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.bracket_detail, menu);
-        return true;
-    }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
 
-            Fragment nextRoundFragment = new OpponentsFragment();
-            Bundle b = new Bundle();
-            b.putInt("ROUND_NUMBER", 2);
-            nextRoundFragment.setArguments(b);
+        switch (item.getItemId()) {
 
-            FragmentTransaction ft = getFragmentManager().beginTransaction();
-//            ft.setCustomAnimations(R.animator.fade_in, R.animator.fade_in);
-
-            ft.addToBackStack(null).replace(android.R.id.content, nextRoundFragment, "round_frag").commit();
-
-            return true;
-        } else if (id == android.R.id.home) {
-            //TODO: if round 1, go to main activity
-            //TODO: if round > 1, go to previous fragment
-
-            Intent startingActivity = new Intent(getApplicationContext(), StartingBracketActivity.class);
-            startActivity(startingActivity);
-
-            //getFragmentManager().popBackStack();
+            case android.R.id.home:
+               super.onBackPressed();
+                break;
         }
-        return super.onOptionsItemSelected(item);
+        return false;
     }
 }

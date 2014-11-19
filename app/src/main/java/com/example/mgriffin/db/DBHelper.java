@@ -30,6 +30,9 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String COLUMN_TEAM_ONE_NAME = "teamOneName";
     public static final String COLUMN_TEAM_TWO_NAME = "teamTwoName";
     public static final String COLUMN_WINNER_NAME = "winnerName";
+    public static final String COLUMN_WINS_REQUIRED = "winsRequired";
+    public static final String COLUMN_WINS_TEAM_ONE = "winsTeamOne";
+    public static final String COLUMN_WINS_TEAM_TWO = "winsTeamTwo";
 
     private static final String DATABASE_CREATE_MATCHUP = "create table "
             + TABLE_MATCH_UP + "(" + COLUMN_ID
@@ -40,7 +43,10 @@ public class DBHelper extends SQLiteOpenHelper {
             + " integer, " + COLUMN_ROUND_NUMBER
             + " integer, " + COLUMN_TEAM_ONE_NAME
             + " integer, " + COLUMN_TEAM_TWO_NAME
-            + " integer, " + COLUMN_WINNER_NAME + " integer);";
+            + " integer, " + COLUMN_WINNER_NAME
+            + " integer, " + COLUMN_WINS_REQUIRED
+            + " integer, " + COLUMN_WINS_TEAM_ONE
+            + " integer, " + COLUMN_WINS_TEAM_TWO + " integer);";
 
     //Team Table
     public static final String TABLE_TEAM = "team";

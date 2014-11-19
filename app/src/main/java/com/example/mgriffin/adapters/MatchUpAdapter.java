@@ -14,6 +14,8 @@ import com.example.mgriffin.pojos.MatchUp;
 import com.example.mgriffin.listviewex.R;
 import com.example.mgriffin.public_references.PublicVars;
 
+import org.w3c.dom.Text;
+
 import java.util.List;
 
 /**
@@ -24,12 +26,14 @@ public class MatchUpAdapter<T> extends ArrayAdapter<MatchUp> {
     private Activity context;
     private int layout;
     private List<MatchUp> data;
+    private Typeface typeface;
 
-    public MatchUpAdapter(Activity context, int layout, List<MatchUp> data) {
+    public MatchUpAdapter(Activity context, int layout, List<MatchUp> data, Typeface typeface) {
         super(context, layout, data);
         this.data = data;
         this.layout = layout;
         this.context = context;
+        this.typeface = typeface;
     }
 
     @Override
@@ -44,10 +48,9 @@ public class MatchUpAdapter<T> extends ArrayAdapter<MatchUp> {
 
             dataHolder = new DataHolder();
             dataHolder.name1Holder = (TextView) row.findViewById(R.id.tv_name1);
-            dataHolder.name1WinHolder = (TextView) row.findViewById(R.id.tv_name1_w);
             dataHolder.name2Holder = (TextView) row.findViewById(R.id.tv_name2);
-            dataHolder.name2WinHolder = (TextView) row.findViewById(R.id.tv_name2_w);
-
+//            dataHolder.name1Score = (TextView) row.findViewById(R.id.tv_name1_scoreboard);
+//            dataHolder.name2Score = (TextView) row.findViewById(R.id.tv_name2_scoreboard);
             row.setTag(dataHolder);
         }
         else {
@@ -56,36 +59,30 @@ public class MatchUpAdapter<T> extends ArrayAdapter<MatchUp> {
 
         MatchUp matchUp = data.get(position);
 
-        Typeface tf = Typeface.createFromAsset(context.getAssets(), "OptimusPrinceps.ttf");
-
-        dataHolder.name1Holder.setTypeface(tf);
-        dataHolder.name2Holder.setTypeface(tf);
+        dataHolder.name1Holder.setTypeface(typeface);
+        dataHolder.name2Holder.setTypeface(typeface);
 
         if (matchUp.getTeamOneId() == matchUp.getWinnerId()) {
             dataHolder.name1Holder.setText(matchUp.getTeamOneName());
             dataHolder.name1Holder.setTextColor(Color.parseColor("#ff18af20"));
-//            dataHolder.name1WinHolder.setText( "(winner)");
             dataHolder.name2Holder.setText(matchUp.getTeamTwoName());
-            dataHolder.name2Holder.setTextColor(-1979711488);
             dataHolder.name2Holder.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
-            dataHolder.name1Holder.setPaintFlags(dataHolder.name1Holder.getPaintFlags() & (~ Paint.STRIKE_THRU_TEXT_FLAG));
-            dataHolder.name2WinHolder.setText("");
+            dataHolder.name1Holder.setPaintFlags(dataHolder.name1Holder.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
         } else if (matchUp.getTeamTwoId() == matchUp.getWinnerId()) {
             dataHolder.name1Holder.setText(matchUp.getTeamOneName());
-            dataHolder.name1Holder.setTextColor(-1979711488);
             dataHolder.name1Holder.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
-//            dataHolder.name2WinHolder.setText( "(winner)");
             dataHolder.name2Holder.setText(matchUp.getTeamTwoName());
             dataHolder.name2Holder.setTextColor(Color.parseColor("#ff18af20"));
-            dataHolder.name2Holder.setPaintFlags(dataHolder.name2Holder.getPaintFlags() & (~ Paint.STRIKE_THRU_TEXT_FLAG));
-            dataHolder.name1WinHolder.setText("");
+            dataHolder.name2Holder.setPaintFlags(dataHolder.name2Holder.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
         } else {
             dataHolder.name1Holder.setText(matchUp.getTeamOneName());
             dataHolder.name2Holder.setText(matchUp.getTeamTwoName());
-            dataHolder.name1Holder.setTextColor(-1979711488);
-            dataHolder.name2Holder.setTextColor(-1979711488);
             dataHolder.name1Holder.setPaintFlags(dataHolder.name1Holder.getPaintFlags() & (~ Paint.STRIKE_THRU_TEXT_FLAG));
             dataHolder.name2Holder.setPaintFlags(dataHolder.name2Holder.getPaintFlags() & (~ Paint.STRIKE_THRU_TEXT_FLAG));
+//            dataHolder.name1Score.setText("(1-0)");
+//            dataHolder.name1Score.setTextColor(Color.parseColor("#C4C4C4"));
+//            dataHolder.name2Score.setText("(1-0)");
+//            dataHolder.name2Score.setTextColor(Color.parseColor("#C4C4C4"));
         }
 
 
@@ -96,10 +93,14 @@ public class MatchUpAdapter<T> extends ArrayAdapter<MatchUp> {
         return row;
     }
 
+    private void setWinner(TextView tvWinner, TextView tvLoser) {
+
+    }
+
     static class DataHolder {
         TextView name1Holder;
-        TextView name1WinHolder;
         TextView name2Holder;
-        TextView name2WinHolder;
+        TextView name1Score;
+        TextView name2Score;
     }
 }

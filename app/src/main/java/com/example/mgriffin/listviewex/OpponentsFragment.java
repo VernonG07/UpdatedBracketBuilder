@@ -2,10 +2,19 @@ package com.example.mgriffin.listviewex;
 
 import android.app.AlertDialog;
 import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -34,6 +43,7 @@ public class OpponentsFragment extends Fragment{
 
     private TextView bracketTitleView;
     private TextView roundTitleView;
+    private Button goToNextRound;
     private Button addNewMatchUp;
     private ListView matchUps;
     private MatchUpAdapter<MatchUp> matchUpAdapter;
@@ -51,13 +61,13 @@ public class OpponentsFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_opponents_list, container, false);
 
+
+
         getParms();
         initializeDataSources();
         initializeViews(rootView);
         initializeData();
-
-        getActivity().getActionBar().setTitle(currentGame.getGameName());
-
+        modifyActionBar();
         return rootView;
     }
 
@@ -90,60 +100,125 @@ public class OpponentsFragment extends Fragment{
 
         roundTitleView = (TextView) rootView.findViewById(R.id.tv_round_title);
         addNewMatchUp = (Button) rootView.findViewById(R.id.btn_add_opponents);
+        if (roundNumber != 1) {
+            addNewMatchUp.setVisibility(View.INVISIBLE);
+        }
+        goToNextRound = (Button) rootView.findViewById(R.id.btn_next_round);
         matchUps = (ListView) rootView.findViewById(R.id.lv_matchups);
 
     }
 
     private void initializeData() {
         currentGame = gameDataSource.getExistingGameById(gameId);
-
         matchUpData = new ArrayList<MatchUp>();
+        matchUpData = matchUpDataSource.getAllMatchUps(currentGame.getGameId(), roundNumber);
 
-        if ( roundNumber == 1) {
-            matchUpData = matchUpDataSource.getAllMatchUps(currentGame.getGameId(), roundNumber);
-        }
-        else {
-            //TODO: Auto-Create MatchUps from previous round
+        boolean isData = true;
+
+        if (matchUpData.size() == 0) {
+
             List<MatchUp> autoMatchUps = matchUpDataSource.getAllMatchUps(currentGame.getGameId(), roundNumber - 1);
-            for (int i = 0; i < autoMatchUps.size(); i=i+2) {
-                MatchUp matchUpWinnerOne = autoMatchUps.get(i);
-                MatchUp matchUpWinnerTwo = autoMatchUps.get(i+1);
+            boolean isWinner = true;
+            for (MatchUp matchUp : autoMatchUps) {
+                if (matchUp.getWinnerId() == 0) {
+                    isWinner = false;
+                    isData = false;
+                }
+            }
+            if (!isWinner) {
+                Toast.makeText(getActivity(), "You must select a winner before going to the next round", Toast.LENGTH_SHORT).show();
+                getFragmentManager().popBackStack();
+            }
 
-                MatchUp newMatchUp = matchUpDataSource.createMatchUp(matchUpWinnerOne.getWinnerId(), matchUpWinnerTwo.getWinnerId(), currentGame.getGameId(), roundNumber, matchUpWinnerOne.getWinnerName(), matchUpWinnerTwo.getWinnerName());
-                matchUpData.add(newMatchUp);
+
+            if (isData) {
+                if (autoMatchUps.size() == 1) {
+                    for (MatchUp winner : autoMatchUps) {
+                        Toast.makeText(getActivity(), winner.getWinnerName() + " is the winner!", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    for (int i = 0; i < autoMatchUps.size(); i = i + 2) {
+                        MatchUp matchUpWinnerOne = autoMatchUps.get(i);
+                        MatchUp matchUpWinnerTwo = new MatchUp();
+
+                        try {
+                            matchUpWinnerTwo = autoMatchUps.get(i + 1);
+                        } catch (IndexOutOfBoundsException e) {
+                            matchUpWinnerTwo.setWinnerId(9999);
+                            matchUpWinnerTwo.setWinnerName("BYE");
+                        }
+
+                        MatchUp newMatchUp = matchUpDataSource.createMatchUp(matchUpWinnerOne.getWinnerId(), matchUpWinnerTwo.getWinnerId(), currentGame.getGameId(), roundNumber, matchUpWinnerOne.getWinnerName(), matchUpWinnerTwo.getWinnerName());
+                        if (newMatchUp.getTeamTwoId()==9999)
+                        {
+                            matchUpDataSource.assignMatchUpWinner(newMatchUp.getId(), newMatchUp.getTeamOneId(), newMatchUp.getTeamOneName());
+                            newMatchUp.setWinnerId(newMatchUp.getTeamOneId());
+                            newMatchUp.setWinnerName(newMatchUp.getTeamOneName());
+                        }
+                        matchUpData.add(newMatchUp);
+                    }
+                }
             }
         }
 
-        bracketTitleView.setText(currentGame.getGameName());
-        roundTitleView.setText("Round: " + roundNumber);
+        if (isData) {
+            bracketTitleView.setText(currentGame.getGameName());
+            roundTitleView.setText("Round: " + roundNumber);
 
-        matchUpAdapter = new MatchUpAdapter<MatchUp>(getActivity(), R.layout.matchup_list_view, matchUpData);
-        matchUps.setAdapter(matchUpAdapter);
+            matchUpAdapter = new MatchUpAdapter<MatchUp>(getActivity(), R.layout.matchup_list_view, matchUpData, Typeface.createFromAsset(getActivity().getAssets(), "OptimusPrinceps.ttf"));
+            matchUps.setAdapter(matchUpAdapter);
 
-        addNewMatchUp.setOnClickListener(new AddMatchUpListener());
-        matchUps.setOnItemLongClickListener(new DeleteMatchUpListener());
-        matchUps.setOnItemClickListener(new ChooseWinnerListener());
+            AddMatchUpListener btnClick = new AddMatchUpListener();
 
+            addNewMatchUp.setOnClickListener(btnClick);
+            goToNextRound.setOnClickListener(btnClick);
+            if (roundNumber == 1) //TODO or if round 2 has been started.
+                matchUps.setOnItemLongClickListener(new DeleteMatchUpListener());
+            matchUps.setOnItemClickListener(new ChooseWinnerListener());
+        }
     }
 
     private class AddMatchUpListener implements View.OnClickListener {
         @Override
         public void onClick(View view) {
-            AssignNewOpponentsDialogFragment opponentDialogFragment = new AssignNewOpponentsDialogFragment();
-            opponentDialogFragment.show(getFragmentManager(), null);
-            opponentDialogFragment.setListener(new AssignNewOpponentsDialogFragment.OpponentListener() {
-                @Override
-                public void returnOpponents(String nameOne, String nameTwo) {
 
-                    Team teamOne = teamDataSource.createTeam(nameOne);
-                    Team teamTwo = teamDataSource.createTeam(nameTwo);
+            switch (view.getId()) {
+                case R.id.btn_next_round:
 
-                    MatchUp matchUp = matchUpDataSource.createMatchUp(teamOne.getTeamId(), teamTwo.getTeamId(), currentGame.getGameId(), roundNumber, nameOne, nameTwo);
+                    if (matchUpData.size() > 0) {
+                        Fragment nextRoundFragment = new OpponentsFragment();
+                        Bundle b = new Bundle();
+                        b.putInt("ROUND_NUMBER", roundNumber + 1);
+                        nextRoundFragment.setArguments(b);
 
-                    matchUpData.add(matchUp);
-                    matchUpAdapter.notifyDataSetChanged();
-                }
-            });
+                        FragmentTransaction ft = getFragmentManager().beginTransaction();
+//                      ft.setCustomAnimations(R.animator.fade_in, R.animator.fade_in);
+
+                        ft.addToBackStack(null).replace(android.R.id.content, nextRoundFragment, "round_frag").commit();
+
+                    } else {
+                        Toast.makeText(getActivity(), "Please add matchups", Toast.LENGTH_SHORT).show();
+                    }
+
+                    break;
+                case R.id.btn_add_opponents:
+                    AssignNewOpponentsDialogFragment opponentDialogFragment = new AssignNewOpponentsDialogFragment();
+                    opponentDialogFragment.show(getFragmentManager(), null);
+                    opponentDialogFragment.setListener(new AssignNewOpponentsDialogFragment.OpponentListener() {
+                        @Override
+                        public void returnOpponents(String nameOne, String nameTwo) {
+
+                            Team teamOne = teamDataSource.createTeam(nameOne);
+                            Team teamTwo = teamDataSource.createTeam(nameTwo);
+
+                            MatchUp matchUp = matchUpDataSource.createMatchUp(teamOne.getTeamId(), teamTwo.getTeamId(), currentGame.getGameId(), roundNumber, nameOne, nameTwo);
+
+                            matchUpData.add(matchUp);
+                            matchUpAdapter.notifyDataSetChanged();
+                        }
+                    });
+                    break;
+            }
         }
     }
 
@@ -215,5 +290,44 @@ public class OpponentsFragment extends Fragment{
             });
             chooseWinnerDialog.show(getFragmentManager(), null);
         }
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.bracket_detail, menu);
+
+        if (roundNumber > 1) {
+            MenuItem menuItem = menu.findItem(R.id.action_settings);
+            menuItem.setVisible(false);
+        }
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+
+            case R.id.action_home: Intent i = new Intent(getActivity(), StartingBracketActivity.class);
+                startActivity(i);
+                break;
+
+            case R.id.action_settings:
+
+                Fragment f = getFragmentManager().findFragmentByTag("settings_frag");
+
+                if (f == null) {
+                    f = new SettingsFragment().newInstance((int)gameId);
+                }
+
+                getFragmentManager().beginTransaction().addToBackStack("settings").replace(android.R.id.content, f, "settings_frag").commit();
+            return true;
+        }
+
+        return false;
+    }
+    private void modifyActionBar () {
+        getActivity().getActionBar().setTitle(currentGame.getGameName());
+        setHasOptionsMenu(true);
     }
 }
