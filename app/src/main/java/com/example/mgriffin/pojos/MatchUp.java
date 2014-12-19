@@ -13,32 +13,6 @@ public class MatchUp{
     private long gameId;
     private String winnerName;
     private long winnerId;
-    private int winsRequired;
-    private int winsTeamOne;
-    private int winsTeamTwo;
-
-    public void setWinsRequired (int winsRequired) {
-        this.winsRequired = winsRequired;
-    }
-    public int getWinsRequired() {
-        return winsRequired;
-    }
-
-    public void setWinsTeamOne(int winsTeamOne) {
-        this.winsTeamOne = winsTeamOne;
-    }
-
-    public int getWinsTeamOne() {
-        return winsTeamOne;
-    }
-
-    public void setWinsTeamTwo(int winsTeamTwo) {
-        this.winsTeamTwo = winsTeamTwo;
-    }
-
-    public int getWinsTeamTwo() {
-        return winsTeamTwo;
-    }
 
     //setters
     public void setId(long id) {

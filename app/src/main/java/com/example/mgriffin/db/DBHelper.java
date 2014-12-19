@@ -43,10 +43,7 @@ public class DBHelper extends SQLiteOpenHelper {
             + " integer, " + COLUMN_ROUND_NUMBER
             + " integer, " + COLUMN_TEAM_ONE_NAME
             + " integer, " + COLUMN_TEAM_TWO_NAME
-            + " integer, " + COLUMN_WINNER_NAME
-            + " integer, " + COLUMN_WINS_REQUIRED
-            + " integer, " + COLUMN_WINS_TEAM_ONE
-            + " integer, " + COLUMN_WINS_TEAM_TWO + " integer);";
+            + " integer, " + COLUMN_WINNER_NAME + " integer);";
 
     //Team Table
     public static final String TABLE_TEAM = "team";

@@ -36,7 +36,9 @@ import com.example.mgriffin.public_references.PublicVars;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 
 public class OpponentsFragment extends Fragment{
@@ -68,6 +70,8 @@ public class OpponentsFragment extends Fragment{
         initializeViews(rootView);
         initializeData();
         modifyActionBar();
+
+
         return rootView;
     }
 
@@ -137,6 +141,15 @@ public class OpponentsFragment extends Fragment{
                         Toast.makeText(getActivity(), winner.getWinnerName() + " is the winner!", Toast.LENGTH_SHORT).show();
                     }
                 } else {
+
+                    SharedPreferences sharedPreferences = getActivity().getSharedPreferences(String.valueOf(gameId), Context.MODE_PRIVATE);
+                    boolean randomizeMatchUps = sharedPreferences.getBoolean("checkbox_randomize_opponents", false);
+
+                    if (randomizeMatchUps) {
+                        long seed = System.nanoTime();
+                        Collections.shuffle(autoMatchUps, new Random(seed));
+                    }
+
                     for (int i = 0; i < autoMatchUps.size(); i = i + 2) {
                         MatchUp matchUpWinnerOne = autoMatchUps.get(i);
                         MatchUp matchUpWinnerTwo = new MatchUp();
@@ -308,8 +321,8 @@ public class OpponentsFragment extends Fragment{
         int id = item.getItemId();
         switch (id) {
 
-            case R.id.action_home: Intent i = new Intent(getActivity(), StartingBracketActivity.class);
-                startActivity(i);
+            case R.id.action_home:
+                getActivity().finish();
                 break;
 
             case R.id.action_settings:
@@ -317,7 +330,7 @@ public class OpponentsFragment extends Fragment{
                 Fragment f = getFragmentManager().findFragmentByTag("settings_frag");
 
                 if (f == null) {
-                    f = new SettingsFragment().newInstance((int)gameId);
+                    f = new SettingsFragment().newInstance((int)gameId, matchUpDataSource.isRoundTwoStarted(gameId));
                 }
 
                 getFragmentManager().beginTransaction().addToBackStack("settings").replace(android.R.id.content, f, "settings_frag").commit();

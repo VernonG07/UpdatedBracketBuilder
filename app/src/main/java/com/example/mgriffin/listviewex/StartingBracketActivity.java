@@ -1,10 +1,14 @@
 package com.example.mgriffin.listviewex;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -40,6 +44,7 @@ public class StartingBracketActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting_bracket);
 
+//        setMultiTaskColor();
         getActionBar().setTitle("Brackets");
 
         initializeViews();
@@ -59,6 +64,11 @@ public class StartingBracketActivity extends Activity {
 //        rlp.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
 //        scv.setButtonPosition(rlp);
 //        scv.setButtonText("haha");
+    }
+
+    @TargetApi(21)
+    private void setMultiTaskColor () {
+        setTaskDescription(new ActivityManager.TaskDescription("Simple Bracket Builder", null, Color.parseColor("#ff525f6d")));
     }
 
     private void handleGameLongClick(long position, Context context) {
@@ -112,8 +122,7 @@ public class StartingBracketActivity extends Activity {
         }
 
         bracketList = gameDataSource.getAllGames();
-
-        bracketAdapter = new GameAdapter<Game>(this, R.layout.game_list_view, bracketList);
+        bracketAdapter = new GameAdapter<Game>(this, R.layout.game_list_view, bracketList, Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf"));
         bracketView.setAdapter(bracketAdapter);
 
     }
@@ -126,9 +135,12 @@ public class StartingBracketActivity extends Activity {
                 df.setListener(new AddBracketDialogFragment.Listener() {
                     @Override
                     public void returnData(String name) {
-                        Game g = gameDataSource.createGame(name);
-                        bracketList.add(g);
-                        bracketAdapter.notifyDataSetChanged();
+
+                        if ( !name.equals("") ) {
+                            Game g = gameDataSource.createGame(name);
+                            bracketList.add(g);
+                            bracketAdapter.notifyDataSetChanged();
+                        }
                     }
                 });
             }

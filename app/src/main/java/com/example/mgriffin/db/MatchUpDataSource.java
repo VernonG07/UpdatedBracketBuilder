@@ -8,6 +8,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.example.mgriffin.pojos.Game;
 import com.example.mgriffin.pojos.MatchUp;
 import com.example.mgriffin.pojos.Team;
 
@@ -27,15 +28,13 @@ public class MatchUpDataSource {
             DBHelper.COLUMN_ROUND_NUMBER,
             DBHelper.COLUMN_TEAM_ONE_NAME,
             DBHelper.COLUMN_TEAM_TWO_NAME,
-            DBHelper.COLUMN_WINNER_NAME,
-            DBHelper.COLUMN_WINS_REQUIRED,
-            DBHelper.COLUMN_WINS_TEAM_ONE,
-            DBHelper.COLUMN_WINS_TEAM_TWO};
+            DBHelper.COLUMN_WINNER_NAME};
+
     private Context context;
 
     public MatchUpDataSource(Context context) {
         this.context = context;
-        dbHelper = new DBHelper(context, DBHelper.DBType.MATCH_UP, 5);
+        dbHelper = new DBHelper(context, DBHelper.DBType.MATCH_UP, 6);
     }
 
     public void open() throws SQLException {
@@ -65,12 +64,6 @@ public class MatchUpDataSource {
 
         long insertId = database.insert(DBHelper.TABLE_MATCH_UP, null, values);
         matchUp.setId(insertId);
-
-        return matchUp;
-    }
-
-    public MatchUp incrementWinCount(long matchUpId, long currentWinnerId, long currentWinnerName) {
-        MatchUp matchUp = new MatchUp();
 
         return matchUp;
     }
@@ -156,6 +149,18 @@ public class MatchUpDataSource {
         matchUp.setTeamTwoName(teamTwo.getTeamName());
 
         return matchUp;
+    }
+
+    public boolean isRoundTwoStarted (long gameId) {
+        boolean isStarted = false;
+
+        Cursor cursor = database.query(DBHelper.TABLE_MATCH_UP, new String[] {DBHelper.COLUMN_ROUND_NUMBER}, DBHelper.COLUMN_GAME_ID + " = " + gameId + " and " + DBHelper.COLUMN_ROUND_NUMBER + " = 2", null, null, null, null);
+        cursor.moveToFirst();
+
+        if (cursor.getCount()!=0)
+            isStarted = true;
+
+        return isStarted;
     }
 }
 

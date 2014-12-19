@@ -4,23 +4,23 @@
 
     <PreferenceCategory android:title="Game Setup">
 
-        <CheckBoxPreference
-            android:defaultValue="true"
-            android:key="checkbox_randomize_bye"
-            android:title="Randomize BYE Round"
-            android:summary="When there is an uneven match up, randomize who gets the bye" />
+        <!--<CheckBoxPreference-->
+            <!--android:defaultValue="true"-->
+            <!--android:key="checkbox_randomize_bye"-->
+            <!--android:title="Randomize BYE Round"-->
+            <!--android:summary="When there is an uneven match up, randomize who gets the bye" />-->
 
         <CheckBoxPreference
             android:key="checkbox_randomize_opponents"
             android:title="Randomize Opponents"
             android:summary="Randomize opponents after round one" />
 
-        <EditTextPreference
-            android:inputType="number"
-            android:defaultValue="1"
-            android:key="et_wins_required"
-            android:title="Wins Required"
-            android:summary="Sets the amount of wins you need before moving to the next round" />
+        <!--<EditTextPreference-->
+            <!--android:inputType="number"-->
+            <!--android:defaultValue="1"-->
+            <!--android:key="et_wins_required"-->
+            <!--android:title="Wins Required"-->
+            <!--android:summary="Sets the amount of wins you need before moving to the next round" />-->
 
     </PreferenceCategory>
 

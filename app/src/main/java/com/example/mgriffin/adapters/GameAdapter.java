@@ -21,12 +21,14 @@ public class GameAdapter<T> extends ArrayAdapter<Game> {
     private Activity context;
     private int layout;
     private List<Game> data;
+    private Typeface tf;
 
-    public GameAdapter(Activity context, int layout, List<Game> data) {
+    public GameAdapter(Activity context, int layout, List<Game> data, Typeface tf) {
         super(context, layout, data);
         this.data = data;
         this.layout = layout;
         this.context = context;
+        this.tf = tf;
     }
 
     @Override
@@ -50,9 +52,7 @@ public class GameAdapter<T> extends ArrayAdapter<Game> {
 
         Game game = data.get(position);
 
-        Typeface tf = Typeface.createFromAsset(context.getAssets(), "OptimusPrinceps.ttf");
         dataHolder.gameNameHolder.setTypeface(tf);
-
         dataHolder.gameNameHolder.setText(game.getGameName());
 
         return row;
