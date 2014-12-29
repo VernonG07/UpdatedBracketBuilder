@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:drawable="@drawable/nred_shadow"/>
+    <item android:bottom="2dp" android:left="1dp" android:drawable="@drawable/next_gray_circle"/>
+    <item android:drawable="@drawable/ic_arrow_forward_white_48dp"/>
+
+</layer-list>

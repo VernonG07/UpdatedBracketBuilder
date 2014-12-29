@@ -9,6 +9,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -24,8 +25,7 @@ import com.example.mgriffin.adapters.GameAdapter;
 import com.example.mgriffin.db.GameDataSource;
 import com.example.mgriffin.dialog_fragments.AddBracketDialogFragment;
 import com.example.mgriffin.pojos.Game;
-import com.github.amlcurran.showcaseview.ShowcaseView;
-import com.github.amlcurran.showcaseview.targets.ViewTarget;
+import com.example.mgriffin.public_references.PublicVars;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,8 +44,10 @@ public class StartingBracketActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting_bracket);
 
-//        setMultiTaskColor();
-        getActionBar().setTitle("Brackets");
+        if (Build.VERSION.SDK_INT >= 21)
+            setMultiTaskColor();
+
+        getActionBar().setTitle("Brackets " + PublicVars.APP_VERSION_NUMBER);
 
         initializeViews();
         initializeData();
@@ -122,7 +124,7 @@ public class StartingBracketActivity extends Activity {
         }
 
         bracketList = gameDataSource.getAllGames();
-        bracketAdapter = new GameAdapter<Game>(this, R.layout.game_list_view, bracketList, Typeface.createFromAsset(getAssets(), "OptimusPrinceps.ttf"));
+        bracketAdapter = new GameAdapter<Game>(this, R.layout.game_list_view, bracketList, Typeface.createFromAsset(getAssets(), "OpenSans-Regular.ttf"));
         bracketView.setAdapter(bracketAdapter);
 
     }

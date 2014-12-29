@@ -1,5 +1,6 @@
 package com.example.mgriffin.db;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -92,12 +93,25 @@ public class DBHelper extends SQLiteOpenHelper {
         }
         if (dbName != null)
             sqLiteDatabase.execSQL(dbName);
+
+
+        switch (dbType) {
+            case TEAM:
+
+                ContentValues values = new ContentValues();
+                values.put(DBHelper.COLUMN_ID, -1);
+                values.put(DBHelper.COLUMN_TEAM_NAME, "BYE");
+
+                sqLiteDatabase.insert(DBHelper.TABLE_TEAM, null, values);
+            break;
+        }
+
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i2) {
 
-        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_MATCH_UP);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_TEAM);
         onCreate(sqLiteDatabase);
     }
 }

@@ -62,15 +62,19 @@ public class MatchUpAdapter<T> extends ArrayAdapter<MatchUp> {
         dataHolder.name1Holder.setTypeface(typeface);
         dataHolder.name2Holder.setTypeface(typeface);
 
+
+
         if (matchUp.getTeamOneId() == matchUp.getWinnerId()) {
             dataHolder.name1Holder.setText(matchUp.getTeamOneName());
             dataHolder.name1Holder.setTextColor(Color.parseColor("#ff18af20"));
-            dataHolder.name2Holder.setText(matchUp.getTeamTwoName());
-            dataHolder.name2Holder.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
             dataHolder.name1Holder.setPaintFlags(dataHolder.name1Holder.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
+            dataHolder.name2Holder.setText(matchUp.getTeamTwoName());
+            dataHolder.name2Holder.setTextColor(-1979711488);
+            dataHolder.name2Holder.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
         } else if (matchUp.getTeamTwoId() == matchUp.getWinnerId()) {
             dataHolder.name1Holder.setText(matchUp.getTeamOneName());
             dataHolder.name1Holder.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+            dataHolder.name1Holder.setTextColor(-1979711488);
             dataHolder.name2Holder.setText(matchUp.getTeamTwoName());
             dataHolder.name2Holder.setTextColor(Color.parseColor("#ff18af20"));
             dataHolder.name2Holder.setPaintFlags(dataHolder.name2Holder.getPaintFlags() & (~Paint.STRIKE_THRU_TEXT_FLAG));
@@ -79,6 +83,7 @@ public class MatchUpAdapter<T> extends ArrayAdapter<MatchUp> {
             dataHolder.name2Holder.setText(matchUp.getTeamTwoName());
             dataHolder.name1Holder.setPaintFlags(dataHolder.name1Holder.getPaintFlags() & (~ Paint.STRIKE_THRU_TEXT_FLAG));
             dataHolder.name2Holder.setPaintFlags(dataHolder.name2Holder.getPaintFlags() & (~ Paint.STRIKE_THRU_TEXT_FLAG));
+
 //            dataHolder.name1Score.setText("(1-0)");
 //            dataHolder.name1Score.setTextColor(Color.parseColor("#C4C4C4"));
 //            dataHolder.name2Score.setText("(1-0)");

@@ -5,6 +5,7 @@ package com.example.mgriffin.db;
  */
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.mgriffin.pojos.Team;
@@ -22,7 +23,7 @@ public class TeamDataSource {
             DBHelper.COLUMN_TEAM_NAME};
 
     public TeamDataSource(Context context) {
-        dbHelper = new DBHelper(context, DBHelper.DBType.TEAM, 1);
+        dbHelper = new DBHelper(context, DBHelper.DBType.TEAM, 4);
     }
 
     public void open() throws SQLException {
@@ -55,6 +56,24 @@ public class TeamDataSource {
         values.put(DBHelper.COLUMN_TEAM_NAME, newTeamName);
 
         database.update(DBHelper.TABLE_TEAM, values, DBHelper.COLUMN_ID + " = " + teamId, null);
+
+        return team;
+    }
+
+    public Team getExistingTeam (long teamId) {
+
+        Team team = new Team();
+
+        Cursor cursor = database.query(DBHelper.TABLE_TEAM, allColumns, DBHelper.COLUMN_ID + " = " + teamId, null, null, null, null);
+
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+
+            team.setTeamId(cursor.getLong(0));
+            team.setTeamName(cursor.getString(1));
+
+            cursor.moveToNext();
+        }
 
         return team;
     }

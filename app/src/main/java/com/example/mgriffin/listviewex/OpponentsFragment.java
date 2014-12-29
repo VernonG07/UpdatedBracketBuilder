@@ -104,7 +104,7 @@ public class OpponentsFragment extends Fragment{
 
         roundTitleView = (TextView) rootView.findViewById(R.id.tv_round_title);
         addNewMatchUp = (Button) rootView.findViewById(R.id.btn_add_opponents);
-        if (roundNumber != 1) {
+        if (roundNumber != 1 || matchUpDataSource.isRoundTwoStarted(gameId) ) {
             addNewMatchUp.setVisibility(View.INVISIBLE);
         }
         goToNextRound = (Button) rootView.findViewById(R.id.btn_next_round);
@@ -157,12 +157,15 @@ public class OpponentsFragment extends Fragment{
                         try {
                             matchUpWinnerTwo = autoMatchUps.get(i + 1);
                         } catch (IndexOutOfBoundsException e) {
-                            matchUpWinnerTwo.setWinnerId(9999);
+
+
+
+                            matchUpWinnerTwo.setWinnerId(-1);
                             matchUpWinnerTwo.setWinnerName("BYE");
                         }
 
                         MatchUp newMatchUp = matchUpDataSource.createMatchUp(matchUpWinnerOne.getWinnerId(), matchUpWinnerTwo.getWinnerId(), currentGame.getGameId(), roundNumber, matchUpWinnerOne.getWinnerName(), matchUpWinnerTwo.getWinnerName());
-                        if (newMatchUp.getTeamTwoId()==9999)
+                        if (newMatchUp.getTeamTwoId()==-1)
                         {
                             matchUpDataSource.assignMatchUpWinner(newMatchUp.getId(), newMatchUp.getTeamOneId(), newMatchUp.getTeamOneName());
                             newMatchUp.setWinnerId(newMatchUp.getTeamOneId());
@@ -185,7 +188,7 @@ public class OpponentsFragment extends Fragment{
 
             addNewMatchUp.setOnClickListener(btnClick);
             goToNextRound.setOnClickListener(btnClick);
-            if (roundNumber == 1) //TODO or if round 2 has been started.
+            if (roundNumber == 1 && !matchUpDataSource.isRoundTwoStarted(gameId))
                 matchUps.setOnItemLongClickListener(new DeleteMatchUpListener());
             matchUps.setOnItemClickListener(new ChooseWinnerListener());
         }
@@ -221,10 +224,31 @@ public class OpponentsFragment extends Fragment{
                         @Override
                         public void returnOpponents(String nameOne, String nameTwo) {
 
-                            Team teamOne = teamDataSource.createTeam(nameOne);
-                            Team teamTwo = teamDataSource.createTeam(nameTwo);
+                            Team teamOne;
+                            Team teamTwo;
 
-                            MatchUp matchUp = matchUpDataSource.createMatchUp(teamOne.getTeamId(), teamTwo.getTeamId(), currentGame.getGameId(), roundNumber, nameOne, nameTwo);
+                            if (nameOne.equals(""))
+                                teamOne = teamDataSource.getExistingTeam(-1);
+                            else
+                                teamOne = teamDataSource.createTeam(nameOne);
+
+                            if (nameTwo.equals(""))
+                                teamTwo = teamDataSource.getExistingTeam(-1);
+                            else
+                                teamTwo = teamDataSource.createTeam(nameTwo);
+
+                            MatchUp matchUp = matchUpDataSource.createMatchUp(teamOne.getTeamId(), teamTwo.getTeamId(), currentGame.getGameId(), roundNumber, teamOne.getTeamName(), teamTwo.getTeamName());
+
+                            if ( teamOne.getTeamId() == -1) {
+                                matchUpDataSource.assignMatchUpWinner(matchUp.getId(), teamTwo.getTeamId(), teamTwo.getTeamName());
+                                matchUp.setWinnerId(teamTwo.getTeamId());
+                                matchUp.setWinnerName(teamTwo.getTeamName());
+                            } else if (teamTwo.getTeamId() == -1) {
+                                matchUpDataSource.assignMatchUpWinner(matchUp.getId(), teamOne.getTeamId(), teamOne.getTeamName());
+                                matchUp.setWinnerId(teamOne.getTeamId());
+                                matchUp.setWinnerName(teamOne.getTeamName());
+                            }
+
 
                             matchUpData.add(matchUp);
                             matchUpAdapter.notifyDataSetChanged();
@@ -262,9 +286,20 @@ public class OpponentsFragment extends Fragment{
                         @Override
                         public void returnOpponents(String oName1, String oName2) {
 
-                            Team t1 = teamDataSource.editTeamName(longClickMatchUp.getTeamOneId(), oName1);
-                            Team t2 = teamDataSource.editTeamName(longClickMatchUp.getTeamTwoId(), oName2);
+                            Team t1;
+                            Team t2;
 
+                            if (longClickMatchUp.getTeamOneId() == -1){
+                                t1 = teamDataSource.createTeam(oName1);
+                            } else {
+                                t1 = teamDataSource.editTeamName(longClickMatchUp.getTeamOneId(), oName1);
+                            }
+
+                            if (longClickMatchUp.getTeamTwoId() == -1) {
+                                t2 = teamDataSource.createTeam(oName2);
+                            } else {
+                                t2 = teamDataSource.editTeamName(longClickMatchUp.getTeamTwoId(), oName2);
+                            }
                             MatchUp editedMatchUp = matchUpDataSource.editMatchUp(longClickMatchUp, t1, t2);
 
                             matchUpData.set(longClickPos, editedMatchUp);
