@@ -7,5 +7,6 @@
     <string name="title_activity_detailed_bracket">DetailedBracket</string>
     <string name="title_activity_bracket_detail">BracketDetailActivity</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_next_round">Next Round</string>
 
 </resources>

@@ -1,5 +1,6 @@
 package com.example.mgriffin.listviewex;
 
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -101,13 +102,21 @@ public class OpponentsFragment extends Fragment{
 
         bracketTitleView = (TextView) rootView.findViewById(R.id.tv_bracket_title);
         bracketTitleView.setTypeface(tf);
+        goToNextRound = (Button) rootView.findViewById(R.id.btn_next_round);
 
         roundTitleView = (TextView) rootView.findViewById(R.id.tv_round_title);
         addNewMatchUp = (Button) rootView.findViewById(R.id.btn_add_opponents);
         if (roundNumber != 1 || matchUpDataSource.isRoundTwoStarted(gameId) ) {
+
+            ViewGroup.LayoutParams lp = addNewMatchUp.getLayoutParams();
             addNewMatchUp.setVisibility(View.INVISIBLE);
+            goToNextRound.setLayoutParams(lp);
+
+
+
+
         }
-        goToNextRound = (Button) rootView.findViewById(R.id.btn_next_round);
+
         matchUps = (ListView) rootView.findViewById(R.id.lv_matchups);
 
     }

@@ -9,14 +9,18 @@
         android:id="@+id/et_name1"
         android:hint="Team One"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:imeOptions="actionNext"/>
 
     <EditText
         android:id="@+id/et_name2"
         android:hint="Team Two"
         android:layout_below="@id/et_name1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:imeOptions="actionDone"/>
 
     <Button
         android:id="@+id/btn_add_opponents"

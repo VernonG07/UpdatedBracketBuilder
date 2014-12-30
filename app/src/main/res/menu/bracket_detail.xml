@@ -9,7 +9,7 @@
         android:showAsAction="ifRoom" />
 
     <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
+        android:title="@string/action_next_round"
         android:icon="@drawable/ic_settings_applications_white_48dp"
         android:orderInCategory="101"
         android:showAsAction="ifRoom" />

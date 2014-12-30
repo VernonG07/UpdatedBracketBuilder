@@ -40,6 +40,7 @@
         android:layout_above="@+id/btn_add_opponents"
         android:layout_alignParentRight="true"
         android:layout_marginRight="2dp"
+        android:transitionName="something"
          />
 
     <Button
@@ -53,6 +54,7 @@
         android:layout_marginTop="5dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:transitionName="something"
         />
 
 </RelativeLayout>
