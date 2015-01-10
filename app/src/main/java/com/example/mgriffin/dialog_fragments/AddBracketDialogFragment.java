@@ -1,12 +1,17 @@
 package com.example.mgriffin.dialog_fragments;
 
+import android.app.Dialog;
 import android.app.DialogFragment;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mgriffin.listviewex.R;
 
@@ -42,6 +47,21 @@ public class AddBracketDialogFragment extends DialogFragment implements View.OnC
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.dialogfragment_add_bracket, container, false);
         name = (EditText) rootView.findViewById(R.id.et_name);
+        name.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+
+                if ( actionId == EditorInfo.IME_ACTION_DONE){
+                    String bracketName = name.getText().toString();
+
+                    if (!bracketName.equals(""))
+                        mListener.returnData(name.getText().toString());
+
+                    getDialog().dismiss();
+                }
+                return false;
+            }
+        });
         addButton = (Button) rootView.findViewById(R.id.btn_add);
         addButton.setOnClickListener(this);
 
@@ -62,5 +82,18 @@ public class AddBracketDialogFragment extends DialogFragment implements View.OnC
             mListener.returnData(name.getText().toString());
 
         getDialog().dismiss();
+    }
+
+    @Override
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        setRetainInstance(true);
+        return super.onCreateDialog(savedInstanceState);
+    }
+
+    @Override
+    public void onDestroyView() {
+        if (getDialog() != null && getRetainInstance())
+            getDialog().setDismissMessage(null);
+        super.onDestroyView();
     }
 }

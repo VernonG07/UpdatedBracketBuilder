@@ -11,7 +11,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:layout_marginBottom="5dp"
-        android:background="@drawable/main_dialog_button_selector"/>
+        android:maxLength="10"
+        />
 
     <TextView
         android:id="@+id/tv_or"
@@ -22,12 +23,12 @@
 
     <Button
         android:id="@+id/btn_choose_name_two"
-        android:background="@drawable/main_dialog_button_selector"
         android:layout_marginTop="10dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="5dp"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
+        android:maxLength="10"
         android:layout_alignParentRight="true"/>
 
 </RelativeLayout>

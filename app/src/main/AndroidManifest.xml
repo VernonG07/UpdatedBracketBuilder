@@ -6,21 +6,27 @@
         android:allowBackup="true"
         android:icon="@drawable/gameicon"
         android:label="Simple Bracket Builder"
-        android:theme="@style/AppTheme"
-        android:logo="@android:color/transparent">
+        android:logo="@android:color/transparent"
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".StartingBracketActivity"
-            android:windowSoftInputMode="adjustPan"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".OpponentsMainActivity"
-            android:windowSoftInputMode="adjustPan"
-            android:label="@string/title_activity_bracket_detail" >
+            android:label="@string/title_activity_bracket_detail"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppThemeSettings">
         </activity>
     </application>
 

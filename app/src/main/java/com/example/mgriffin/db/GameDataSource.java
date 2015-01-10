@@ -20,7 +20,7 @@ public class GameDataSource {
     private DBHelper mDbHelper;
 
     public GameDataSource(Context context) {
-        mDbHelper = new DBHelper(context, DBHelper.DBType.GAME, 1);
+        mDbHelper = new DBHelper(context, DBHelper.DBType.GAME, 3 );
     }
 
     public void open() throws SQLException {
@@ -48,7 +48,7 @@ public class GameDataSource {
     public List<Game> getAllGames() {
         List<Game> games = new ArrayList<Game>();
 
-        Cursor cursor = database.query(DBHelper.TABLE_GAME, new String[] {DBHelper.COLUMN_ID, DBHelper.COLUMN_GAME_NAME}, null, null, null, null, null);
+        Cursor cursor = database.query(DBHelper.TABLE_GAME, new String[] {DBHelper.COLUMN_ID, DBHelper.COLUMN_GAME_NAME, DBHelper.COLUMN_GAME_WINNER}, null, null, null, null, null);
 
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
@@ -56,6 +56,8 @@ public class GameDataSource {
             games.add(game);
             cursor.moveToNext();
         }
+
+
         cursor.close();
         return games;
     }
@@ -63,22 +65,33 @@ public class GameDataSource {
     public Game getExistingGameById(long id) {
         Game game = null;
 
-        Cursor cursor = database.query(DBHelper.TABLE_GAME, new String[] {DBHelper.COLUMN_ID, DBHelper.COLUMN_GAME_NAME}, DBHelper.COLUMN_ID + " = " + id, null, null, null, null);
+        Cursor cursor = database.query(DBHelper.TABLE_GAME, new String[] {DBHelper.COLUMN_ID, DBHelper.COLUMN_GAME_NAME, DBHelper.COLUMN_GAME_WINNER}, DBHelper.COLUMN_ID + " = " + id, null, null, null, null);
         cursor.moveToFirst();
         game = cursorToGame(cursor);
 
+        cursor.close();
         return game;
     }
 
     public void deleteGame (Game game) {
         long id = game.getGameId();
+//
+//        Cursor cursor = database.query(DBHelper.TABLE_MATCH_UP, new String[] {DBHelper.COLUMN_TEAM_ONE_ID, DBHelper.COLUMN_TEAM_TWO_ID}, DBHelper.COLUMN_GAME_ID + " = " + game.getGameId(), null, null, null, null);
+//        cursor.moveToFirst();
+//        int teamOne = cursor.getInt(0);
+//        int teamTwo = cursor.getInt(1);
+
         database.delete(DBHelper.TABLE_GAME, DBHelper.COLUMN_ID + " = " + game.getGameId(), null);
+//        database.delete(DBHelper.TABLE_MATCH_UP, DBHelper.COLUMN_GAME_ID + " = " + game.getGameId(), null);
+//        database.delete(DBHelper.TABLE_TEAM, DBHelper.COLUMN_ID + " = " + teamOne, null);
+//        database.delete(DBHelper.TABLE_TEAM, DBHelper.COLUMN_ID + " = " + teamTwo, null);
     }
 
     private Game cursorToGame(Cursor cursor) {
         Game game = new Game();
         game.setGameId(cursor.getLong(0));
         game.setGameName(cursor.getString(1));
+        game.setWinner(cursor.getString(2));
         return game;
     }
 
@@ -91,5 +104,19 @@ public class GameDataSource {
         game.setGameName(newGameName);
 
         return game;
+    }
+
+    public void setGameWinner ( Game game, String winner) {
+        ContentValues values = new ContentValues();
+        values.put(DBHelper.COLUMN_GAME_WINNER, winner);
+
+        database.update(DBHelper.TABLE_GAME, values, DBHelper.COLUMN_ID + " = " + game.getGameId(), null);
+    }
+
+    public String getGameWinner (long gameId) {
+        Cursor cursor = database.query(DBHelper.TABLE_GAME, new String[] {DBHelper.COLUMN_GAME_WINNER}, DBHelper.COLUMN_ID + " = " + gameId, null, null, null, null);
+        cursor.moveToFirst();
+
+        return cursor.getString(0);
     }
 }

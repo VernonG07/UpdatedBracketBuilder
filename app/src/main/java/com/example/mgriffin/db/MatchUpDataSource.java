@@ -162,5 +162,40 @@ public class MatchUpDataSource {
 
         return isStarted;
     }
+
+    public boolean isNextRoundStarted (long gameId, int roundNumber) {
+        boolean isStarted = false;
+
+        roundNumber = roundNumber + 1;
+
+        Cursor cursor = database.query(DBHelper.TABLE_MATCH_UP, new String[] {DBHelper.COLUMN_ROUND_NUMBER}, DBHelper.COLUMN_GAME_ID + " = " + gameId + " and " + DBHelper.COLUMN_ROUND_NUMBER + " = " + roundNumber, null, null, null, null);
+        cursor.moveToFirst();
+
+        if (cursor.getCount() == 0) {
+            isStarted = false;
+        } else {
+            isStarted = true;
+        }
+
+        cursor.close();
+
+        return  isStarted;
+    }
+
+    public List<MatchUp> getMatchupsByGameId(long gameId){
+        //TODO
+
+        List<MatchUp> matchUps = new ArrayList<>();
+
+        Cursor cursor = database.query(DBHelper.TABLE_MATCH_UP, allColumns, DBHelper.COLUMN_GAME_ID + " = " + gameId, null, null, null, null);
+        cursor.moveToFirst();
+
+        while (!cursor.isAfterLast()) {
+            MatchUp matchUp = cursorToMatchUp(cursor);
+            matchUps.add(matchUp);
+            cursor.moveToNext();
+        }
+        return  matchUps;
+    }
 }
 

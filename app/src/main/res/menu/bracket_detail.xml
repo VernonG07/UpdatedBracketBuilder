@@ -2,15 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.mgriffin.listviewex.OpponentsMainActivity" >
 
-    <item android:id="@+id/action_home"
-        android:title="@string/action_settings"
-        android:icon="@drawable/ic_home_white_48dp"
+    <item
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/action_home"
+        android:title="@string/action_home"
+        android:icon="@drawable/ic_home_white_36dp"
         android:orderInCategory="100"
-        android:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom" />
 
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_next_round"
-        android:icon="@drawable/ic_settings_applications_white_48dp"
+    <item
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_settings_applications_white_36dp"
         android:orderInCategory="101"
-        android:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom" />
 </menu>

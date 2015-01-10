@@ -15,11 +15,12 @@ public class DBHelper extends SQLiteOpenHelper {
     //Game DB
     public static final String TABLE_GAME = "game";
     public static final String COLUMN_GAME_NAME = "gameName";
+    public static final String COLUMN_GAME_WINNER = "gameWinner";
 
     private static final String DATABASE_CREATE = "create table "
             + TABLE_GAME + "(" + COLUMN_ID
             + " integer primary key autoincrement, " + COLUMN_GAME_NAME
-            + " text not null);";
+            + " text not null, " + COLUMN_GAME_WINNER + " text);";
 
     //MatchUp Table
     public static final String TABLE_MATCH_UP = "match_up";
@@ -111,7 +112,7 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i2) {
 
-        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_TEAM);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_GAME);
         onCreate(sqLiteDatabase);
     }
 }

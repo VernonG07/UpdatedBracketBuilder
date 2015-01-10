@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textCapWords"
+        android:maxLength="20"
         android:imeOptions="actionNext"/>
 
     <EditText
@@ -20,12 +21,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textCapWords"
+        android:maxLength="20"
         android:imeOptions="actionDone"/>
 
     <Button
         android:id="@+id/btn_add_opponents"
         android:text="Add"
-        android:background="@drawable/main_dialog_button_selector"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="5dp"

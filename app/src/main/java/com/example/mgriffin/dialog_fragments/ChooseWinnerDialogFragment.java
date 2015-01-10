@@ -2,6 +2,7 @@ package com.example.mgriffin.dialog_fragments;
 
 
 
+import android.app.Dialog;
 import android.app.DialogFragment;
 import android.os.Bundle;
 import android.app.Fragment;
@@ -90,5 +91,18 @@ public class ChooseWinnerDialogFragment extends DialogFragment implements View.O
         selectedWinnerMatchUp.setWinnerName(winner.getWinnerName());
 
         mListener.returnWinner(selectedWinnerMatchUp);
+    }
+
+    @Override
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        setRetainInstance(true);
+        return super.onCreateDialog(savedInstanceState);
+    }
+
+    @Override
+    public void onDestroyView() {
+        if (getDialog() != null && getRetainInstance())
+            getDialog().setDismissMessage(null);
+        super.onDestroyView();
     }
 }

@@ -2,6 +2,7 @@ package com.example.mgriffin.adapters;
 
 import android.app.Activity;
 import android.graphics.Typeface;
+import android.sax.TextElementListener;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,7 @@ public class GameAdapter<T> extends ArrayAdapter<Game> {
 
             dataHolder = new DataHolder();
             dataHolder.gameNameHolder = (TextView) row.findViewById(R.id.tv_game_name);
+            dataHolder.gameWinnerHolder = (TextView) row.findViewById(R.id.tv_winner_name);
 
             row.setTag(dataHolder);
         }
@@ -52,7 +54,11 @@ public class GameAdapter<T> extends ArrayAdapter<Game> {
 
         Game game = data.get(position);
 
-        dataHolder.gameNameHolder.setTypeface(tf);
+        if ( game.getWinner() != null)
+            dataHolder.gameWinnerHolder.setText("Winner: " + game.getWinner());
+        else
+            dataHolder.gameWinnerHolder.setText("");
+
         dataHolder.gameNameHolder.setText(game.getGameName());
 
         return row;
@@ -60,6 +66,7 @@ public class GameAdapter<T> extends ArrayAdapter<Game> {
 
     static class DataHolder {
         TextView gameNameHolder;
+        TextView gameWinnerHolder;
     }
 }
 

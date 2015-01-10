@@ -5,18 +5,29 @@
         <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
     <!--</style>-->
 
-        <style name="AppTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
-            <item name="android:actionBarStyle">@style/MyActionBar</item>
-        </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#ff247198</item>
+        <item name="colorPrimaryDark">#ff26729b</item>
+        <item name="windowActionBar">false</item>
+    </style>
 
-        <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
-            <item name="android:background">#ff596778</item>
-            <item name="android:titleTextStyle">@style/MyActionBarTextColor</item>
-        </style>
 
-        <style name="MyActionBarTextColor" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
-            <item name="android:textColor">#FFFFFF</item>
-        </style>
+    <style name="AppThemeSettings" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#ff247198</item>
+        <item name="colorPrimaryDark">#ff26729b</item>
+    </style>
+
+
+    <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="ToolbarSubtitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">#ffbfbfbf</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
 
 
 
