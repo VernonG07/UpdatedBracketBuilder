@@ -22,15 +22,15 @@ public class SettingsActivity extends ActionBarActivity {
 
         Bundle b2 = getIntent().getExtras();
 
-        this.something = b2.getInt("INT");
-        this.somethingBool = b2.getBoolean("BOOL");
+//        this.something = b2.getInt("INT");
+//        this.somethingBool = b2.getBoolean("BOOL");
 
 
         Fragment newFragment;
         if (savedInstanceState != null) {
             newFragment = getFragmentManager().findFragmentByTag("sett_frag");
         } else {
-            newFragment = new SettingsFragment().newInstance(something, somethingBool);
+            newFragment = new SettingsFragment();
             getFragmentManager().beginTransaction().add(android.R.id.content, newFragment, "sett_frag").commit();
         }
     }

@@ -65,6 +65,8 @@ public class OpponentsFragment extends Fragment{
     private long gameId;
     private int roundNumber;
     private Toolbar toolbar;
+    private SharedPreferences sharedPreferences;
+    private CheckBox foot;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -75,11 +77,12 @@ public class OpponentsFragment extends Fragment{
         initializeViews(rootView);
         initializeData();
         modifyActionBar();
+        api21Actions();
 
-        if (matchUpData.isEmpty()) {
-            goToNextRound.setVisibility(View.INVISIBLE);
-        }
+        return rootView;
+    }
 
+    private void api21Actions() {
         if (Build.VERSION.SDK_INT >= 21) {
             addNewMatchUp.setBackgroundResource(R.drawable.ripple);
             addNewMatchUp.setStateListAnimator(AnimatorInflater.loadStateListAnimator(getActivity(), R.anim.anim));
@@ -90,9 +93,6 @@ public class OpponentsFragment extends Fragment{
             addNewMatchUp.setBackgroundResource(R.drawable.ripple_u21);
             goToNextRound.setBackgroundResource(R.drawable.ripple_next_u21);
         }
-
-
-        return rootView;
     }
 
     private void getParms() {
@@ -110,9 +110,9 @@ public class OpponentsFragment extends Fragment{
             teamDataSource.open();
             matchUpDataSource.open();
         } catch (Exception e) {
-            Toast.makeText(getActivity(), "could not open", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), "Database was not opened", Toast.LENGTH_SHORT).show();
+            getActivity().finish();
         }
-
     }
 
     private void initializeViews(View rootView) {
@@ -133,7 +133,6 @@ public class OpponentsFragment extends Fragment{
         }
 
         matchUps = (ListView) rootView.findViewById(R.id.lv_matchups);
-
     }
 
     private void initializeData() {
@@ -141,86 +140,109 @@ public class OpponentsFragment extends Fragment{
         matchUpData = new ArrayList<MatchUp>();
         matchUpData = matchUpDataSource.getAllMatchUps(currentGame.getGameId(), roundNumber);
 
-        boolean isData = true;
+        bracketTitleView.setText(currentGame.getGameName());
+        roundTitleView.setText("Round: " + roundNumber);
 
         if (matchUpData.size() == 0) {
-
-            List<MatchUp> autoMatchUps = matchUpDataSource.getAllMatchUps(currentGame.getGameId(), roundNumber - 1);
-            for (MatchUp matchUp : autoMatchUps) {
-                if (matchUp.getWinnerId() == 0) {
-                    isData = false;
-                }
-            }
-
-            if (isData) {
-
-                SharedPreferences sharedPreferences = getActivity().getSharedPreferences(String.valueOf(gameId), Context.MODE_PRIVATE);
-                boolean randomizeMatchUps = sharedPreferences.getBoolean("checkbox_randomize_opponents", false);
-
-                if (randomizeMatchUps) {
-                    long seed = System.nanoTime();
-                    Collections.shuffle(autoMatchUps, new Random(seed));
-                }
-
-                for (int i = 0; i < autoMatchUps.size(); i = i + 2) {
-                    MatchUp matchUpWinnerOne = autoMatchUps.get(i);
-                    MatchUp matchUpWinnerTwo = new MatchUp();
-
-                    try {
-                        matchUpWinnerTwo = autoMatchUps.get(i + 1);
-                    } catch (IndexOutOfBoundsException e) {
-                        matchUpWinnerTwo.setWinnerId(-1);
-                        matchUpWinnerTwo.setWinnerName("BYE");
-                    }
-
-                    MatchUp newMatchUp = matchUpDataSource.createMatchUp(matchUpWinnerOne.getWinnerId(), matchUpWinnerTwo.getWinnerId(), currentGame.getGameId(), roundNumber, matchUpWinnerOne.getWinnerName(), matchUpWinnerTwo.getWinnerName());
-                    if (newMatchUp.getTeamTwoId()==-1)
-                    {
-                        matchUpDataSource.assignMatchUpWinner(newMatchUp.getId(), newMatchUp.getTeamOneId(), newMatchUp.getTeamOneName());
-                        newMatchUp.setWinnerId(newMatchUp.getTeamOneId());
-                        newMatchUp.setWinnerName(newMatchUp.getTeamOneName());
-                    }
-                    matchUpData.add(newMatchUp);
-                }
-            }
+            createMatchUps();
         }
 
-        if (isData) {
-            bracketTitleView.setText(currentGame.getGameName());
-            roundTitleView.setText("Round: " + roundNumber);
+        createFooter();
+        matchUpAdapter = new MatchUpAdapter<MatchUp>(getActivity(), R.layout.matchup_list_view, matchUpData, Typeface.createFromAsset(getActivity().getAssets(), "OptimusPrinceps.ttf"));
+        matchUps.setAdapter(matchUpAdapter);
 
-            matchUpAdapter = new MatchUpAdapter<MatchUp>(getActivity(), R.layout.matchup_list_view, matchUpData, Typeface.createFromAsset(getActivity().getAssets(), "OptimusPrinceps.ttf"));
+        AddMatchUpListener btnClick = new AddMatchUpListener();
 
-            int spacerHeight;
-            spacerHeight = addNewMatchUp.getVisibility()==View.INVISIBLE ? 250 : 450;
+        addNewMatchUp.setOnClickListener(btnClick);
+        goToNextRound.setOnClickListener(btnClick);
+        if (roundNumber == 1 && !matchUpDataSource.isRoundTwoStarted(gameId))
+            matchUps.setOnItemLongClickListener(new DeleteMatchUpListener());
 
-//            CheckBox foot = new CheckBox(getActivity());
-//            SharedPreferences sharedPreferences = getActivity().getSharedPreferences(String.valueOf(gameId), Context.MODE_PRIVATE);
-//            foot.setChecked(sharedPreferences.getBoolean("checkbox_randomize_opponents", false));
-//            foot.setText("Randomize Opponents");
-//            foot.setPadding(20, 0, 0, 0);
-//            foot.setLayoutParams( new AbsListView.LayoutParams( AbsListView.LayoutParams.MATCH_PARENT, AbsListView.LayoutParams.WRAP_CONTENT));
+        if (!matchUpDataSource.isNextRoundStarted(gameId, roundNumber)) {
+            if (gameDataSource.getGameWinner(gameId) == null)
+                matchUps.setOnItemClickListener(new ChooseWinnerListener());
+        }
 
-            View footer = new View(getActivity());
-            footer.setLayoutParams( new AbsListView.LayoutParams( AbsListView.LayoutParams.MATCH_PARENT, spacerHeight ));
-//            matchUps.addFooterView(foot);
-            matchUps.addFooterView(footer, null, false);
-            matchUps.setAdapter(matchUpAdapter);
+        if (matchUpData.isEmpty()) {
+            goToNextRound.setVisibility(View.INVISIBLE);
+        }
+    }
 
-            AddMatchUpListener btnClick = new AddMatchUpListener();
+    private void createFooter() {
+        int spacerHeight;
+        spacerHeight = addNewMatchUp.getVisibility()==View.INVISIBLE ? 250 : 450;
 
-            addNewMatchUp.setOnClickListener(btnClick);
-            goToNextRound.setOnClickListener(btnClick);
-            if (roundNumber == 1 && !matchUpDataSource.isRoundTwoStarted(gameId))
-                matchUps.setOnItemLongClickListener(new DeleteMatchUpListener());
+        foot = new CheckBox(getActivity());
 
+        sharedPreferences = getActivity().getSharedPreferences("DEFAULT_RANDO", Context.MODE_PRIVATE);
+        boolean test = sharedPreferences.getBoolean("checkbox_randomize_opponents" + gameId, sharedPreferences.getBoolean("checkbox_randomize_opponents_default", false));
 
-            String t = gameDataSource.getGameWinner(gameId);
+        if (roundNumber == 1 && !matchUpDataSource.isRoundTwoStarted(gameId)) {
+            sharedPreferences.edit().putBoolean("checkbox_randomize_opponents" + gameId, test).commit();
+            foot.setChecked(test);
+            if ( matchUpData.size() == 0)
+                foot.setVisibility(View.INVISIBLE);
+            foot.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    sharedPreferences.edit().putBoolean("checkbox_randomize_opponents" + gameId, foot.isChecked()).commit();
+                }
+            });
+            matchUps.addFooterView(foot);
+        } else if ( roundNumber == 1) {
+            foot.setChecked(test);
+            if ( matchUpData.size() == 0)
+                foot.setVisibility(View.INVISIBLE);
+            foot.setEnabled(false);
+            matchUps.addFooterView(foot);
+        }
+        else {
+            foot.setChecked(test);
+            if ( matchUpData.size() == 0)
+                foot.setVisibility(View.INVISIBLE);
+            sharedPreferences.edit().putBoolean("checkbox_randomize_opponents" + gameId, test).commit();
+        }
 
-            if (!matchUpDataSource.isNextRoundStarted(gameId, roundNumber)) {
-                if (t == null)
-                    matchUps.setOnItemClickListener(new ChooseWinnerListener());
+        foot.setText("Randomize Opponents");
+        foot.setLayoutParams( new AbsListView.LayoutParams( AbsListView.LayoutParams.MATCH_PARENT, AbsListView.LayoutParams.WRAP_CONTENT));
+
+        View footer = new View(getActivity());
+        footer.setLayoutParams( new AbsListView.LayoutParams( AbsListView.LayoutParams.MATCH_PARENT, spacerHeight ));
+        matchUps.addFooterView(footer, null, false);
+    }
+
+    private void createMatchUps() {
+
+        List<MatchUp> autoMatchUps = matchUpDataSource.getAllMatchUps(currentGame.getGameId(), roundNumber - 1);
+
+        sharedPreferences = getActivity().getSharedPreferences("DEFAULT_RANDO", Context.MODE_PRIVATE);
+        boolean randomizeMatchUps = sharedPreferences.getBoolean("checkbox_randomize_opponents" + gameId, false);
+
+        if (randomizeMatchUps) {
+            long seed = System.nanoTime();
+            Collections.shuffle(autoMatchUps, new Random(seed));
+        }
+
+        //TODO: create mode for double elimination
+        for (int i = 0; i < autoMatchUps.size(); i = i + 2) {
+            MatchUp matchUpWinnerOne = autoMatchUps.get(i);
+            MatchUp matchUpWinnerTwo = new MatchUp();
+
+            try {
+                matchUpWinnerTwo = autoMatchUps.get(i + 1);
+            } catch (IndexOutOfBoundsException e) {
+                matchUpWinnerTwo.setWinnerId(-1);
+                matchUpWinnerTwo.setWinnerName("BYE");
             }
+
+            MatchUp newMatchUp = matchUpDataSource.createMatchUp(matchUpWinnerOne.getWinnerId(), matchUpWinnerTwo.getWinnerId(), currentGame.getGameId(), roundNumber, matchUpWinnerOne.getWinnerName(), matchUpWinnerTwo.getWinnerName());
+            if (newMatchUp.getTeamTwoId()==-1)
+            {
+                matchUpDataSource.assignMatchUpWinner(newMatchUp.getId(), newMatchUp.getTeamOneId(), newMatchUp.getTeamOneName());
+                newMatchUp.setWinnerId(newMatchUp.getTeamOneId());
+                newMatchUp.setWinnerName(newMatchUp.getTeamOneName());
+            }
+            matchUpData.add(newMatchUp);
         }
     }
 
@@ -287,6 +309,7 @@ public class OpponentsFragment extends Fragment{
 
                                 MatchUp matchUp = matchUpDataSource.createMatchUp(teamOne.getTeamId(), teamTwo.getTeamId(), currentGame.getGameId(), roundNumber, teamOne.getTeamName(), teamTwo.getTeamName());
                                 goToNextRound.setVisibility(View.VISIBLE);
+                                foot.setVisibility(View.VISIBLE);
 
                                 if (teamOne.getTeamId() == -1) {
                                     matchUpDataSource.assignMatchUpWinner(matchUp.getId(), teamTwo.getTeamId(), teamTwo.getTeamName());
@@ -331,6 +354,9 @@ public class OpponentsFragment extends Fragment{
                                     slideOut.setDuration(150);
                                     goToNextRound.setVisibility(View.INVISIBLE);
                                     goToNextRound.setAnimation(slideOut);
+                                }
+                                if (matchUpData.size() == 0) {
+                                    foot.setVisibility(View.INVISIBLE);
                                 }
                 }
             });
@@ -418,14 +444,8 @@ public class OpponentsFragment extends Fragment{
                 break;
 
             case R.id.action_settings:
-
-
                 Intent i = new Intent(getActivity(), SettingsActivity.class);
-                i.putExtra("INT", (int) gameId);
-                i.putExtra("BOOL", matchUpDataSource.isRoundTwoStarted(gameId));
-
                 startActivity(i);
-
             return true;
         }
 

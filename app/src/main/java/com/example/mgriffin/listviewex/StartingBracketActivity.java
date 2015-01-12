@@ -16,8 +16,11 @@ import android.support.v4.util.Pair;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
+import android.transition.ChangeBounds;
 import android.transition.Transition;
 import android.util.AttributeSet;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -52,12 +55,6 @@ public class StartingBracketActivity extends ActionBarActivity {
 
     private MatchUpDataSource matchUpDataSource;
     private TeamDataSource teamDataSource;
-
-    @Override
-    public View onCreateView(View parent, String name, Context context, AttributeSet attrs) {
-
-        return super.onCreateView(parent, name, context, attrs);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -150,6 +147,7 @@ public class StartingBracketActivity extends ActionBarActivity {
 
     private void initializeViews() {
         toolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
         addBracketButton = (ImageButton) findViewById(R.id.btn_add);
         bracketView = (ListView) findViewById(R.id.lv_items);
         cardView = (CardView) findViewById(R.id.main_cv);
@@ -260,6 +258,25 @@ public class StartingBracketActivity extends ActionBarActivity {
         } catch (SQLException e) {
             Toast.makeText(this, "Sorry", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.bracket_detail, menu);
+        menu.findItem(R.id.action_home).setVisible(false);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                Intent i = new Intent(this, SettingsActivity.class);
+                startActivity(i);
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
 

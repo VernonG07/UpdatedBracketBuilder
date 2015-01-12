@@ -26,31 +26,23 @@ public class SettingsFragment extends PreferenceFragment {
 
     }
 
-    public static SettingsFragment newInstance(int gameId, boolean isRoundTwoStarted) {
-        SettingsFragment sf = new SettingsFragment();
-
-        Bundle b = new Bundle();
-        b.putInt("GAME_ID", gameId);
-        b.putBoolean("ROUND_TWO_STARTED", isRoundTwoStarted);
-        sf.setArguments(b);
-
-        return sf;
-    }
+//    public static SettingsFragment newInstance(int gameId, boolean isRoundTwoStarted) {
+//        SettingsFragment sf = new SettingsFragment();
+//
+//        Bundle b = new Bundle();
+//        b.putInt("GAME_ID", gameId);
+//        b.putBoolean("ROUND_TWO_STARTED", isRoundTwoStarted);
+//        sf.setArguments(b);
+//
+//        return sf;
+//    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        gameId = getArguments().getInt("GAME_ID");
-        isRoundTwoStarted = getArguments().getBoolean("ROUND_TWO_STARTED");
-
-        getPreferenceManager().setSharedPreferencesName(String.valueOf(gameId));
+        getPreferenceManager().setSharedPreferencesName("DEFAULT_RANDO");
         addPreferencesFromResource(R.xml.fragment_settings);
-
-        Preference randomizePreference = getPreferenceManager().findPreference("checkbox_randomize_opponents");
-
-        if (isRoundTwoStarted)
-            randomizePreference.setEnabled(false);
 
     }
 }

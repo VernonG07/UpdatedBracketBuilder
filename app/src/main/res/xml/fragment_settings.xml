@@ -5,7 +5,7 @@
     <PreferenceCategory android:title="Game Setup - Defaults">
 
         <CheckBoxPreference
-            android:key="checkbox_randomize_opponents"
+            android:key="checkbox_randomize_opponents_default"
             android:title="Randomize Opponents"
             android:summary="Randomize opponents after round one" />
 

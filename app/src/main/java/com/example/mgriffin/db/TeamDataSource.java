@@ -79,6 +79,8 @@ public class TeamDataSource {
     }
 
     public void deleteTeam(long teamId) {
-        database.delete(DBHelper.TABLE_TEAM, DBHelper.COLUMN_ID + " = " + teamId, null);
+
+        if (teamId != -1)
+            database.delete(DBHelper.TABLE_TEAM, DBHelper.COLUMN_ID + " = " + teamId, null);
     }
 }
