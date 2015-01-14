@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.mgriffin.listviewex.R;
+import com.example.mgriffin.public_references.PublicVars;
 
 
 /**
@@ -70,7 +71,7 @@ public class AssignNewOpponentsDialogFragment extends DialogFragment implements 
         if (editNameOne != null && editNameTwo != null) {
             nameOne.setText(editNameOne);
             nameTwo.setText(editNameTwo);
-            addOpponentDialogFragment.setText("Update");
+            addOpponentDialogFragment.setText(PublicVars.BUTTON_UPDATE);
         }
 
         getDialog().setTitle("Add Opponents");

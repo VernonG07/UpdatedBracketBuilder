@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mgriffin.listviewex.R;
+import com.example.mgriffin.public_references.PublicVars;
 
 /**
  * Created by mgriffin on 10/23/2014.
@@ -54,7 +55,7 @@ public class AddBracketDialogFragment extends DialogFragment implements View.OnC
                 if ( actionId == EditorInfo.IME_ACTION_DONE){
                     String bracketName = name.getText().toString();
 
-                    if (!bracketName.equals(""))
+                    if (!bracketName.equals(PublicVars.STRING_EMPTY))
                         mListener.returnData(name.getText().toString());
 
                     getDialog().dismiss();
@@ -67,7 +68,7 @@ public class AddBracketDialogFragment extends DialogFragment implements View.OnC
 
         if (gameName != null) {
             name.setText(gameName);
-            addButton.setText("Update");
+            addButton.setText(PublicVars.BUTTON_UPDATE);
         }
 
         getDialog().setTitle("Bracket Name");
@@ -78,7 +79,7 @@ public class AddBracketDialogFragment extends DialogFragment implements View.OnC
     public void onClick(View view) {
         String bracketName = name.getText().toString();
 
-        if (!bracketName.equals(""))
+        if (!bracketName.equals(PublicVars.STRING_EMPTY))
             mListener.returnData(name.getText().toString());
 
         getDialog().dismiss();

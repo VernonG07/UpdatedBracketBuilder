@@ -11,8 +11,6 @@ import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -33,7 +31,6 @@ import com.example.mgriffin.adapters.MatchUpAdapter;
 import com.example.mgriffin.db.GameDataSource;
 import com.example.mgriffin.db.MatchUpDataSource;
 import com.example.mgriffin.db.TeamDataSource;
-import com.example.mgriffin.dialog_fragments.AddBracketDialogFragment;
 import com.example.mgriffin.dialog_fragments.AssignNewOpponentsDialogFragment;
 import com.example.mgriffin.dialog_fragments.ChooseWinnerDialogFragment;
 import com.example.mgriffin.pojos.Game;
@@ -64,9 +61,8 @@ public class OpponentsFragment extends Fragment{
     private long clickPos;
     private long gameId;
     private int roundNumber;
-    private Toolbar toolbar;
     private SharedPreferences sharedPreferences;
-    private CheckBox foot;
+    private CheckBox checkBoxFooter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -78,6 +74,7 @@ public class OpponentsFragment extends Fragment{
         initializeData();
         modifyActionBar();
         api21Actions();
+        closeDataSources();
 
         return rootView;
     }
@@ -96,8 +93,8 @@ public class OpponentsFragment extends Fragment{
     }
 
     private void getParms() {
-        gameId = getActivity().getIntent().getExtras().getLong("GAME_ID");
-        roundNumber = this.getArguments().getInt("ROUND_NUMBER");
+        gameId = getActivity().getIntent().getExtras().getLong(PublicVars.INTENT_EXTRA_GAME_ID);
+        roundNumber = this.getArguments().getInt(PublicVars.FRAGMENT_EXTRA_ROUND_NUMBER);
     }
 
     private void initializeDataSources() {
@@ -110,14 +107,20 @@ public class OpponentsFragment extends Fragment{
             teamDataSource.open();
             matchUpDataSource.open();
         } catch (Exception e) {
-            Toast.makeText(getActivity(), "Database was not opened", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(), PublicVars.ERROR_NO_DATASOURCE, Toast.LENGTH_SHORT).show();
             getActivity().finish();
         }
     }
 
+    private void closeDataSources() {
+        gameDataSource.close();
+        teamDataSource.close();
+        matchUpDataSource.close();
+    }
+
     private void initializeViews(View rootView) {
 
-        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "lking.ttf");
+        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), PublicVars.FONT_LION_KING);
 
         bracketTitleView = (TextView) rootView.findViewById(R.id.tv_bracket_title);
         bracketTitleView.setTypeface(tf);
@@ -148,7 +151,7 @@ public class OpponentsFragment extends Fragment{
         }
 
         createFooter();
-        matchUpAdapter = new MatchUpAdapter<MatchUp>(getActivity(), R.layout.matchup_list_view, matchUpData, Typeface.createFromAsset(getActivity().getAssets(), "OptimusPrinceps.ttf"));
+        matchUpAdapter = new MatchUpAdapter<MatchUp>(getActivity(), R.layout.matchup_list_view, matchUpData);
         matchUps.setAdapter(matchUpAdapter);
 
         AddMatchUpListener btnClick = new AddMatchUpListener();
@@ -172,39 +175,39 @@ public class OpponentsFragment extends Fragment{
         int spacerHeight;
         spacerHeight = addNewMatchUp.getVisibility()==View.INVISIBLE ? 250 : 450;
 
-        foot = new CheckBox(getActivity());
+        checkBoxFooter = new CheckBox(getActivity());
 
-        sharedPreferences = getActivity().getSharedPreferences("DEFAULT_RANDO", Context.MODE_PRIVATE);
-        boolean test = sharedPreferences.getBoolean("checkbox_randomize_opponents" + gameId, sharedPreferences.getBoolean("checkbox_randomize_opponents_default", false));
+        sharedPreferences = getActivity().getSharedPreferences(PublicVars.SP_DEFAULT_RANDOM, Context.MODE_PRIVATE);
+        boolean checked = sharedPreferences.getBoolean(PublicVars.SP_CHECKBOX_RANDOM + gameId, sharedPreferences.getBoolean(PublicVars.SP_CHECKBOX_RANDOM_DEFAULT, false));
 
         if (roundNumber == 1 && !matchUpDataSource.isRoundTwoStarted(gameId)) {
-            sharedPreferences.edit().putBoolean("checkbox_randomize_opponents" + gameId, test).commit();
-            foot.setChecked(test);
+            sharedPreferences.edit().putBoolean(PublicVars.SP_CHECKBOX_RANDOM + gameId, checked).apply();
+            checkBoxFooter.setChecked(checked);
             if ( matchUpData.size() == 0)
-                foot.setVisibility(View.INVISIBLE);
-            foot.setOnClickListener(new View.OnClickListener() {
+                checkBoxFooter.setVisibility(View.INVISIBLE);
+            checkBoxFooter.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    sharedPreferences.edit().putBoolean("checkbox_randomize_opponents" + gameId, foot.isChecked()).commit();
+                    sharedPreferences.edit().putBoolean(PublicVars.SP_CHECKBOX_RANDOM + gameId, checkBoxFooter.isChecked()).apply();
                 }
             });
-            matchUps.addFooterView(foot);
+            matchUps.addFooterView(checkBoxFooter);
         } else if ( roundNumber == 1) {
-            foot.setChecked(test);
+            checkBoxFooter.setChecked(checked);
             if ( matchUpData.size() == 0)
-                foot.setVisibility(View.INVISIBLE);
-            foot.setEnabled(false);
-            matchUps.addFooterView(foot);
+                checkBoxFooter.setVisibility(View.INVISIBLE);
+            checkBoxFooter.setEnabled(false);
+            matchUps.addFooterView(checkBoxFooter);
         }
         else {
-            foot.setChecked(test);
+            checkBoxFooter.setChecked(checked);
             if ( matchUpData.size() == 0)
-                foot.setVisibility(View.INVISIBLE);
-            sharedPreferences.edit().putBoolean("checkbox_randomize_opponents" + gameId, test).commit();
+                checkBoxFooter.setVisibility(View.INVISIBLE);
+            sharedPreferences.edit().putBoolean(PublicVars.SP_CHECKBOX_RANDOM + gameId, checked).apply();
         }
 
-        foot.setText("Randomize Opponents");
-        foot.setLayoutParams( new AbsListView.LayoutParams( AbsListView.LayoutParams.MATCH_PARENT, AbsListView.LayoutParams.WRAP_CONTENT));
+        checkBoxFooter.setText("Randomize Opponents");
+        checkBoxFooter.setLayoutParams(new AbsListView.LayoutParams(AbsListView.LayoutParams.MATCH_PARENT, AbsListView.LayoutParams.WRAP_CONTENT));
 
         View footer = new View(getActivity());
         footer.setLayoutParams( new AbsListView.LayoutParams( AbsListView.LayoutParams.MATCH_PARENT, spacerHeight ));
@@ -215,8 +218,8 @@ public class OpponentsFragment extends Fragment{
 
         List<MatchUp> autoMatchUps = matchUpDataSource.getAllMatchUps(currentGame.getGameId(), roundNumber - 1);
 
-        sharedPreferences = getActivity().getSharedPreferences("DEFAULT_RANDO", Context.MODE_PRIVATE);
-        boolean randomizeMatchUps = sharedPreferences.getBoolean("checkbox_randomize_opponents" + gameId, false);
+        sharedPreferences = getActivity().getSharedPreferences(PublicVars.SP_DEFAULT_RANDOM, Context.MODE_PRIVATE);
+        boolean randomizeMatchUps = sharedPreferences.getBoolean(PublicVars.SP_CHECKBOX_RANDOM + gameId, false);
 
         if (randomizeMatchUps) {
             long seed = System.nanoTime();
@@ -232,7 +235,7 @@ public class OpponentsFragment extends Fragment{
                 matchUpWinnerTwo = autoMatchUps.get(i + 1);
             } catch (IndexOutOfBoundsException e) {
                 matchUpWinnerTwo.setWinnerId(-1);
-                matchUpWinnerTwo.setWinnerName("BYE");
+                matchUpWinnerTwo.setWinnerName(PublicVars.TEAM_BYE);
             }
 
             MatchUp newMatchUp = matchUpDataSource.createMatchUp(matchUpWinnerOne.getWinnerId(), matchUpWinnerTwo.getWinnerId(), currentGame.getGameId(), roundNumber, matchUpWinnerOne.getWinnerName(), matchUpWinnerTwo.getWinnerName());
@@ -252,7 +255,7 @@ public class OpponentsFragment extends Fragment{
 
             switch (view.getId()) {
                 case R.id.btn_next_round:
-
+                    initializeDataSources();
                     List<MatchUp> autoMatchUps = matchUpDataSource.getAllMatchUps(currentGame.getGameId(), roundNumber);
 
                    if (autoMatchUps.size() == 1 && autoMatchUps.get(0).getWinnerId() != 0) {
@@ -270,19 +273,19 @@ public class OpponentsFragment extends Fragment{
                        if (matchUpData.size() > 0 && isWinner) {
                            Fragment nextRoundFragment = new OpponentsFragment();
                            Bundle b = new Bundle();
-                           b.putInt("ROUND_NUMBER", roundNumber + 1);
+                           b.putInt(PublicVars.FRAGMENT_EXTRA_ROUND_NUMBER, roundNumber + 1);
                            nextRoundFragment.setArguments(b);
 
                            FragmentTransaction ft = getFragmentManager().beginTransaction();
-                           ft.setCustomAnimations(R.animator.fade_in, R.animator.fade_out, R.animator.fade_in, R.animator.fade_out).addToBackStack(null).replace(android.R.id.content, nextRoundFragment, "round_frag").commit();
+                           ft.setCustomAnimations(R.animator.fade_in, R.animator.fade_out, R.animator.fade_in, R.animator.fade_out).addToBackStack(null).replace(android.R.id.content, nextRoundFragment, PublicVars.FRAG_TAG_ROUND).commit();
 
                        } else if (!isWinner) {
-                           Toast.makeText(getActivity(), "Please select a winner for all match ups", Toast.LENGTH_SHORT).show();
+                           Toast.makeText(getActivity(), PublicVars.TOAST_SELECT_WINNER, Toast.LENGTH_SHORT).show();
                        } else {
-                           Toast.makeText(getActivity(), "Please add match ups", Toast.LENGTH_SHORT).show();
+                           Toast.makeText(getActivity(), PublicVars.TOAST_ADD_MATCHUPS, Toast.LENGTH_SHORT).show();
                        }
                    }
-
+                    closeDataSources();
                     break;
                 case R.id.btn_add_opponents:
                     AssignNewOpponentsDialogFragment opponentDialogFragment = new AssignNewOpponentsDialogFragment();
@@ -290,26 +293,26 @@ public class OpponentsFragment extends Fragment{
                     opponentDialogFragment.setListener(new AssignNewOpponentsDialogFragment.OpponentListener() {
                         @Override
                         public void returnOpponents(String nameOne, String nameTwo) {
-
+                            initializeDataSources();
                             Team teamOne;
                             Team teamTwo;
 
-                            if (nameOne.equals("") && nameTwo.equals("")) {
+                            if (nameOne.equals(PublicVars.STRING_EMPTY) && nameTwo.equals(PublicVars.STRING_EMPTY)) {
                                 Toast.makeText(getActivity(), "At least one name is required", Toast.LENGTH_SHORT).show();
                             } else {
-                                if (nameOne.equals(""))
+                                if (nameOne.equals(PublicVars.STRING_EMPTY))
                                     teamOne = teamDataSource.getExistingTeam(-1);
                                 else
                                     teamOne = teamDataSource.createTeam(nameOne);
 
-                                if (nameTwo.equals(""))
+                                if (nameTwo.equals(PublicVars.STRING_EMPTY))
                                     teamTwo = teamDataSource.getExistingTeam(-1);
                                 else
                                     teamTwo = teamDataSource.createTeam(nameTwo);
 
                                 MatchUp matchUp = matchUpDataSource.createMatchUp(teamOne.getTeamId(), teamTwo.getTeamId(), currentGame.getGameId(), roundNumber, teamOne.getTeamName(), teamTwo.getTeamName());
                                 goToNextRound.setVisibility(View.VISIBLE);
-                                foot.setVisibility(View.VISIBLE);
+                                checkBoxFooter.setVisibility(View.VISIBLE);
 
                                 if (teamOne.getTeamId() == -1) {
                                     matchUpDataSource.assignMatchUpWinner(matchUp.getId(), teamTwo.getTeamId(), teamTwo.getTeamName());
@@ -324,6 +327,7 @@ public class OpponentsFragment extends Fragment{
                                 matchUpData.add(matchUp);
                                 matchUpAdapter.notifyDataSetChanged();
                             }
+                            closeDataSources();
                         }
                     });
                     break;
@@ -340,27 +344,29 @@ public class OpponentsFragment extends Fragment{
             final int longClickPos = (int)l;
 
             AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
-            alert.setTitle("Modify Match Up");
-            alert.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+            alert.setTitle(PublicVars.DIALOG_TITLE_MODIFY_MATCHUP);
+            alert.setPositiveButton(PublicVars.DIALOG_POS_DELETE, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                                matchUpDataSource.deleteMatchUp(longClickMatchUp);
-                                teamDataSource.deleteTeam(longClickMatchUp.getTeamOneId());
-                                teamDataSource.deleteTeam(longClickMatchUp.getTeamTwoId());
-                                matchUpData.remove(longClickPos);
-                                matchUpAdapter.notifyDataSetChanged();
-                                if (matchUpData.size() == 0){
-                                    Animation slideOut = AnimationUtils.loadAnimation(getActivity(), R.anim.slide_out);
-                                    slideOut.setDuration(150);
-                                    goToNextRound.setVisibility(View.INVISIBLE);
-                                    goToNextRound.setAnimation(slideOut);
-                                }
-                                if (matchUpData.size() == 0) {
-                                    foot.setVisibility(View.INVISIBLE);
-                                }
+                    initializeDataSources();
+                    matchUpDataSource.deleteMatchUp(longClickMatchUp);
+                    teamDataSource.deleteTeam(longClickMatchUp.getTeamOneId());
+                    teamDataSource.deleteTeam(longClickMatchUp.getTeamTwoId());
+                    matchUpData.remove(longClickPos);
+                    matchUpAdapter.notifyDataSetChanged();
+                    if (matchUpData.size() == 0){
+                        Animation slideOut = AnimationUtils.loadAnimation(getActivity(), R.anim.slide_out);
+                        slideOut.setDuration(150);
+                        goToNextRound.setVisibility(View.INVISIBLE);
+                        goToNextRound.setAnimation(slideOut);
+                    }
+                    if (matchUpData.size() == 0) {
+                        checkBoxFooter.setVisibility(View.INVISIBLE);
+                    }
+                    closeDataSources();
                 }
             });
-            alert.setNegativeButton("Edit", new DialogInterface.OnClickListener() {
+            alert.setNegativeButton(PublicVars.DIALOG_NEG_EDIT, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
                     AssignNewOpponentsDialogFragment newOpponentsDialogFragment = new AssignNewOpponentsDialogFragment(longClickMatchUp.getTeamOneName(), longClickMatchUp.getTeamTwoName());
@@ -368,7 +374,7 @@ public class OpponentsFragment extends Fragment{
                     newOpponentsDialogFragment.setListener(new AssignNewOpponentsDialogFragment.OpponentListener() {
                         @Override
                         public void returnOpponents(String oName1, String oName2) {
-
+                            initializeDataSources();
                             Team t1;
                             Team t2;
 
@@ -387,6 +393,7 @@ public class OpponentsFragment extends Fragment{
 
                             matchUpData.set(longClickPos, editedMatchUp);
                             matchUpAdapter.notifyDataSetChanged();
+                            closeDataSources();
                         }
                     });
                 }

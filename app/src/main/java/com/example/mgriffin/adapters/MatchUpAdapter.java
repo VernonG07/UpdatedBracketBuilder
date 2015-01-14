@@ -26,14 +26,12 @@ public class MatchUpAdapter<T> extends ArrayAdapter<MatchUp> {
     private Activity context;
     private int layout;
     private List<MatchUp> data;
-    private Typeface typeface;
 
-    public MatchUpAdapter(Activity context, int layout, List<MatchUp> data, Typeface typeface) {
+    public MatchUpAdapter(Activity context, int layout, List<MatchUp> data) {
         super(context, layout, data);
         this.data = data;
         this.layout = layout;
         this.context = context;
-        this.typeface = typeface;
     }
 
     @Override

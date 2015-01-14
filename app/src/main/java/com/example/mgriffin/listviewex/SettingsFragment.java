@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.mgriffin.public_references.PublicVars;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,22 +28,11 @@ public class SettingsFragment extends PreferenceFragment {
 
     }
 
-//    public static SettingsFragment newInstance(int gameId, boolean isRoundTwoStarted) {
-//        SettingsFragment sf = new SettingsFragment();
-//
-//        Bundle b = new Bundle();
-//        b.putInt("GAME_ID", gameId);
-//        b.putBoolean("ROUND_TWO_STARTED", isRoundTwoStarted);
-//        sf.setArguments(b);
-//
-//        return sf;
-//    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        getPreferenceManager().setSharedPreferencesName("DEFAULT_RANDO");
+        getPreferenceManager().setSharedPreferencesName(PublicVars.SP_DEFAULT_RANDOM);
         addPreferencesFromResource(R.xml.fragment_settings);
 
     }

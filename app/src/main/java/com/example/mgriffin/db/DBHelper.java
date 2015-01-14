@@ -32,9 +32,6 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String COLUMN_TEAM_ONE_NAME = "teamOneName";
     public static final String COLUMN_TEAM_TWO_NAME = "teamTwoName";
     public static final String COLUMN_WINNER_NAME = "winnerName";
-    public static final String COLUMN_WINS_REQUIRED = "winsRequired";
-    public static final String COLUMN_WINS_TEAM_ONE = "winsTeamOne";
-    public static final String COLUMN_WINS_TEAM_TWO = "winsTeamTwo";
 
     private static final String DATABASE_CREATE_MATCHUP = "create table "
             + TABLE_MATCH_UP + "(" + COLUMN_ID
@@ -112,7 +109,18 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i2) {
 
-        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_GAME);
+        switch (dbType){
+            case GAME:
+                sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_GAME);
+                break;
+            case MATCH_UP:
+                sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_MATCH_UP);
+                break;
+            case TEAM:
+                sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_TEAM);
+                break;
+        }
+
         onCreate(sqLiteDatabase);
     }
 }

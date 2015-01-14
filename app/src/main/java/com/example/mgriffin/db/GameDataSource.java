@@ -74,17 +74,7 @@ public class GameDataSource {
     }
 
     public void deleteGame (Game game) {
-        long id = game.getGameId();
-//
-//        Cursor cursor = database.query(DBHelper.TABLE_MATCH_UP, new String[] {DBHelper.COLUMN_TEAM_ONE_ID, DBHelper.COLUMN_TEAM_TWO_ID}, DBHelper.COLUMN_GAME_ID + " = " + game.getGameId(), null, null, null, null);
-//        cursor.moveToFirst();
-//        int teamOne = cursor.getInt(0);
-//        int teamTwo = cursor.getInt(1);
-
         database.delete(DBHelper.TABLE_GAME, DBHelper.COLUMN_ID + " = " + game.getGameId(), null);
-//        database.delete(DBHelper.TABLE_MATCH_UP, DBHelper.COLUMN_GAME_ID + " = " + game.getGameId(), null);
-//        database.delete(DBHelper.TABLE_TEAM, DBHelper.COLUMN_ID + " = " + teamOne, null);
-//        database.delete(DBHelper.TABLE_TEAM, DBHelper.COLUMN_ID + " = " + teamTwo, null);
     }
 
     private Game cursorToGame(Cursor cursor) {
@@ -116,7 +106,8 @@ public class GameDataSource {
     public String getGameWinner (long gameId) {
         Cursor cursor = database.query(DBHelper.TABLE_GAME, new String[] {DBHelper.COLUMN_GAME_WINNER}, DBHelper.COLUMN_ID + " = " + gameId, null, null, null, null);
         cursor.moveToFirst();
-
-        return cursor.getString(0);
+        String gameWinnerName = cursor.getString(0);
+        cursor.close();
+        return gameWinnerName;
     }
 }

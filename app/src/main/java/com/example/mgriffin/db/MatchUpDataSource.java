@@ -86,6 +86,8 @@ public class MatchUpDataSource {
         matchUp.setWinnerId(cursor.getLong(4));
         matchUp.setWinnerName(cursor.getString(8));
 
+
+        cursor.close();
         return matchUp;
     }
 
@@ -100,7 +102,7 @@ public class MatchUpDataSource {
             matchUps.add(matchUp);
             cursor.moveToNext();
         }
-
+        cursor.close();
         return matchUps;
     }
 
@@ -111,7 +113,7 @@ public class MatchUpDataSource {
         cursor.moveToFirst();
 
         matchUp = cursorToMatchUp(cursor);
-
+        cursor.close();
         return matchUp;
     }
 
@@ -160,6 +162,7 @@ public class MatchUpDataSource {
         if (cursor.getCount()!=0)
             isStarted = true;
 
+        cursor.close();
         return isStarted;
     }
 
@@ -183,8 +186,6 @@ public class MatchUpDataSource {
     }
 
     public List<MatchUp> getMatchupsByGameId(long gameId){
-        //TODO
-
         List<MatchUp> matchUps = new ArrayList<>();
 
         Cursor cursor = database.query(DBHelper.TABLE_MATCH_UP, allColumns, DBHelper.COLUMN_GAME_ID + " = " + gameId, null, null, null, null);
@@ -195,6 +196,7 @@ public class MatchUpDataSource {
             matchUps.add(matchUp);
             cursor.moveToNext();
         }
+        cursor.close();
         return  matchUps;
     }
 }

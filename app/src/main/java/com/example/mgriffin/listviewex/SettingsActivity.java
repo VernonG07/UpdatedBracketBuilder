@@ -7,6 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.mgriffin.public_references.PublicVars;
+
 
 public class SettingsActivity extends ActionBarActivity {
 
@@ -20,18 +22,12 @@ public class SettingsActivity extends ActionBarActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Bundle b2 = getIntent().getExtras();
-
-//        this.something = b2.getInt("INT");
-//        this.somethingBool = b2.getBoolean("BOOL");
-
-
         Fragment newFragment;
         if (savedInstanceState != null) {
-            newFragment = getFragmentManager().findFragmentByTag("sett_frag");
+            newFragment = getFragmentManager().findFragmentByTag(PublicVars.FRAG_TAG_SETTINGS);
         } else {
             newFragment = new SettingsFragment();
-            getFragmentManager().beginTransaction().add(android.R.id.content, newFragment, "sett_frag").commit();
+            getFragmentManager().beginTransaction().add(android.R.id.content, newFragment, PublicVars.FRAG_TAG_SETTINGS).commit();
         }
     }
 

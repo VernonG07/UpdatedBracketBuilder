@@ -22,14 +22,12 @@ public class GameAdapter<T> extends ArrayAdapter<Game> {
     private Activity context;
     private int layout;
     private List<Game> data;
-    private Typeface tf;
 
-    public GameAdapter(Activity context, int layout, List<Game> data, Typeface tf) {
+    public GameAdapter(Activity context, int layout, List<Game> data) {
         super(context, layout, data);
         this.data = data;
         this.layout = layout;
         this.context = context;
-        this.tf = tf;
     }
 
     @Override

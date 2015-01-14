@@ -8,7 +8,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
@@ -16,9 +15,7 @@ import android.support.v4.util.Pair;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
-import android.transition.ChangeBounds;
 import android.transition.Transition;
-import android.util.AttributeSet;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -36,18 +33,17 @@ import com.example.mgriffin.db.TeamDataSource;
 import com.example.mgriffin.dialog_fragments.AddBracketDialogFragment;
 import com.example.mgriffin.pojos.Game;
 import com.example.mgriffin.pojos.MatchUp;
-import com.example.mgriffin.pojos.Team;
+import com.example.mgriffin.public_references.PublicVars;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class StartingBracketActivity extends ActionBarActivity {
 
-    ListView bracketView;
-    GameAdapter<Game> bracketAdapter;
-    List<Game> bracketList;
+    private ListView bracketView;
+    private GameAdapter<Game> bracketAdapter;
+    private List<Game> bracketList;
     private GameDataSource gameDataSource;
     private ImageButton addBracketButton;
     private Toolbar toolbar;
@@ -60,23 +56,25 @@ public class StartingBracketActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting_bracket);
-
-//        getActionBar().setTitle("Brackets " + PublicVars.APP_VERSION_NUMBER);
         initializeViews();
         initializeData();
         addListeners();
+        api21Level();
+    }
 
-        if (bracketList.isEmpty()) {
-            cardView.setVisibility(View.VISIBLE);
-        }
+    @TargetApi(21)
+    private void setMultiTaskColor () {
+        setTaskDescription(new ActivityManager.TaskDescription("Simple Bracket Builder", null, Color.parseColor("#FF26729B")));
+    }
 
+    private void api21Level() {
         if (Build.VERSION.SDK_INT >= 21) {
             setMultiTaskColor();
-            toolbar.setTransitionName("toolbar");
+            toolbar.setTransitionName(PublicVars.TRANSITION_TOOLBAR);
 
-            Transition t = getWindow().getExitTransition();
-            t.excludeTarget(android.R.id.statusBarBackground, true);
-            t.excludeTarget(android.R.id.navigationBarBackground, true);
+            Transition transition = getWindow().getExitTransition();
+            transition.excludeTarget(android.R.id.statusBarBackground, true);
+            transition.excludeTarget(android.R.id.navigationBarBackground, true);
 
             addBracketButton.setBackgroundResource(R.drawable.ripple);
             addBracketButton.setStateListAnimator(AnimatorInflater.loadStateListAnimator(this, R.anim.anim));
@@ -85,19 +83,14 @@ public class StartingBracketActivity extends ActionBarActivity {
         }
     }
 
-    @TargetApi(21)
-    private void setMultiTaskColor () {
-        setTaskDescription(new ActivityManager.TaskDescription("Simple Bracket Builder", null, Color.parseColor("#FF26729B")));
-    }
-
     private void handleGameLongClick(long position, Context context) {
 
         final long clickedGamePos = position;
         final Game clickedGame = bracketList.get((int)clickedGamePos);
 
-        AlertDialog.Builder alert = new AlertDialog.Builder(context);
-        alert.setTitle("Modify Game");
-        alert.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+        AlertDialog.Builder alertModify = new AlertDialog.Builder(context);
+        alertModify.setTitle(PublicVars.DIALOG_TITLE_MODIFY_GAME);
+        alertModify.setPositiveButton(PublicVars.DIALOG_POS_DELETE, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 openAllDataSources();
@@ -113,7 +106,7 @@ public class StartingBracketActivity extends ActionBarActivity {
                 gameDataSource.close();
                 teamDataSource.close();
                 matchUpDataSource.close();
-                bracketList.remove((int)clickedGamePos);
+                bracketList.remove((int) clickedGamePos);
                 bracketAdapter.notifyDataSetChanged();
 
                 if (bracketList.isEmpty()) {
@@ -123,25 +116,25 @@ public class StartingBracketActivity extends ActionBarActivity {
                 }
             }
         });
-        alert.setNegativeButton("Edit", new DialogInterface.OnClickListener() {
+        alertModify.setNegativeButton(PublicVars.DIALOG_NEG_EDIT, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                AddBracketDialogFragment addBracketDialogFragment= new AddBracketDialogFragment(clickedGame.getGameName());
+                AddBracketDialogFragment addBracketDialogFragment = new AddBracketDialogFragment(clickedGame.getGameName());
                 addBracketDialogFragment.show(getFragmentManager(), null);
                 addBracketDialogFragment.setListener(new AddBracketDialogFragment.Listener() {
                     @Override
-                    public void returnData(String d) {
+                    public void returnData(String gameName) {
                         openDataSource();
-                        gameDataSource.editGameName(clickedGame, d);
+                        gameDataSource.editGameName(clickedGame, gameName);
                         gameDataSource.close();
-                        bracketList.set((int)clickedGamePos, clickedGame);
+                        bracketList.set((int) clickedGamePos, clickedGame);
                         bracketAdapter.notifyDataSetChanged();
                     }
                 });
             }
         });
 
-        AlertDialog dialog = alert.create();
+        AlertDialog dialog = alertModify.create();
         dialog.show();
     }
 
@@ -161,10 +154,11 @@ public class StartingBracketActivity extends ActionBarActivity {
         openDataSource();
         bracketList = gameDataSource.getAllGames();
         gameDataSource.close();
-        bracketAdapter = new GameAdapter<Game>(this, R.layout.game_list_view, bracketList, Typeface.createFromAsset(getAssets(), "lking.ttf"));
+        bracketAdapter = new GameAdapter<Game>(this, R.layout.game_list_view, bracketList);
         bracketView.setAdapter(bracketAdapter);
-
-
+        if (bracketList.isEmpty()) {
+            cardView.setVisibility(View.VISIBLE);
+        }
     }
     private void addListeners () {
         addBracketButton.setOnClickListener(new View.OnClickListener() {
@@ -176,18 +170,18 @@ public class StartingBracketActivity extends ActionBarActivity {
                     @Override
                     public void returnData(String name) {
 
-                        if (!name.equals("")) {
+                        if (!name.equals(PublicVars.STRING_EMPTY)) {
                             openDataSource();
-                            Game g = gameDataSource.createGame(name);
+                            Game game = gameDataSource.createGame(name);
                             gameDataSource.close();
 
                             if (bracketList.isEmpty()) {
-                                Animation hi = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide_out);
+                                Animation slideOut = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide_out);
                                 cardView.setVisibility(View.INVISIBLE);
-                                cardView.startAnimation(hi);
+                                cardView.startAnimation(slideOut);
                             }
 
-                            bracketList.add(g);
+                            bracketList.add(game);
                             bracketAdapter.notifyDataSetChanged();
                         }
                     }
@@ -214,16 +208,13 @@ public class StartingBracketActivity extends ActionBarActivity {
                 Intent intent = new Intent(getApplicationContext(), OpponentsMainActivity.class);
 
                 long gameId = bracketList.get((int)l).getGameId();
-                intent.putExtra("GAME_ID", gameId);
-
-                if (Build.VERSION.SDK_INT >= 21)
-                    view.setTransitionName("newTitle");
+                intent.putExtra(PublicVars.INTENT_EXTRA_GAME_ID, gameId);
 
                 ActivityOptionsCompat o = ActivityOptionsCompat.makeSceneTransitionAnimation(StartingBracketActivity.this,
-                        Pair.create((View) toolbar, "toolbar")
+                        Pair.create((View) toolbar, PublicVars.TRANSITION_TOOLBAR)
                 );
 
-                startActivityForResult(intent, 007, o.toBundle());
+                startActivityForResult(intent, PublicVars.RESULT_CODE_STARTING_ACTIVITY, o.toBundle());
             }
         });
     }
@@ -232,11 +223,11 @@ public class StartingBracketActivity extends ActionBarActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == 007) {
+        if (requestCode == PublicVars.RESULT_CODE_STARTING_ACTIVITY) {
             openDataSource();
             bracketList = gameDataSource.getAllGames();
             gameDataSource.close();
-            bracketAdapter = new GameAdapter<Game>(this, R.layout.game_list_view, bracketList, Typeface.createFromAsset(getAssets(), "lking.ttf"));
+            bracketAdapter = new GameAdapter<Game>(this, R.layout.game_list_view, bracketList);
             bracketView.setAdapter(bracketAdapter);
             bracketAdapter.notifyDataSetChanged();
         }
@@ -246,7 +237,7 @@ public class StartingBracketActivity extends ActionBarActivity {
         try {
             gameDataSource.open();
         } catch (SQLException e) {
-            Toast.makeText(this, "Sorry", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, PublicVars.ERROR_NO_DATASOURCE, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -256,7 +247,7 @@ public class StartingBracketActivity extends ActionBarActivity {
             teamDataSource.open();
             matchUpDataSource.open();
         } catch (SQLException e) {
-            Toast.makeText(this, "Sorry", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, PublicVars.ERROR_NO_DATASOURCE, Toast.LENGTH_SHORT).show();
         }
     }
 

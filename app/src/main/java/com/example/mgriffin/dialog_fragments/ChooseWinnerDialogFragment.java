@@ -89,7 +89,7 @@ public class ChooseWinnerDialogFragment extends DialogFragment implements View.O
 
         selectedWinnerMatchUp.setWinnerId(winner.getWinnerId());
         selectedWinnerMatchUp.setWinnerName(winner.getWinnerName());
-
+        matchUpDataSource.close();
         mListener.returnWinner(selectedWinnerMatchUp);
     }
 

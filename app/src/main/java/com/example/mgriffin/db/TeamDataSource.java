@@ -74,6 +74,7 @@ public class TeamDataSource {
 
             cursor.moveToNext();
         }
+        cursor.close();
 
         return team;
     }
