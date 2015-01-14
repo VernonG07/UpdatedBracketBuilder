@@ -277,9 +277,9 @@ public class OpponentsFragment extends Fragment{
                            ft.setCustomAnimations(R.animator.fade_in, R.animator.fade_out, R.animator.fade_in, R.animator.fade_out).addToBackStack(null).replace(android.R.id.content, nextRoundFragment, "round_frag").commit();
 
                        } else if (!isWinner) {
-                           Toast.makeText(getActivity(), "You must select a winner before going to the next round", Toast.LENGTH_SHORT).show();
+                           Toast.makeText(getActivity(), "Please select a winner for all match ups", Toast.LENGTH_SHORT).show();
                        } else {
-                           Toast.makeText(getActivity(), "Please add matchups", Toast.LENGTH_SHORT).show();
+                           Toast.makeText(getActivity(), "Please add match ups", Toast.LENGTH_SHORT).show();
                        }
                    }
 
