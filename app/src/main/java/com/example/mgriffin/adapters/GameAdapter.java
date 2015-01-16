@@ -1,6 +1,8 @@
 package com.example.mgriffin.adapters;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.sax.TextElementListener;
 import android.view.LayoutInflater;
@@ -11,6 +13,9 @@ import android.widget.TextView;
 
 import com.example.mgriffin.pojos.Game;
 import com.example.mgriffin.listviewex.R;
+import com.example.mgriffin.public_references.PublicVars;
+
+import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -22,6 +27,8 @@ public class GameAdapter<T> extends ArrayAdapter<Game> {
     private Activity context;
     private int layout;
     private List<Game> data;
+
+    private SharedPreferences sharedPreferences;
 
     public GameAdapter(Activity context, int layout, List<Game> data) {
         super(context, layout, data);
@@ -43,6 +50,7 @@ public class GameAdapter<T> extends ArrayAdapter<Game> {
             dataHolder = new DataHolder();
             dataHolder.gameNameHolder = (TextView) row.findViewById(R.id.tv_game_name);
             dataHolder.gameWinnerHolder = (TextView) row.findViewById(R.id.tv_winner_name);
+            dataHolder.gameDateHolder = (TextView) row.findViewById(R.id.tv_timeCreated);
 
             row.setTag(dataHolder);
         }
@@ -59,12 +67,21 @@ public class GameAdapter<T> extends ArrayAdapter<Game> {
 
         dataHolder.gameNameHolder.setText(game.getGameName());
 
+        sharedPreferences = context.getSharedPreferences(PublicVars.SP_DEFAULT_RANDOM, Context.MODE_PRIVATE);
+        boolean t = sharedPreferences.getBoolean("show_date_created", false);
+
+        if (t)
+            dataHolder.gameDateHolder.setText("Date Created: " + game.getDateCreated());
+        else
+            dataHolder.gameDateHolder.setText("");
+
         return row;
     }
 
     static class DataHolder {
         TextView gameNameHolder;
         TextView gameWinnerHolder;
+        TextView gameDateHolder;
     }
 }
 

@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/gameicon"
+        android:icon="@drawable/ic_launcher"
         android:label="Simple Bracket Builder"
         android:logo="@android:color/transparent"
         android:theme="@style/AppTheme" >

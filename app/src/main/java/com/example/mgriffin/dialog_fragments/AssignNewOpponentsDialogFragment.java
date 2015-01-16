@@ -91,10 +91,10 @@ public class AssignNewOpponentsDialogFragment extends DialogFragment implements 
         return super.onCreateDialog(savedInstanceState);
     }
 
-    @Override
-    public void onDestroyView() {
-        if (getDialog() != null && getRetainInstance())
-            getDialog().setDismissMessage(null);
-        super.onDestroyView();
-    }
+//    @Override
+//    public void onDestroyView() {
+//        if (getDialog() != null && getRetainInstance())
+//            getDialog().setDismissMessage(null);
+//        super.onDestroyView();
+//    }
 }

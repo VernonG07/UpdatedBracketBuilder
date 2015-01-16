@@ -1,6 +1,7 @@
 package com.example.mgriffin.listviewex;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -48,10 +49,17 @@ public class SettingsActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == android.R.id.home) {
-            super.onBackPressed();
+            startActivity(new Intent(SettingsActivity.this, StartingBracketActivity.class));
+            finish();
             return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(SettingsActivity.this, StartingBracketActivity.class));
+        finish();
     }
 }

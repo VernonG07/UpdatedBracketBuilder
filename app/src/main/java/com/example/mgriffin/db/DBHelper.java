@@ -16,11 +16,13 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String TABLE_GAME = "game";
     public static final String COLUMN_GAME_NAME = "gameName";
     public static final String COLUMN_GAME_WINNER = "gameWinner";
+    public static final String COLUMN_DATE_CREATED = "dateCreated";
 
     private static final String DATABASE_CREATE = "create table "
             + TABLE_GAME + "(" + COLUMN_ID
             + " integer primary key autoincrement, " + COLUMN_GAME_NAME
-            + " text not null, " + COLUMN_GAME_WINNER + " text);";
+            + " text not null, " + COLUMN_GAME_WINNER
+            + " text, " + COLUMN_DATE_CREATED + " text);";
 
     //MatchUp Table
     public static final String TABLE_MATCH_UP = "match_up";

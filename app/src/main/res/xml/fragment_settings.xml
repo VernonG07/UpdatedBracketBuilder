@@ -23,6 +23,13 @@
             android:enabled="false"
             android:summary="Buy the PRO version to unlock!" />
 
+        <CheckBoxPreference
+            android:key="show_date_created"
+            android:defaultValue="false"
+            android:title="Show Date Created"
+            android:enabled="true"
+            android:summary="Displays when the game was created" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

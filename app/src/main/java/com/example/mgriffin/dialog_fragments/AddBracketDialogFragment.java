@@ -70,7 +70,6 @@ public class AddBracketDialogFragment extends DialogFragment implements View.OnC
             name.setText(gameName);
             addButton.setText(PublicVars.BUTTON_UPDATE);
         }
-
         getDialog().setTitle("Bracket Name");
         return rootView;
     }
@@ -91,10 +90,10 @@ public class AddBracketDialogFragment extends DialogFragment implements View.OnC
         return super.onCreateDialog(savedInstanceState);
     }
 
-    @Override
-    public void onDestroyView() {
-        if (getDialog() != null && getRetainInstance())
-            getDialog().setDismissMessage(null);
-        super.onDestroyView();
-    }
+//    @Override
+//    public void onDestroyView() {
+//        if (getDialog() != null && getRetainInstance())
+//            getDialog().setDismissMessage(null);
+//        super.onDestroyView();
+//    }
 }

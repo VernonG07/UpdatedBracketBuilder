@@ -94,7 +94,7 @@ public class OpponentsFragment extends Fragment{
 
     private void getParms() {
         gameId = getActivity().getIntent().getExtras().getLong(PublicVars.INTENT_EXTRA_GAME_ID);
-        roundNumber = this.getArguments().getInt(PublicVars.FRAGMENT_EXTRA_ROUND_NUMBER);
+        roundNumber = getArguments().getInt(PublicVars.FRAGMENT_EXTRA_ROUND_NUMBER);
     }
 
     private void initializeDataSources() {
@@ -128,6 +128,9 @@ public class OpponentsFragment extends Fragment{
 
         roundTitleView = (TextView) rootView.findViewById(R.id.tv_round_title);
         addNewMatchUp = (ImageButton) rootView.findViewById(R.id.btn_add_opponents);
+        //The Robbie Bug
+//        Toast.makeText(getActivity(), "Round Number: " + roundNumber, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getActivity(), "Game ID: " + gameId, Toast.LENGTH_SHORT).show();
         if (roundNumber != 1 || matchUpDataSource.isRoundTwoStarted(gameId) ) {
 
             ViewGroup.LayoutParams lp = addNewMatchUp.getLayoutParams();
@@ -434,10 +437,8 @@ public class OpponentsFragment extends Fragment{
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.bracket_detail, menu);
 
-        if (roundNumber > 1) {
-            MenuItem menuItem = menu.findItem(R.id.action_settings);
-            menuItem.setVisible(false);
-        }
+        MenuItem menuItem = menu.findItem(R.id.action_settings);
+        menuItem.setVisible(false);
     }
 
 

@@ -8,7 +8,14 @@ public class Game {
     private String gameName;
     private long gameId;
     private String winner;
+    private String dateCreated;
 
+    public void setDateCreated(String dateCreated) {
+        this.dateCreated = dateCreated;
+    }
+    public String getDateCreated() {
+        return dateCreated;
+    }
     public void setWinner (String winner) {
         this.winner = winner;
     }

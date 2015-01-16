@@ -4,6 +4,7 @@ import android.animation.AnimatorInflater;
 import android.annotation.TargetApi;
 import android.app.ActivityManager;
 import android.app.AlertDialog;
+import android.app.DialogFragment;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -56,10 +57,12 @@ public class StartingBracketActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_starting_bracket);
+
         initializeViews();
         initializeData();
         addListeners();
         api21Level();
+
     }
 
     @TargetApi(21)
@@ -265,6 +268,7 @@ public class StartingBracketActivity extends ActionBarActivity {
             case R.id.action_settings:
                 Intent i = new Intent(this, SettingsActivity.class);
                 startActivity(i);
+                finish();
         }
 
         return super.onOptionsItemSelected(item);

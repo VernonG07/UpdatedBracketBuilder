@@ -74,21 +74,25 @@ public class ChooseWinnerDialogFragment extends DialogFragment implements View.O
 
         MatchUp winner = null;
 
-        switch (view.getId()) {
-            case R.id.btn_choose_name_one:
-                winner = matchUpDataSource.assignMatchUpWinner(matchUpId, selectedWinnerMatchUp.getTeamOneId(), selectedWinnerMatchUp.getTeamOneName());
-                getDialog().dismiss();
-                break;
-            case R.id.btn_choose_name_two:
-                winner = matchUpDataSource.assignMatchUpWinner(matchUpId, selectedWinnerMatchUp.getTeamTwoId(), selectedWinnerMatchUp.getTeamTwoName());
-                getDialog().dismiss();
-                break;
-            default:
-                break;
+        if ( selectedWinnerMatchUp.getTeamOneId() != -1 && selectedWinnerMatchUp.getTeamTwoId() != -1) {
+
+            switch (view.getId()) {
+                case R.id.btn_choose_name_one:
+                        winner = matchUpDataSource.assignMatchUpWinner(matchUpId, selectedWinnerMatchUp.getTeamOneId(), selectedWinnerMatchUp.getTeamOneName());
+                    getDialog().dismiss();
+                    break;
+                case R.id.btn_choose_name_two:
+                        winner = matchUpDataSource.assignMatchUpWinner(matchUpId, selectedWinnerMatchUp.getTeamTwoId(), selectedWinnerMatchUp.getTeamTwoName());
+                    getDialog().dismiss();
+                    break;
+                default:
+                    break;
+            }
+            selectedWinnerMatchUp.setWinnerId(winner.getWinnerId());
+            selectedWinnerMatchUp.setWinnerName(winner.getWinnerName());
         }
 
-        selectedWinnerMatchUp.setWinnerId(winner.getWinnerId());
-        selectedWinnerMatchUp.setWinnerName(winner.getWinnerName());
+        getDialog().dismiss();
         matchUpDataSource.close();
         mListener.returnWinner(selectedWinnerMatchUp);
     }
@@ -99,10 +103,10 @@ public class ChooseWinnerDialogFragment extends DialogFragment implements View.O
         return super.onCreateDialog(savedInstanceState);
     }
 
-    @Override
-    public void onDestroyView() {
-        if (getDialog() != null && getRetainInstance())
-            getDialog().setDismissMessage(null);
-        super.onDestroyView();
-    }
+//    @Override
+//    public void onDestroyView() {
+//        if (getDialog() != null && getRetainInstance())
+//            getDialog().setDismissMessage(null);
+//        super.onDestroyView();
+//    }
 }

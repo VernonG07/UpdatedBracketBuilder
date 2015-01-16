@@ -8,7 +8,9 @@ import android.database.sqlite.SQLiteDatabase;
 import com.example.mgriffin.pojos.Game;
 
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -20,7 +22,7 @@ public class GameDataSource {
     private DBHelper mDbHelper;
 
     public GameDataSource(Context context) {
-        mDbHelper = new DBHelper(context, DBHelper.DBType.GAME, 3 );
+        mDbHelper = new DBHelper(context, DBHelper.DBType.GAME, 4 );
     }
 
     public void open() throws SQLException {
@@ -35,12 +37,16 @@ public class GameDataSource {
         Game game = new Game();
         game.setGameName(gameName);
 
+        SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy");
+        String date = sdf.format(new Date());
+
         ContentValues contentValues = new ContentValues();
         contentValues.put(DBHelper.COLUMN_GAME_NAME, gameName);
-
+        contentValues.put(DBHelper.COLUMN_DATE_CREATED, date);
         long insertId = database.insert(DBHelper.TABLE_GAME, null, contentValues);
 
         game.setGameId(insertId);
+        game.setDateCreated(date);
 
         return game;
     }
@@ -48,7 +54,7 @@ public class GameDataSource {
     public List<Game> getAllGames() {
         List<Game> games = new ArrayList<Game>();
 
-        Cursor cursor = database.query(DBHelper.TABLE_GAME, new String[] {DBHelper.COLUMN_ID, DBHelper.COLUMN_GAME_NAME, DBHelper.COLUMN_GAME_WINNER}, null, null, null, null, null);
+        Cursor cursor = database.query(DBHelper.TABLE_GAME, new String[] {DBHelper.COLUMN_ID, DBHelper.COLUMN_GAME_NAME, DBHelper.COLUMN_GAME_WINNER, DBHelper.COLUMN_DATE_CREATED}, null, null, null, null, null);
 
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
@@ -65,7 +71,7 @@ public class GameDataSource {
     public Game getExistingGameById(long id) {
         Game game = null;
 
-        Cursor cursor = database.query(DBHelper.TABLE_GAME, new String[] {DBHelper.COLUMN_ID, DBHelper.COLUMN_GAME_NAME, DBHelper.COLUMN_GAME_WINNER}, DBHelper.COLUMN_ID + " = " + id, null, null, null, null);
+        Cursor cursor = database.query(DBHelper.TABLE_GAME, new String[] {DBHelper.COLUMN_ID, DBHelper.COLUMN_GAME_NAME, DBHelper.COLUMN_GAME_WINNER, DBHelper.COLUMN_DATE_CREATED}, DBHelper.COLUMN_ID + " = " + id, null, null, null, null);
         cursor.moveToFirst();
         game = cursorToGame(cursor);
 
@@ -82,6 +88,7 @@ public class GameDataSource {
         game.setGameId(cursor.getLong(0));
         game.setGameName(cursor.getString(1));
         game.setWinner(cursor.getString(2));
+        game.setDateCreated(cursor.getString(3));
         return game;
     }
 
