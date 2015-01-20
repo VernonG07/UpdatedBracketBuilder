@@ -9,19 +9,23 @@
             android:title="Randomize Opponents"
             android:summary="Randomize opponents after round one" />
 
-        <CheckBoxPreference
-            android:key="checkbox_double_elimination"
-            android:title="Double Elimination"
-            android:enabled="false"
-            android:summary="Buy the PRO version to unlock!" />
+        <!--<CheckBoxPreference-->
+            <!--android:key="checkbox_double_elimination"-->
+            <!--android:title="Double Elimination"-->
+            <!--android:enabled="false"-->
+            <!--android:summary="Buy the PRO version to unlock!" />-->
 
-        <EditTextPreference
-            android:inputType="number"
-            android:defaultValue="1"
-            android:key="et_wins_required"
-            android:title="Best Of..."
-            android:enabled="false"
-            android:summary="Buy the PRO version to unlock!" />
+        <!--<EditTextPreference-->
+            <!--android:inputType="number"-->
+            <!--android:defaultValue="1"-->
+            <!--android:key="et_wins_required"-->
+            <!--android:title="Best Of..."-->
+            <!--android:enabled="false"-->
+            <!--android:summary="Buy the PRO version to unlock!" />-->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Display Options">
 
         <CheckBoxPreference
             android:key="show_date_created"

@@ -128,11 +128,9 @@ public class OpponentsFragment extends Fragment{
 
         roundTitleView = (TextView) rootView.findViewById(R.id.tv_round_title);
         addNewMatchUp = (ImageButton) rootView.findViewById(R.id.btn_add_opponents);
-        //The Robbie Bug
-//        Toast.makeText(getActivity(), "Round Number: " + roundNumber, Toast.LENGTH_SHORT).show();
-//        Toast.makeText(getActivity(), "Game ID: " + gameId, Toast.LENGTH_SHORT).show();
-        if (roundNumber != 1 || matchUpDataSource.isRoundTwoStarted(gameId) ) {
 
+        //The Robbie Bug
+        if (roundNumber != 1 || matchUpDataSource.isRoundTwoStarted(gameId) || gameDataSource.getGameWinner(gameId) != null) {
             ViewGroup.LayoutParams lp = addNewMatchUp.getLayoutParams();
             addNewMatchUp.setVisibility(View.INVISIBLE);
             goToNextRound.setLayoutParams(lp);
@@ -263,6 +261,7 @@ public class OpponentsFragment extends Fragment{
 
                    if (autoMatchUps.size() == 1 && autoMatchUps.get(0).getWinnerId() != 0) {
                        gameDataSource.setGameWinner(currentGame, autoMatchUps.get(0).getWinnerName());
+                       //Set Game Complete
                        getActivity().finish();
                    } else {
 
