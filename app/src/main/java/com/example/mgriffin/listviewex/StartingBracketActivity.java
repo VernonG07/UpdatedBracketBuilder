@@ -113,9 +113,9 @@ public class StartingBracketActivity extends ActionBarActivity {
                 bracketAdapter.notifyDataSetChanged();
 
                 if (bracketList.isEmpty()) {
-                    Animation hi = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide_in);
+                    Animation slideIn = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide_in);
                     cardView.setVisibility(View.VISIBLE);
-                    cardView.startAnimation(hi);
+                    cardView.startAnimation(slideIn);
                 }
             }
         });
