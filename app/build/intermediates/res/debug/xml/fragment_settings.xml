@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Game Setup - Defaults">
+
+        <CheckBoxPreference
+            android:key="checkbox_randomize_opponents_default"
+            android:title="Randomize Opponents"
+            android:summary="Randomize opponents after round one" />
+
+        <!--<CheckBoxPreference-->
+            <!--android:key="checkbox_double_elimination"-->
+            <!--android:title="Double Elimination"-->
+            <!--android:enabled="false"-->
+            <!--android:summary="Buy the PRO version to unlock!" />-->
+
+        <!--<EditTextPreference-->
+            <!--android:inputType="number"-->
+            <!--android:defaultValue="1"-->
+            <!--android:key="et_wins_required"-->
+            <!--android:title="Best Of..."-->
+            <!--android:enabled="false"-->
+            <!--android:summary="Buy the PRO version to unlock!" />-->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Display Options">
+
+        <CheckBoxPreference
+            android:key="show_date_created"
+            android:defaultValue="false"
+            android:title="Show Date Created"
+            android:enabled="true"
+            android:summary="Displays when the game was created" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen><!-- From: file:/C:/Users/matt/Programming/workspace/UpdatedBracketBuilder/app/src/main/res/xml/fragment_settings.xml -->

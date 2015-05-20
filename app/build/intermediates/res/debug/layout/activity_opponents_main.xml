@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.mgriffin.listviewex.OpponentsMainActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="?attr/colorPrimary"
+        app:title="Bracket Builder"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/matt/Programming/workspace/UpdatedBracketBuilder/app/src/main/res/layout/activity_opponents_main.xml -->

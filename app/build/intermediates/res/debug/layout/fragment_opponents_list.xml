@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="?attr/actionBarSize"
+    android:orientation="vertical"
+    tools:context="com.example.mgriffin.listviewex.OpponentsFragment">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/my_toolbar"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:paddingLeft="36dp"-->
+        <!--android:paddingBottom="12dp"-->
+        <!--android:gravity="bottom"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--app:titleTextAppearance="@style/ToolbarTitle"-->
+        <!--app:title="Bracket Builder"-->
+        <!--/>-->
+
+
+    <TextView
+        android:id="@+id/tv_bracket_title"
+        android:layout_below="@id/my_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tv_round_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/tv_bracket_title"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"/>
+
+    <ListView
+        android:id="@+id/lv_matchups"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tv_round_title">
+
+        </ListView>
+
+    <!--<CheckBox-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/lv_matchups"-->
+        <!--android:text="Testing Checkbox"/>-->
+
+    <ImageButton
+        android:id="@+id/btn_next_round"
+        android:layout_above="@+id/btn_add_opponents"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_arrow_forward_white_24dp"
+        android:elevation="4dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_add_opponents"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_add_white_24dp"
+        android:elevation="4dp" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/matt/Programming/workspace/UpdatedBracketBuilder/app/src/main/res/layout/fragment_opponents_list.xml -->
