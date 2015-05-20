@@ -1,0 +1,38 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#ff247198</item>
+        <item name="colorPrimaryDark">#ff26729b</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <style name="AppThemeSettings" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#ff247198</item>
+        <item name="colorPrimaryDark">#ff26729b</item>
+    </style>
+
+    <style name="TBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="subtitleTextAppearance">@style/ToolbarSubtitle</item>
+        <item name="titleTextAppearance">@style/ToolbarTitle</item>
+    </style>
+
+
+    <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ToolbarSubtitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">#ffbfbfbf</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+
+</resources>
