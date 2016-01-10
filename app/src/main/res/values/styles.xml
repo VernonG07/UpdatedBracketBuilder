@@ -8,7 +8,6 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light">
         <item name="colorPrimary">#ff247198</item>
         <item name="colorPrimaryDark">#ff26729b</item>
-        <item name="windowActionBar">false</item>
     </style>
 
 

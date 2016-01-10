@@ -111,6 +111,7 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i2) {
 
+        //TODO: Merge to V2 Data Structure
         switch (dbType){
             case GAME:
                 sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_GAME);

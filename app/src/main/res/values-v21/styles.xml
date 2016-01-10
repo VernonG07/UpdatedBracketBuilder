@@ -5,7 +5,6 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">#ff247198</item>
         <item name="colorPrimaryDark">#ff26729b</item>
-        <item name="windowActionBar">false</item>
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowReenterTransition">@android:transition/explode</item>
         <item name="android:windowExitTransition">@android:transition/explode</item>
