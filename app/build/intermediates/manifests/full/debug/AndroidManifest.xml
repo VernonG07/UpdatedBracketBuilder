@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="23" />
 
     <application
         android:allowBackup="true"
@@ -15,25 +15,16 @@
         android:logo="@android:color/transparent"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.mgriffin.listviewex.StartingBracketActivity"
+            android:name="com.griffin.bracketbuilder.v2.CreateTournamentActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="adjustNothing" >
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.mgriffin.listviewex.OpponentsMainActivity"
-            android:label="@string/title_activity_bracket_detail"
-            android:windowSoftInputMode="adjustPan" >
-        </activity>
-        <activity
-            android:name="com.example.mgriffin.listviewex.SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:theme="@style/AppThemeSettings" >
-        </activity>
+        <activity android:name="com.griffin.bracketbuilder.v2.BuildTournamentDialogFragment" />
     </application>
 
 </manifest>

@@ -143,7 +143,7 @@ public class StartingBracketActivity extends ActionBarActivity {
 
     private void initializeViews() {
         toolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar);
         addBracketButton = (ImageButton) findViewById(R.id.btn_add);
         bracketView = (ListView) findViewById(R.id.lv_items);
         cardView = (CardView) findViewById(R.id.main_cv);

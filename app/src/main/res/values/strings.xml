@@ -15,5 +15,6 @@
     <string name="hint_create_tournament">tournament name.</string>
     <string name="hint_create_team_one">team name.</string>
     <string name="hint_create_team_two">team name.</string>
+    <string name="title_activity_ugh">UGH</string>
 
 </resources>

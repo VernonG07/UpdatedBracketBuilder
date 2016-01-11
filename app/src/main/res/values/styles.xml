@@ -1,37 +1,20 @@
 <resources>
 
-    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
-    <!--<style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">-->
-        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
-    <!--</style>-->
-
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
-        <item name="colorPrimary">#ff247198</item>
-        <item name="colorPrimaryDark">#ff26729b</item>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#00acc1</item>
+        <item name="colorPrimaryDark">#00838f</item>
+        <item name="colorAccent">#FF4081</item>
     </style>
 
-
-    <style name="AppThemeSettings" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">#ff247198</item>
-        <item name="colorPrimaryDark">#ff26729b</item>
+    <style name="AppTheme.NoActionBar">
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
     </style>
 
-    <style name="TBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="subtitleTextAppearance">@style/ToolbarSubtitle</item>
-        <item name="titleTextAppearance">@style/ToolbarTitle</item>
-    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-
-    <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:textSize">18sp</item>
-    </style>
-
-    <style name="ToolbarSubtitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
-        <item name="android:textColor">#ffbfbfbf</item>
-        <item name="android:textSize">13sp</item>
-    </style>
-
-
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
