@@ -52,7 +52,7 @@ public class OpponentsMainActivity extends ActionBarActivity {
         toolbar = (Toolbar) findViewById(R.id.my_toolbar);
         if (toolbar != null) {
 //            setSupportActionBar(toolbar);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         }
     }

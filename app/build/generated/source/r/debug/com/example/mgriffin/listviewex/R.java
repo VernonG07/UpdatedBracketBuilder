@@ -2333,7 +2333,7 @@ containing a value of this type.
     public static final class id {
         public static final int MyAppbar=0x7f0d006a;
         public static final int MyToolbar=0x7f0d006c;
-        public static final int action0=0x7f0d0093;
+        public static final int action0=0x7f0d0098;
         public static final int action_bar=0x7f0d005a;
         public static final int action_bar_activity_content=0x7f0d0000;
         public static final int action_bar_container=0x7f0d0059;
@@ -2342,33 +2342,34 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f0d003b;
         public static final int action_bar_title=0x7f0d003a;
         public static final int action_context_bar=0x7f0d005b;
-        public static final int action_divider=0x7f0d0097;
-        public static final int action_home=0x7f0d00a0;
+        public static final int action_divider=0x7f0d009c;
+        public static final int action_home=0x7f0d00a5;
         public static final int action_menu_divider=0x7f0d0002;
         public static final int action_menu_presenter=0x7f0d0003;
         public static final int action_mode_bar=0x7f0d0057;
         public static final int action_mode_bar_stub=0x7f0d0056;
         public static final int action_mode_close_button=0x7f0d003c;
-        public static final int action_settings=0x7f0d00a1;
+        public static final int action_settings=0x7f0d00a6;
         public static final int activity_chooser_view_content=0x7f0d003d;
         public static final int alertTitle=0x7f0d0049;
         public static final int always=0x7f0d0032;
         public static final int beginning=0x7f0d0030;
         public static final int bottom=0x7f0d001c;
-        public static final int btn_accept=0x7f0d0087;
-        public static final int btn_add=0x7f0d0072;
-        public static final int btn_add_opponents=0x7f0d007d;
-        public static final int btn_cancel=0x7f0d0089;
-        public static final int btn_choose_name_one=0x7f0d007e;
-        public static final int btn_choose_name_two=0x7f0d0080;
-        public static final int btn_next_round=0x7f0d008d;
+        public static final int btn_accept=0x7f0d008b;
+        public static final int btn_add=0x7f0d0073;
+        public static final int btn_add_opponents=0x7f0d0081;
+        public static final int btn_cancel=0x7f0d008d;
+        public static final int btn_choose_name_one=0x7f0d0082;
+        public static final int btn_choose_name_two=0x7f0d0084;
+        public static final int btn_next_round=0x7f0d0091;
         public static final int buttonPanel=0x7f0d0044;
-        public static final int cancel_action=0x7f0d0094;
+        public static final int cancel_action=0x7f0d0099;
+        public static final int card_view=0x7f0d0092;
         public static final int center=0x7f0d001d;
         public static final int center_horizontal=0x7f0d001e;
         public static final int center_vertical=0x7f0d001f;
         public static final int checkbox=0x7f0d0052;
-        public static final int chronometer=0x7f0d009a;
+        public static final int chronometer=0x7f0d009f;
         public static final int clip_horizontal=0x7f0d002b;
         public static final int clip_vertical=0x7f0d002c;
         public static final int collapseActionView=0x7f0d0033;
@@ -2378,27 +2379,28 @@ containing a value of this type.
         public static final int customPanel=0x7f0d004f;
         public static final int decor_content_parent=0x7f0d0058;
         public static final int default_activity_button=0x7f0d0040;
-        public static final int design_menu_item_action_area=0x7f0d0079;
-        public static final int design_menu_item_action_area_stub=0x7f0d0078;
-        public static final int design_menu_item_text=0x7f0d0077;
-        public static final int design_navigation_view=0x7f0d0076;
+        public static final int design_menu_item_action_area=0x7f0d007d;
+        public static final int design_menu_item_action_area_stub=0x7f0d007c;
+        public static final int design_menu_item_text=0x7f0d007b;
+        public static final int design_navigation_view=0x7f0d007a;
         public static final int disableHome=0x7f0d000e;
         public static final int edit_query=0x7f0d005c;
         public static final int end=0x7f0d0020;
-        public static final int end_padder=0x7f0d009f;
+        public static final int end_padder=0x7f0d00a4;
         public static final int enterAlways=0x7f0d0015;
         public static final int enterAlwaysCollapsed=0x7f0d0016;
-        public static final int et_name=0x7f0d007a;
-        public static final int et_name1=0x7f0d007b;
-        public static final int et_name2=0x7f0d007c;
-        public static final int et_team_name1=0x7f0d0085;
-        public static final int et_team_name2=0x7f0d0086;
-        public static final int et_tournament_name=0x7f0d0082;
+        public static final int et_name=0x7f0d007e;
+        public static final int et_name1=0x7f0d007f;
+        public static final int et_name2=0x7f0d0080;
+        public static final int et_team_name1=0x7f0d0089;
+        public static final int et_team_name2=0x7f0d008a;
+        public static final int et_tournament_name=0x7f0d0086;
         public static final int exitUntilCollapsed=0x7f0d0017;
         public static final int expand_activities_button=0x7f0d003e;
         public static final int expanded_menu=0x7f0d0051;
-        public static final int fab_add=0x7f0d006d;
-        public static final int fab_addTeam=0x7f0d0088;
+        public static final int fab=0x7f0d0075;
+        public static final int fab_add=0x7f0d006e;
+        public static final int fab_addTeam=0x7f0d008c;
         public static final int fill=0x7f0d002d;
         public static final int fill_horizontal=0x7f0d002e;
         public static final int fill_vertical=0x7f0d0021;
@@ -2408,25 +2410,25 @@ containing a value of this type.
         public static final int icon=0x7f0d0042;
         public static final int ifRoom=0x7f0d0034;
         public static final int image=0x7f0d003f;
-        public static final int info=0x7f0d009e;
+        public static final int info=0x7f0d00a3;
         public static final int item_touch_helper_previous_elevation=0x7f0d0005;
         public static final int left=0x7f0d0022;
-        public static final int line1=0x7f0d0098;
-        public static final int line3=0x7f0d009c;
+        public static final int line1=0x7f0d009d;
+        public static final int line3=0x7f0d00a1;
         public static final int listMode=0x7f0d000b;
         public static final int list_item=0x7f0d0041;
-        public static final int ll_container=0x7f0d0083;
-        public static final int ll_main=0x7f0d0084;
-        public static final int lv_items=0x7f0d0071;
-        public static final int lv_matchups=0x7f0d008c;
+        public static final int ll_container=0x7f0d0087;
+        public static final int ll_main=0x7f0d0088;
+        public static final int lv_items=0x7f0d0072;
+        public static final int lv_matchups=0x7f0d0090;
         public static final int main_content=0x7f0d0069;
-        public static final int main_cv=0x7f0d006f;
-        public static final int media_actions=0x7f0d0096;
+        public static final int main_cv=0x7f0d0070;
+        public static final int media_actions=0x7f0d009b;
         public static final int middle=0x7f0d0031;
         public static final int mini=0x7f0d002f;
         public static final int multiply=0x7f0d0026;
-        public static final int my_toolbar=0x7f0d006e;
-        public static final int navigation_header_container=0x7f0d0075;
+        public static final int my_toolbar=0x7f0d006f;
+        public static final int navigation_header_container=0x7f0d0079;
         public static final int never=0x7f0d0035;
         public static final int none=0x7f0d0010;
         public static final int normal=0x7f0d000c;
@@ -2436,8 +2438,9 @@ containing a value of this type.
         public static final int progress_circular=0x7f0d0006;
         public static final int progress_horizontal=0x7f0d0007;
         public static final int radio=0x7f0d0054;
+        public static final int recyclerView=0x7f0d006d;
         public static final int right=0x7f0d0023;
-        public static final int rl_main=0x7f0d0081;
+        public static final int rl_main=0x7f0d0085;
         public static final int screen=0x7f0d0027;
         public static final int scroll=0x7f0d0018;
         public static final int scrollIndicatorDown=0x7f0d004e;
@@ -2459,8 +2462,8 @@ containing a value of this type.
         public static final int showCustom=0x7f0d0011;
         public static final int showHome=0x7f0d0012;
         public static final int showTitle=0x7f0d0013;
-        public static final int snackbar_action=0x7f0d0074;
-        public static final int snackbar_text=0x7f0d0073;
+        public static final int snackbar_action=0x7f0d0078;
+        public static final int snackbar_text=0x7f0d0077;
         public static final int snap=0x7f0d0019;
         public static final int spacer=0x7f0d0045;
         public static final int split_action_bar=0x7f0d0008;
@@ -2468,26 +2471,28 @@ containing a value of this type.
         public static final int src_in=0x7f0d0029;
         public static final int src_over=0x7f0d002a;
         public static final int start=0x7f0d0024;
-        public static final int status_bar_latest_event_content=0x7f0d0095;
+        public static final int status_bar_latest_event_content=0x7f0d009a;
         public static final int submit_area=0x7f0d0065;
         public static final int tabMode=0x7f0d000d;
-        public static final int text=0x7f0d009d;
-        public static final int text2=0x7f0d009b;
+        public static final int text=0x7f0d00a2;
+        public static final int text2=0x7f0d00a0;
         public static final int textSpacerNoButtons=0x7f0d004d;
-        public static final int time=0x7f0d0099;
+        public static final int time=0x7f0d009e;
         public static final int title=0x7f0d0043;
         public static final int title_template=0x7f0d0048;
+        public static final int toolbar=0x7f0d0074;
         public static final int top=0x7f0d0025;
         public static final int topPanel=0x7f0d0047;
-        public static final int tv_bracket_title=0x7f0d008a;
-        public static final int tv_cv=0x7f0d0070;
-        public static final int tv_game_name=0x7f0d008e;
-        public static final int tv_name1=0x7f0d0091;
-        public static final int tv_name2=0x7f0d0092;
-        public static final int tv_or=0x7f0d007f;
-        public static final int tv_round_title=0x7f0d008b;
-        public static final int tv_timeCreated=0x7f0d0090;
-        public static final int tv_winner_name=0x7f0d008f;
+        public static final int tv_bracket_title=0x7f0d008e;
+        public static final int tv_cv=0x7f0d0071;
+        public static final int tv_game_name=0x7f0d0093;
+        public static final int tv_name1=0x7f0d0096;
+        public static final int tv_name2=0x7f0d0097;
+        public static final int tv_or=0x7f0d0083;
+        public static final int tv_round_title=0x7f0d008f;
+        public static final int tv_timeCreated=0x7f0d0095;
+        public static final int tv_tournament_name=0x7f0d0076;
+        public static final int tv_winner_name=0x7f0d0094;
         public static final int up=0x7f0d0009;
         public static final int useLogo=0x7f0d0014;
         public static final int view_offset_helper=0x7f0d000a;
@@ -2532,36 +2537,39 @@ containing a value of this type.
         public static final int activity_opponents_main=0x7f03001a;
         public static final int activity_settings=0x7f03001b;
         public static final int activity_starting_bracket=0x7f03001c;
-        public static final int design_layout_snackbar=0x7f03001d;
-        public static final int design_layout_snackbar_include=0x7f03001e;
-        public static final int design_layout_tab_icon=0x7f03001f;
-        public static final int design_layout_tab_text=0x7f030020;
-        public static final int design_menu_item_action_area=0x7f030021;
-        public static final int design_navigation_item=0x7f030022;
-        public static final int design_navigation_item_header=0x7f030023;
-        public static final int design_navigation_item_separator=0x7f030024;
-        public static final int design_navigation_item_subheader=0x7f030025;
-        public static final int design_navigation_menu=0x7f030026;
-        public static final int design_navigation_menu_item=0x7f030027;
-        public static final int dialogfragment_add_bracket=0x7f030028;
-        public static final int dialogfragment_assign_opponents=0x7f030029;
-        public static final int dialogfragment_choose_winner=0x7f03002a;
-        public static final int dialogfragment_create_tournament=0x7f03002b;
-        public static final int fragment_opponents_list=0x7f03002c;
-        public static final int game_list_view=0x7f03002d;
-        public static final int matchup_list_view=0x7f03002e;
-        public static final int notification_media_action=0x7f03002f;
-        public static final int notification_media_cancel_action=0x7f030030;
-        public static final int notification_template_big_media=0x7f030031;
-        public static final int notification_template_big_media_narrow=0x7f030032;
-        public static final int notification_template_lines=0x7f030033;
-        public static final int notification_template_media=0x7f030034;
-        public static final int notification_template_part_chronometer=0x7f030035;
-        public static final int notification_template_part_time=0x7f030036;
-        public static final int select_dialog_item_material=0x7f030037;
-        public static final int select_dialog_multichoice_material=0x7f030038;
-        public static final int select_dialog_singlechoice_material=0x7f030039;
-        public static final int support_simple_spinner_dropdown_item=0x7f03003a;
+        public static final int activity_tournament_detail=0x7f03001d;
+        public static final int content_tournament_detail=0x7f03001e;
+        public static final int design_layout_snackbar=0x7f03001f;
+        public static final int design_layout_snackbar_include=0x7f030020;
+        public static final int design_layout_tab_icon=0x7f030021;
+        public static final int design_layout_tab_text=0x7f030022;
+        public static final int design_menu_item_action_area=0x7f030023;
+        public static final int design_navigation_item=0x7f030024;
+        public static final int design_navigation_item_header=0x7f030025;
+        public static final int design_navigation_item_separator=0x7f030026;
+        public static final int design_navigation_item_subheader=0x7f030027;
+        public static final int design_navigation_menu=0x7f030028;
+        public static final int design_navigation_menu_item=0x7f030029;
+        public static final int dialogfragment_add_bracket=0x7f03002a;
+        public static final int dialogfragment_assign_opponents=0x7f03002b;
+        public static final int dialogfragment_choose_winner=0x7f03002c;
+        public static final int dialogfragment_create_tournament=0x7f03002d;
+        public static final int fragment_opponents_list=0x7f03002e;
+        public static final int game_card_view=0x7f03002f;
+        public static final int game_list_view=0x7f030030;
+        public static final int matchup_list_view=0x7f030031;
+        public static final int notification_media_action=0x7f030032;
+        public static final int notification_media_cancel_action=0x7f030033;
+        public static final int notification_template_big_media=0x7f030034;
+        public static final int notification_template_big_media_narrow=0x7f030035;
+        public static final int notification_template_lines=0x7f030036;
+        public static final int notification_template_media=0x7f030037;
+        public static final int notification_template_part_chronometer=0x7f030038;
+        public static final int notification_template_part_time=0x7f030039;
+        public static final int select_dialog_item_material=0x7f03003a;
+        public static final int select_dialog_multichoice_material=0x7f03003b;
+        public static final int select_dialog_singlechoice_material=0x7f03003c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03003d;
     }
     public static final class menu {
         public static final int bracket_detail=0x7f0e0000;
@@ -2601,7 +2609,8 @@ containing a value of this type.
         public static final int title_activity_create_tournament=0x7f07001f;
         public static final int title_activity_detailed_bracket=0x7f070020;
         public static final int title_activity_settings=0x7f070021;
-        public static final int title_activity_ugh=0x7f070022;
+        public static final int title_activity_tournament_detail=0x7f070022;
+        public static final int title_activity_ugh=0x7f070023;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0a007f;
@@ -2953,33 +2962,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background com.example.mgriffin.listviewex:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit com.example.mgriffin.listviewex:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked com.example.mgriffin.listviewex:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd com.example.mgriffin.listviewex:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft com.example.mgriffin.listviewex:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight com.example.mgriffin.listviewex:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart com.example.mgriffin.listviewex:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout com.example.mgriffin.listviewex:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions com.example.mgriffin.listviewex:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider com.example.mgriffin.listviewex:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation com.example.mgriffin.listviewex:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height com.example.mgriffin.listviewex:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.example.mgriffin.listviewex:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.example.mgriffin.listviewex:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout com.example.mgriffin.listviewex:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon com.example.mgriffin.listviewex:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.example.mgriffin.listviewex:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding com.example.mgriffin.listviewex:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo com.example.mgriffin.listviewex:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode com.example.mgriffin.listviewex:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme com.example.mgriffin.listviewex:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding com.example.mgriffin.listviewex:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle com.example.mgriffin.listviewex:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle com.example.mgriffin.listviewex:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.example.mgriffin.listviewex:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title com.example.mgriffin.listviewex:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle com.example.mgriffin.listviewex:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background com.vernong.development.simplybrackets:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.vernong.development.simplybrackets:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.vernong.development.simplybrackets:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd com.vernong.development.simplybrackets:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft com.vernong.development.simplybrackets:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight com.vernong.development.simplybrackets:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart com.vernong.development.simplybrackets:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.vernong.development.simplybrackets:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.vernong.development.simplybrackets:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.vernong.development.simplybrackets:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation com.vernong.development.simplybrackets:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height com.vernong.development.simplybrackets:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.vernong.development.simplybrackets:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.vernong.development.simplybrackets:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.vernong.development.simplybrackets:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.vernong.development.simplybrackets:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.vernong.development.simplybrackets:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.vernong.development.simplybrackets:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.vernong.development.simplybrackets:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.vernong.development.simplybrackets:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme com.vernong.development.simplybrackets:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.vernong.development.simplybrackets:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.vernong.development.simplybrackets:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.vernong.development.simplybrackets:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.vernong.development.simplybrackets:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title com.vernong.development.simplybrackets:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.vernong.development.simplybrackets:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -3019,17 +3028,17 @@ containing a value of this type.
             0x7f01001a, 0x7f01001b, 0x7f0100c9
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#background}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:background
+          @attr name com.vernong.development.simplybrackets:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3037,11 +3046,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.mgriffin.listviewex:backgroundSplit
+          @attr name com.vernong.development.simplybrackets:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3049,11 +3058,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.mgriffin.listviewex:backgroundStacked
+          @attr name com.vernong.development.simplybrackets:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3065,11 +3074,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentInsetEnd
+          @attr name com.vernong.development.simplybrackets:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3081,11 +3090,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentInsetLeft
+          @attr name com.vernong.development.simplybrackets:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3097,11 +3106,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentInsetRight
+          @attr name com.vernong.development.simplybrackets:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3113,21 +3122,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentInsetStart
+          @attr name com.vernong.development.simplybrackets:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:customNavigationLayout
+          @attr name com.vernong.development.simplybrackets:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3145,21 +3154,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:displayOptions
+          @attr name com.vernong.development.simplybrackets:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:divider
+          @attr name com.vernong.development.simplybrackets:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3171,11 +3180,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:elevation
+          @attr name com.vernong.development.simplybrackets:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#height}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3187,11 +3196,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:height
+          @attr name com.vernong.development.simplybrackets:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3201,51 +3210,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:hideOnContentScroll
+          @attr name com.vernong.development.simplybrackets:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:homeAsUpIndicator
+          @attr name com.vernong.development.simplybrackets:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:homeLayout
+          @attr name com.vernong.development.simplybrackets:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#icon}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:icon
+          @attr name com.vernong.development.simplybrackets:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:indeterminateProgressStyle
+          @attr name com.vernong.development.simplybrackets:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3257,21 +3266,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:itemPadding
+          @attr name com.vernong.development.simplybrackets:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:logo
+          @attr name com.vernong.development.simplybrackets:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3285,21 +3294,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:navigationMode
+          @attr name com.vernong.development.simplybrackets:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:popupTheme
+          @attr name com.vernong.development.simplybrackets:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3311,21 +3320,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:progressBarPadding
+          @attr name com.vernong.development.simplybrackets:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:progressBarStyle
+          @attr name com.vernong.development.simplybrackets:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3335,21 +3344,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:subtitle
+          @attr name com.vernong.development.simplybrackets:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:subtitleTextStyle
+          @attr name com.vernong.development.simplybrackets:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#title}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3359,17 +3368,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:title
+          @attr name com.vernong.development.simplybrackets:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:titleTextStyle
+          @attr name com.vernong.development.simplybrackets:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -3421,12 +3430,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background com.example.mgriffin.listviewex:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit com.example.mgriffin.listviewex:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout com.example.mgriffin.listviewex:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height com.example.mgriffin.listviewex:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.example.mgriffin.listviewex:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle com.example.mgriffin.listviewex:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background com.vernong.development.simplybrackets:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.vernong.development.simplybrackets:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout com.vernong.development.simplybrackets:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height com.vernong.development.simplybrackets:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.vernong.development.simplybrackets:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.vernong.development.simplybrackets:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -3440,17 +3449,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01001c
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#background}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:background
+          @attr name com.vernong.development.simplybrackets:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3458,21 +3467,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.mgriffin.listviewex:backgroundSplit
+          @attr name com.vernong.development.simplybrackets:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:closeItemLayout
+          @attr name com.vernong.development.simplybrackets:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#height}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -3484,27 +3493,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:height
+          @attr name com.vernong.development.simplybrackets:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:subtitleTextStyle
+          @attr name com.vernong.development.simplybrackets:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:titleTextStyle
+          @attr name com.vernong.development.simplybrackets:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -3513,8 +3522,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.example.mgriffin.listviewex:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.example.mgriffin.listviewex:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.vernong.development.simplybrackets:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.vernong.development.simplybrackets:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -3523,17 +3532,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001d, 0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:expandActivityOverflowButtonDrawable
+          @attr name com.vernong.development.simplybrackets:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -3543,7 +3552,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:initialActivityCount
+          @attr name com.vernong.development.simplybrackets:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -3553,11 +3562,11 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.example.mgriffin.listviewex:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout com.example.mgriffin.listviewex:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout com.example.mgriffin.listviewex:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.example.mgriffin.listviewex:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.example.mgriffin.listviewex:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.vernong.development.simplybrackets:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout com.vernong.development.simplybrackets:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout com.vernong.development.simplybrackets:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.vernong.development.simplybrackets:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.vernong.development.simplybrackets:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -3577,53 +3586,53 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:buttonPanelSideLayout
+          @attr name com.vernong.development.simplybrackets:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:listItemLayout
+          @attr name com.vernong.development.simplybrackets:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:listLayout
+          @attr name com.vernong.development.simplybrackets:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:multiChoiceItemLayout
+          @attr name com.vernong.development.simplybrackets:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:singleChoiceItemLayout
+          @attr name com.vernong.development.simplybrackets:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -3633,8 +3642,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_elevation com.example.mgriffin.listviewex:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_expanded com.example.mgriffin.listviewex:expanded}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation com.vernong.development.simplybrackets:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded com.vernong.development.simplybrackets:expanded}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_elevation
@@ -3650,7 +3659,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -3662,11 +3671,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:elevation
+          @attr name com.vernong.development.simplybrackets:elevation
         */
         public static final int AppBarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#expanded}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -3676,7 +3685,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:expanded
+          @attr name com.vernong.development.simplybrackets:expanded
         */
         public static final int AppBarLayout_expanded = 2;
         /** Attributes that can be used with a AppBarLayout_LayoutParams.
@@ -3685,8 +3694,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags com.example.mgriffin.listviewex:layout_scrollFlags}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator com.example.mgriffin.listviewex:layout_scrollInterpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollFlags com.vernong.development.simplybrackets:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_LayoutParams_layout_scrollInterpolator com.vernong.development.simplybrackets:layout_scrollInterpolator}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_LayoutParams_layout_scrollFlags
            @see #AppBarLayout_LayoutParams_layout_scrollInterpolator
@@ -3695,7 +3704,7 @@ containing a value of this type.
             0x7f010025, 0x7f010026
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
@@ -3711,17 +3720,17 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:layout_scrollFlags
+          @attr name com.vernong.development.simplybrackets:layout_scrollFlags
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:layout_scrollInterpolator
+          @attr name com.vernong.development.simplybrackets:layout_scrollInterpolator
         */
         public static final int AppBarLayout_LayoutParams_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatTextView.
@@ -3731,7 +3740,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.example.mgriffin.listviewex:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.vernong.development.simplybrackets:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
@@ -3746,14 +3755,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.example.mgriffin.listviewex:textAllCaps
+          @attr name com.vernong.development.simplybrackets:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -3762,7 +3771,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking com.example.mgriffin.listviewex:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking com.vernong.development.simplybrackets:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -3770,7 +3779,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010028
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -3780,7 +3789,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:allowStacking
+          @attr name com.vernong.development.simplybrackets:allowStacking
         */
         public static final int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CardView.
@@ -3789,17 +3798,17 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CardView_cardBackgroundColor com.example.mgriffin.listviewex:cardBackgroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardCornerRadius com.example.mgriffin.listviewex:cardCornerRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardElevation com.example.mgriffin.listviewex:cardElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardMaxElevation com.example.mgriffin.listviewex:cardMaxElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.example.mgriffin.listviewex:cardPreventCornerOverlap}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardUseCompatPadding com.example.mgriffin.listviewex:cardUseCompatPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPadding com.example.mgriffin.listviewex:contentPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingBottom com.example.mgriffin.listviewex:contentPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingLeft com.example.mgriffin.listviewex:contentPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingRight com.example.mgriffin.listviewex:contentPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingTop com.example.mgriffin.listviewex:contentPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor com.vernong.development.simplybrackets:cardBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius com.vernong.development.simplybrackets:cardCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardElevation com.vernong.development.simplybrackets:cardElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation com.vernong.development.simplybrackets:cardMaxElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.vernong.development.simplybrackets:cardPreventCornerOverlap}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding com.vernong.development.simplybrackets:cardUseCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPadding com.vernong.development.simplybrackets:contentPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom com.vernong.development.simplybrackets:contentPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft com.vernong.development.simplybrackets:contentPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight com.vernong.development.simplybrackets:contentPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop com.vernong.development.simplybrackets:contentPaddingTop}</code></td><td></td></tr>
            </table>
            @see #CardView_cardBackgroundColor
            @see #CardView_cardCornerRadius
@@ -3819,7 +3828,7 @@ containing a value of this type.
             0x7f010031, 0x7f010032, 0x7f010033
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#cardBackgroundColor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#cardBackgroundColor}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3830,11 +3839,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:cardBackgroundColor
+          @attr name com.vernong.development.simplybrackets:cardBackgroundColor
         */
         public static final int CardView_cardBackgroundColor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#cardCornerRadius}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#cardCornerRadius}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3846,11 +3855,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:cardCornerRadius
+          @attr name com.vernong.development.simplybrackets:cardCornerRadius
         */
         public static final int CardView_cardCornerRadius = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#cardElevation}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#cardElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3862,11 +3871,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:cardElevation
+          @attr name com.vernong.development.simplybrackets:cardElevation
         */
         public static final int CardView_cardElevation = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#cardMaxElevation}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#cardMaxElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3878,11 +3887,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:cardMaxElevation
+          @attr name com.vernong.development.simplybrackets:cardMaxElevation
         */
         public static final int CardView_cardMaxElevation = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#cardPreventCornerOverlap}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#cardPreventCornerOverlap}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3892,11 +3901,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:cardPreventCornerOverlap
+          @attr name com.vernong.development.simplybrackets:cardPreventCornerOverlap
         */
         public static final int CardView_cardPreventCornerOverlap = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#cardUseCompatPadding}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#cardUseCompatPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3906,11 +3915,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:cardUseCompatPadding
+          @attr name com.vernong.development.simplybrackets:cardUseCompatPadding
         */
         public static final int CardView_cardUseCompatPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentPadding}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3922,11 +3931,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentPadding
+          @attr name com.vernong.development.simplybrackets:contentPadding
         */
         public static final int CardView_contentPadding = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentPaddingBottom}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentPaddingBottom}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3938,11 +3947,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentPaddingBottom
+          @attr name com.vernong.development.simplybrackets:contentPaddingBottom
         */
         public static final int CardView_contentPaddingBottom = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentPaddingLeft}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentPaddingLeft}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3954,11 +3963,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentPaddingLeft
+          @attr name com.vernong.development.simplybrackets:contentPaddingLeft
         */
         public static final int CardView_contentPaddingLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentPaddingRight}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentPaddingRight}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3970,11 +3979,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentPaddingRight
+          @attr name com.vernong.development.simplybrackets:contentPaddingRight
         */
         public static final int CardView_contentPaddingRight = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentPaddingTop}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentPaddingTop}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -3986,7 +3995,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentPaddingTop
+          @attr name com.vernong.development.simplybrackets:contentPaddingTop
         */
         public static final int CardView_contentPaddingTop = 9;
         /** Attributes that can be used with a CollapsingAppBarLayout_LayoutParams.
@@ -3995,8 +4004,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode com.example.mgriffin.listviewex:layout_collapseMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier com.example.mgriffin.listviewex:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseMode com.vernong.development.simplybrackets:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier com.vernong.development.simplybrackets:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
            </table>
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseMode
            @see #CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier
@@ -4005,7 +4014,7 @@ containing a value of this type.
             0x7f010034, 0x7f010035
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -4019,11 +4028,11 @@ containing a value of this type.
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:layout_collapseMode
+          @attr name com.vernong.development.simplybrackets:layout_collapseMode
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingAppBarLayout_LayoutParams} array.
 
 
@@ -4033,7 +4042,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:layout_collapseParallaxMultiplier
+          @attr name com.vernong.development.simplybrackets:layout_collapseParallaxMultiplier
         */
         public static final int CollapsingAppBarLayout_LayoutParams_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -4042,20 +4051,20 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.example.mgriffin.listviewex:collapsedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.example.mgriffin.listviewex:collapsedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.example.mgriffin.listviewex:contentScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.example.mgriffin.listviewex:expandedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.example.mgriffin.listviewex:expandedTitleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.example.mgriffin.listviewex:expandedTitleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.example.mgriffin.listviewex:expandedTitleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.example.mgriffin.listviewex:expandedTitleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.example.mgriffin.listviewex:expandedTitleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.example.mgriffin.listviewex:expandedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.example.mgriffin.listviewex:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title com.example.mgriffin.listviewex:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.example.mgriffin.listviewex:titleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.example.mgriffin.listviewex:toolbarId}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.vernong.development.simplybrackets:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.vernong.development.simplybrackets:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.vernong.development.simplybrackets:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.vernong.development.simplybrackets:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.vernong.development.simplybrackets:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.vernong.development.simplybrackets:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.vernong.development.simplybrackets:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.vernong.development.simplybrackets:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.vernong.development.simplybrackets:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.vernong.development.simplybrackets:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.vernong.development.simplybrackets:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title com.vernong.development.simplybrackets:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.vernong.development.simplybrackets:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.vernong.development.simplybrackets:toolbarId}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -4079,7 +4088,7 @@ containing a value of this type.
             0x7f010041, 0x7f010042
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4100,21 +4109,21 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:collapsedTitleGravity
+          @attr name com.vernong.development.simplybrackets:collapsedTitleGravity
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:collapsedTitleTextAppearance
+          @attr name com.vernong.development.simplybrackets:collapsedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4125,11 +4134,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentScrim
+          @attr name com.vernong.development.simplybrackets:contentScrim
         */
         public static final int CollapsingToolbarLayout_contentScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4150,11 +4159,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:expandedTitleGravity
+          @attr name com.vernong.development.simplybrackets:expandedTitleGravity
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 12;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4166,11 +4175,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:expandedTitleMargin
+          @attr name com.vernong.development.simplybrackets:expandedTitleMargin
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4182,11 +4191,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:expandedTitleMarginBottom
+          @attr name com.vernong.development.simplybrackets:expandedTitleMarginBottom
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4198,11 +4207,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:expandedTitleMarginEnd
+          @attr name com.vernong.development.simplybrackets:expandedTitleMarginEnd
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4214,11 +4223,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:expandedTitleMarginStart
+          @attr name com.vernong.development.simplybrackets:expandedTitleMarginStart
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4230,21 +4239,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:expandedTitleMarginTop
+          @attr name com.vernong.development.simplybrackets:expandedTitleMarginTop
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:expandedTitleTextAppearance
+          @attr name com.vernong.development.simplybrackets:expandedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4255,11 +4264,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:statusBarScrim
+          @attr name com.vernong.development.simplybrackets:statusBarScrim
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#title}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4269,11 +4278,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:title
+          @attr name com.vernong.development.simplybrackets:title
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -4283,17 +4292,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:titleEnabled
+          @attr name com.vernong.development.simplybrackets:titleEnabled
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 13;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:toolbarId
+          @attr name com.vernong.development.simplybrackets:toolbarId
         */
         public static final int CollapsingToolbarLayout_toolbarId = 10;
         /** Attributes that can be used with a CompoundButton.
@@ -4303,8 +4312,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint com.example.mgriffin.listviewex:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode com.example.mgriffin.listviewex:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint com.vernong.development.simplybrackets:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode com.vernong.development.simplybrackets:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -4320,7 +4329,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -4331,11 +4340,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:buttonTint
+          @attr name com.vernong.development.simplybrackets:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -4351,7 +4360,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:buttonTintMode
+          @attr name com.vernong.development.simplybrackets:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -4360,8 +4369,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CoordinatorLayout_keylines com.example.mgriffin.listviewex:keylines}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.example.mgriffin.listviewex:statusBarBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines com.vernong.development.simplybrackets:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.vernong.development.simplybrackets:statusBarBackground}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -4370,23 +4379,23 @@ containing a value of this type.
             0x7f010045, 0x7f010046
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#keylines}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:keylines
+          @attr name com.vernong.development.simplybrackets:keylines
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:statusBarBackground
+          @attr name com.vernong.development.simplybrackets:statusBarBackground
         */
         public static final int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_LayoutParams.
@@ -4396,10 +4405,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_LayoutParams_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor com.example.mgriffin.listviewex:layout_anchor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity com.example.mgriffin.listviewex:layout_anchorGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior com.example.mgriffin.listviewex:layout_behavior}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline com.example.mgriffin.listviewex:layout_keyline}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchor com.vernong.development.simplybrackets:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_anchorGravity com.vernong.development.simplybrackets:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_behavior com.vernong.development.simplybrackets:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_LayoutParams_layout_keyline com.vernong.development.simplybrackets:layout_keyline}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_LayoutParams_android_layout_gravity
            @see #CoordinatorLayout_LayoutParams_layout_anchor
@@ -4418,17 +4427,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_LayoutParams_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:layout_anchor
+          @attr name com.vernong.development.simplybrackets:layout_anchor
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -4453,11 +4462,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:layout_anchorGravity
+          @attr name com.vernong.development.simplybrackets:layout_anchorGravity
         */
         public static final int CoordinatorLayout_LayoutParams_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -4467,11 +4476,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:layout_behavior
+          @attr name com.vernong.development.simplybrackets:layout_behavior
         */
         public static final int CoordinatorLayout_LayoutParams_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_LayoutParams} array.
 
 
@@ -4481,7 +4490,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:layout_keyline
+          @attr name com.vernong.development.simplybrackets:layout_keyline
         */
         public static final int CoordinatorLayout_LayoutParams_layout_keyline = 3;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -4490,14 +4499,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.example.mgriffin.listviewex:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.example.mgriffin.listviewex:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength com.example.mgriffin.listviewex:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color com.example.mgriffin.listviewex:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.example.mgriffin.listviewex:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.example.mgriffin.listviewex:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.example.mgriffin.listviewex:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness com.example.mgriffin.listviewex:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.vernong.development.simplybrackets:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.vernong.development.simplybrackets:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength com.vernong.development.simplybrackets:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color com.vernong.development.simplybrackets:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.vernong.development.simplybrackets:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.vernong.development.simplybrackets:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.vernong.development.simplybrackets:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness com.vernong.development.simplybrackets:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -4513,7 +4522,7 @@ containing a value of this type.
             0x7f01004f, 0x7f010050, 0x7f010051, 0x7f010052
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4525,11 +4534,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:arrowHeadLength
+          @attr name com.vernong.development.simplybrackets:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4541,11 +4550,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:arrowShaftLength
+          @attr name com.vernong.development.simplybrackets:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#barLength}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4557,11 +4566,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:barLength
+          @attr name com.vernong.development.simplybrackets:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#color}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4572,11 +4581,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:color
+          @attr name com.vernong.development.simplybrackets:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4588,11 +4597,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:drawableSize
+          @attr name com.vernong.development.simplybrackets:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4604,11 +4613,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:gapBetweenBars
+          @attr name com.vernong.development.simplybrackets:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4618,11 +4627,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:spinBars
+          @attr name com.vernong.development.simplybrackets:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#thickness}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -4634,7 +4643,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:thickness
+          @attr name com.vernong.development.simplybrackets:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -4643,13 +4652,13 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTint com.example.mgriffin.listviewex:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.example.mgriffin.listviewex:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_borderWidth com.example.mgriffin.listviewex:borderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_elevation com.example.mgriffin.listviewex:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fabSize com.example.mgriffin.listviewex:fabSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.example.mgriffin.listviewex:pressedTranslationZ}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_rippleColor com.example.mgriffin.listviewex:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint com.vernong.development.simplybrackets:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.vernong.development.simplybrackets:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth com.vernong.development.simplybrackets:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation com.vernong.development.simplybrackets:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize com.vernong.development.simplybrackets:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.vernong.development.simplybrackets:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor com.vernong.development.simplybrackets:rippleColor}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -4664,7 +4673,7 @@ containing a value of this type.
             0x7f010056, 0x7f010119, 0x7f01011a
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4675,11 +4684,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:backgroundTint
+          @attr name com.vernong.development.simplybrackets:backgroundTint
         */
         public static final int FloatingActionButton_backgroundTint = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4695,11 +4704,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:backgroundTintMode
+          @attr name com.vernong.development.simplybrackets:backgroundTintMode
         */
         public static final int FloatingActionButton_backgroundTintMode = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4711,11 +4720,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:borderWidth
+          @attr name com.vernong.development.simplybrackets:borderWidth
         */
         public static final int FloatingActionButton_borderWidth = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4727,11 +4736,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:elevation
+          @attr name com.vernong.development.simplybrackets:elevation
         */
         public static final int FloatingActionButton_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4744,11 +4753,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:fabSize
+          @attr name com.vernong.development.simplybrackets:fabSize
         */
         public static final int FloatingActionButton_fabSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4760,11 +4769,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:pressedTranslationZ
+          @attr name com.vernong.development.simplybrackets:pressedTranslationZ
         */
         public static final int FloatingActionButton_pressedTranslationZ = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -4775,7 +4784,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:rippleColor
+          @attr name com.vernong.development.simplybrackets:rippleColor
         */
         public static final int FloatingActionButton_rippleColor = 1;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -4786,7 +4795,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.example.mgriffin.listviewex:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.vernong.development.simplybrackets:foregroundInsidePadding}</code></td><td></td></tr>
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -4808,7 +4817,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -4818,7 +4827,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:foregroundInsidePadding
+          @attr name com.vernong.development.simplybrackets:foregroundInsidePadding
         */
         public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -4832,10 +4841,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider com.example.mgriffin.listviewex:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.example.mgriffin.listviewex:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.example.mgriffin.listviewex:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.example.mgriffin.listviewex:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider com.vernong.development.simplybrackets:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.vernong.development.simplybrackets:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.vernong.development.simplybrackets:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.vernong.development.simplybrackets:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -4883,17 +4892,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:divider
+          @attr name com.vernong.development.simplybrackets:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -4905,11 +4914,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:dividerPadding
+          @attr name com.vernong.development.simplybrackets:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -4919,11 +4928,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:measureWithLargestChild
+          @attr name com.vernong.development.simplybrackets:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -4938,7 +4947,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:showDividers
+          @attr name com.vernong.development.simplybrackets:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -5077,9 +5086,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout com.example.mgriffin.listviewex:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass com.example.mgriffin.listviewex:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass com.example.mgriffin.listviewex:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout com.vernong.development.simplybrackets:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.vernong.development.simplybrackets:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass com.vernong.development.simplybrackets:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -5093,7 +5102,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction com.example.mgriffin.listviewex:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.vernong.development.simplybrackets:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -5121,17 +5130,17 @@ containing a value of this type.
             0x7f01005e
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionLayout
+          @attr name com.vernong.development.simplybrackets:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -5141,11 +5150,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:actionProviderClass
+          @attr name com.vernong.development.simplybrackets:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -5155,7 +5164,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:actionViewClass
+          @attr name com.vernong.development.simplybrackets:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -5237,7 +5246,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -5253,7 +5262,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:showAsAction
+          @attr name com.vernong.development.simplybrackets:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -5269,7 +5278,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing com.example.mgriffin.listviewex:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing com.vernong.development.simplybrackets:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -5327,7 +5336,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -5337,7 +5346,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:preserveIconSpacing
+          @attr name com.vernong.development.simplybrackets:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a NavigationView.
@@ -5349,13 +5358,13 @@ containing a value of this type.
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_elevation com.example.mgriffin.listviewex:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_headerLayout com.example.mgriffin.listviewex:headerLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemBackground com.example.mgriffin.listviewex:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemIconTint com.example.mgriffin.listviewex:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextAppearance com.example.mgriffin.listviewex:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextColor com.example.mgriffin.listviewex:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_menu com.example.mgriffin.listviewex:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation com.vernong.development.simplybrackets:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout com.vernong.development.simplybrackets:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground com.vernong.development.simplybrackets:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint com.vernong.development.simplybrackets:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance com.vernong.development.simplybrackets:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor com.vernong.development.simplybrackets:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu com.vernong.development.simplybrackets:menu}</code></td><td></td></tr>
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -5392,7 +5401,7 @@ containing a value of this type.
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -5404,31 +5413,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:elevation
+          @attr name com.vernong.development.simplybrackets:elevation
         */
         public static final int NavigationView_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:headerLayout
+          @attr name com.vernong.development.simplybrackets:headerLayout
         */
         public static final int NavigationView_headerLayout = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:itemBackground
+          @attr name com.vernong.development.simplybrackets:itemBackground
         */
         public static final int NavigationView_itemBackground = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -5439,21 +5448,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:itemIconTint
+          @attr name com.vernong.development.simplybrackets:itemIconTint
         */
         public static final int NavigationView_itemIconTint = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:itemTextAppearance
+          @attr name com.vernong.development.simplybrackets:itemTextAppearance
         */
         public static final int NavigationView_itemTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -5464,17 +5473,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:itemTextColor
+          @attr name com.vernong.development.simplybrackets:itemTextColor
         */
         public static final int NavigationView_itemTextColor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#menu}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:menu
+          @attr name com.vernong.development.simplybrackets:menu
         */
         public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a PopupWindow.
@@ -5484,7 +5493,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor com.example.mgriffin.listviewex:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor com.vernong.development.simplybrackets:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -5499,7 +5508,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -5509,7 +5518,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:overlapAnchor
+          @attr name com.vernong.development.simplybrackets:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -5518,7 +5527,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.example.mgriffin.listviewex:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.vernong.development.simplybrackets:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -5526,7 +5535,7 @@ containing a value of this type.
             0x7f010067
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -5536,7 +5545,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:state_above_anchor
+          @attr name com.vernong.development.simplybrackets:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecyclerView.
@@ -5546,10 +5555,10 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager com.example.mgriffin.listviewex:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout com.example.mgriffin.listviewex:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount com.example.mgriffin.listviewex:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd com.example.mgriffin.listviewex:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager com.vernong.development.simplybrackets:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout com.vernong.development.simplybrackets:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount com.vernong.development.simplybrackets:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd com.vernong.development.simplybrackets:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_orientation
            @see #RecyclerView_layoutManager
@@ -5568,7 +5577,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -5578,11 +5587,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:layoutManager
+          @attr name com.vernong.development.simplybrackets:layoutManager
         */
         public static final int RecyclerView_layoutManager = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -5592,11 +5601,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:reverseLayout
+          @attr name com.vernong.development.simplybrackets:reverseLayout
         */
         public static final int RecyclerView_reverseLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -5606,11 +5615,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:spanCount
+          @attr name com.vernong.development.simplybrackets:spanCount
         */
         public static final int RecyclerView_spanCount = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -5620,7 +5629,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:stackFromEnd
+          @attr name com.vernong.development.simplybrackets:stackFromEnd
         */
         public static final int RecyclerView_stackFromEnd = 4;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -5629,7 +5638,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.example.mgriffin.listviewex:insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.vernong.development.simplybrackets:insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -5637,7 +5646,7 @@ containing a value of this type.
             0x7f01006c
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -5645,7 +5654,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.mgriffin.listviewex:insetForeground
+          @attr name com.vernong.development.simplybrackets:insetForeground
         */
         public static final int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Params.
@@ -5654,7 +5663,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop com.example.mgriffin.listviewex:behavior_overlapTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Params_behavior_overlapTop com.vernong.development.simplybrackets:behavior_overlapTop}</code></td><td></td></tr>
            </table>
            @see #ScrollingViewBehavior_Params_behavior_overlapTop
          */
@@ -5662,7 +5671,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01006d
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Params} array.
 
 
@@ -5674,7 +5683,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:behavior_overlapTop
+          @attr name com.vernong.development.simplybrackets:behavior_overlapTop
         */
         public static final int ScrollingViewBehavior_Params_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -5687,19 +5696,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon com.example.mgriffin.listviewex:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon com.example.mgriffin.listviewex:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint com.example.mgriffin.listviewex:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon com.example.mgriffin.listviewex:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault com.example.mgriffin.listviewex:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout com.example.mgriffin.listviewex:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground com.example.mgriffin.listviewex:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint com.example.mgriffin.listviewex:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon com.example.mgriffin.listviewex:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon com.example.mgriffin.listviewex:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground com.example.mgriffin.listviewex:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout com.example.mgriffin.listviewex:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon com.example.mgriffin.listviewex:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon com.vernong.development.simplybrackets:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon com.vernong.development.simplybrackets:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint com.vernong.development.simplybrackets:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon com.vernong.development.simplybrackets:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.vernong.development.simplybrackets:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout com.vernong.development.simplybrackets:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground com.vernong.development.simplybrackets:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.vernong.development.simplybrackets:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon com.vernong.development.simplybrackets:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon com.vernong.development.simplybrackets:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground com.vernong.development.simplybrackets:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout com.vernong.development.simplybrackets:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon com.vernong.development.simplybrackets:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -5751,27 +5760,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:closeIcon
+          @attr name com.vernong.development.simplybrackets:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:commitIcon
+          @attr name com.vernong.development.simplybrackets:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5781,21 +5790,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:defaultQueryHint
+          @attr name com.vernong.development.simplybrackets:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:goIcon
+          @attr name com.vernong.development.simplybrackets:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5805,31 +5814,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:iconifiedByDefault
+          @attr name com.vernong.development.simplybrackets:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#layout}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:layout
+          @attr name com.vernong.development.simplybrackets:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:queryBackground
+          @attr name com.vernong.development.simplybrackets:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -5839,57 +5848,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:queryHint
+          @attr name com.vernong.development.simplybrackets:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:searchHintIcon
+          @attr name com.vernong.development.simplybrackets:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:searchIcon
+          @attr name com.vernong.development.simplybrackets:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:submitBackground
+          @attr name com.vernong.development.simplybrackets:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:suggestionRowLayout
+          @attr name com.vernong.development.simplybrackets:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:voiceIcon
+          @attr name com.vernong.development.simplybrackets:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a SnackbarLayout.
@@ -5899,8 +5908,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_elevation com.example.mgriffin.listviewex:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.example.mgriffin.listviewex:maxActionInlineWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation com.vernong.development.simplybrackets:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.vernong.development.simplybrackets:maxActionInlineWidth}</code></td><td></td></tr>
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -5916,7 +5925,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -5928,11 +5937,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:elevation
+          @attr name com.vernong.development.simplybrackets:elevation
         */
         public static final int SnackbarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -5944,7 +5953,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:maxActionInlineWidth
+          @attr name com.vernong.development.simplybrackets:maxActionInlineWidth
         */
         public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
@@ -5956,7 +5965,7 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme com.example.mgriffin.listviewex:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme com.vernong.development.simplybrackets:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_popupBackground
@@ -5985,13 +5994,13 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:popupTheme
+          @attr name com.vernong.development.simplybrackets:popupTheme
         */
         public static final int Spinner_popupTheme = 3;
         /** Attributes that can be used with a SwitchCompat.
@@ -6003,13 +6012,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText com.example.mgriffin.listviewex:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack com.example.mgriffin.listviewex:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.example.mgriffin.listviewex:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding com.example.mgriffin.listviewex:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.example.mgriffin.listviewex:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.example.mgriffin.listviewex:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track com.example.mgriffin.listviewex:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText com.vernong.development.simplybrackets:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack com.vernong.development.simplybrackets:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.vernong.development.simplybrackets:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding com.vernong.development.simplybrackets:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.vernong.development.simplybrackets:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.vernong.development.simplybrackets:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track com.vernong.development.simplybrackets:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -6046,7 +6055,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#showText}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6056,11 +6065,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:showText
+          @attr name com.vernong.development.simplybrackets:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6070,11 +6079,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:splitTrack
+          @attr name com.vernong.development.simplybrackets:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6086,11 +6095,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:switchMinWidth
+          @attr name com.vernong.development.simplybrackets:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6102,21 +6111,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:switchPadding
+          @attr name com.vernong.development.simplybrackets:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:switchTextAppearance
+          @attr name com.vernong.development.simplybrackets:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -6128,17 +6137,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:thumbTextPadding
+          @attr name com.vernong.development.simplybrackets:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#track}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:track
+          @attr name com.vernong.development.simplybrackets:track
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a TabLayout.
@@ -6147,22 +6156,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TabLayout_tabBackground com.example.mgriffin.listviewex:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabContentStart com.example.mgriffin.listviewex:tabContentStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabGravity com.example.mgriffin.listviewex:tabGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorColor com.example.mgriffin.listviewex:tabIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.example.mgriffin.listviewex:tabIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMaxWidth com.example.mgriffin.listviewex:tabMaxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMinWidth com.example.mgriffin.listviewex:tabMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMode com.example.mgriffin.listviewex:tabMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPadding com.example.mgriffin.listviewex:tabPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingBottom com.example.mgriffin.listviewex:tabPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingEnd com.example.mgriffin.listviewex:tabPaddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingStart com.example.mgriffin.listviewex:tabPaddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingTop com.example.mgriffin.listviewex:tabPaddingTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.example.mgriffin.listviewex:tabSelectedTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextAppearance com.example.mgriffin.listviewex:tabTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextColor com.example.mgriffin.listviewex:tabTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground com.vernong.development.simplybrackets:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart com.vernong.development.simplybrackets:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity com.vernong.development.simplybrackets:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor com.vernong.development.simplybrackets:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.vernong.development.simplybrackets:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth com.vernong.development.simplybrackets:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth com.vernong.development.simplybrackets:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode com.vernong.development.simplybrackets:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding com.vernong.development.simplybrackets:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom com.vernong.development.simplybrackets:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd com.vernong.development.simplybrackets:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart com.vernong.development.simplybrackets:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop com.vernong.development.simplybrackets:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.vernong.development.simplybrackets:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance com.vernong.development.simplybrackets:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor com.vernong.development.simplybrackets:tabTextColor}</code></td><td></td></tr>
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -6188,17 +6197,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01008f, 0x7f010090, 0x7f010091, 0x7f010092
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:tabBackground
+          @attr name com.vernong.development.simplybrackets:tabBackground
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6210,11 +6219,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:tabContentStart
+          @attr name com.vernong.development.simplybrackets:tabContentStart
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6227,11 +6236,11 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:tabGravity
+          @attr name com.vernong.development.simplybrackets:tabGravity
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6242,11 +6251,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:tabIndicatorColor
+          @attr name com.vernong.development.simplybrackets:tabIndicatorColor
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6258,11 +6267,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:tabIndicatorHeight
+          @attr name com.vernong.development.simplybrackets:tabIndicatorHeight
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6274,11 +6283,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:tabMaxWidth
+          @attr name com.vernong.development.simplybrackets:tabMaxWidth
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6290,11 +6299,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:tabMinWidth
+          @attr name com.vernong.development.simplybrackets:tabMinWidth
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6307,11 +6316,11 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:tabMode
+          @attr name com.vernong.development.simplybrackets:tabMode
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6323,11 +6332,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:tabPadding
+          @attr name com.vernong.development.simplybrackets:tabPadding
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6339,11 +6348,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:tabPaddingBottom
+          @attr name com.vernong.development.simplybrackets:tabPaddingBottom
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6355,11 +6364,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:tabPaddingEnd
+          @attr name com.vernong.development.simplybrackets:tabPaddingEnd
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6371,11 +6380,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:tabPaddingStart
+          @attr name com.vernong.development.simplybrackets:tabPaddingStart
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6387,11 +6396,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:tabPaddingTop
+          @attr name com.vernong.development.simplybrackets:tabPaddingTop
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6402,21 +6411,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:tabSelectedTextColor
+          @attr name com.vernong.development.simplybrackets:tabSelectedTextColor
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:tabTextAppearance
+          @attr name com.vernong.development.simplybrackets:tabTextAppearance
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -6427,7 +6436,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:tabTextColor
+          @attr name com.vernong.development.simplybrackets:tabTextColor
         */
         public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -6444,7 +6453,7 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps com.example.mgriffin.listviewex:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps com.vernong.development.simplybrackets:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_shadowColor
            @see #TextAppearance_android_shadowDx
@@ -6510,14 +6519,14 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.example.mgriffin.listviewex:textAllCaps
+          @attr name com.vernong.development.simplybrackets:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 8;
         /** Attributes that can be used with a TextInputLayout.
@@ -6528,14 +6537,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterEnabled com.example.mgriffin.listviewex:counterEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterMaxLength com.example.mgriffin.listviewex:counterMaxLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.example.mgriffin.listviewex:counterOverflowTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.example.mgriffin.listviewex:counterTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorEnabled com.example.mgriffin.listviewex:errorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.example.mgriffin.listviewex:errorTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.example.mgriffin.listviewex:hintAnimationEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.example.mgriffin.listviewex:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled com.vernong.development.simplybrackets:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength com.vernong.development.simplybrackets:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.vernong.development.simplybrackets:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.vernong.development.simplybrackets:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled com.vernong.development.simplybrackets:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.vernong.development.simplybrackets:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.vernong.development.simplybrackets:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.vernong.development.simplybrackets:hintTextAppearance}</code></td><td></td></tr>
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -6566,7 +6575,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6576,11 +6585,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:counterEnabled
+          @attr name com.vernong.development.simplybrackets:counterEnabled
         */
         public static final int TextInputLayout_counterEnabled = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6590,31 +6599,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:counterMaxLength
+          @attr name com.vernong.development.simplybrackets:counterMaxLength
         */
         public static final int TextInputLayout_counterMaxLength = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:counterOverflowTextAppearance
+          @attr name com.vernong.development.simplybrackets:counterOverflowTextAppearance
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:counterTextAppearance
+          @attr name com.vernong.development.simplybrackets:counterTextAppearance
         */
         public static final int TextInputLayout_counterTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6624,21 +6633,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:errorEnabled
+          @attr name com.vernong.development.simplybrackets:errorEnabled
         */
         public static final int TextInputLayout_errorEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:errorTextAppearance
+          @attr name com.vernong.development.simplybrackets:errorTextAppearance
         */
         public static final int TextInputLayout_errorTextAppearance = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -6648,17 +6657,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:hintAnimationEnabled
+          @attr name com.vernong.development.simplybrackets:hintAnimationEnabled
         */
         public static final int TextInputLayout_hintAnimationEnabled = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:hintTextAppearance
+          @attr name com.vernong.development.simplybrackets:hintTextAppearance
         */
         public static final int TextInputLayout_hintTextAppearance = 2;
         /** Attributes that can be used with a Theme.
@@ -6667,116 +6676,116 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionBarDivider com.example.mgriffin.listviewex:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarItemBackground com.example.mgriffin.listviewex:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarPopupTheme com.example.mgriffin.listviewex:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSize com.example.mgriffin.listviewex:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSplitStyle com.example.mgriffin.listviewex:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarStyle com.example.mgriffin.listviewex:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.example.mgriffin.listviewex:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabStyle com.example.mgriffin.listviewex:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.example.mgriffin.listviewex:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTheme com.example.mgriffin.listviewex:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.example.mgriffin.listviewex:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionButtonStyle com.example.mgriffin.listviewex:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle com.example.mgriffin.listviewex:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.example.mgriffin.listviewex:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextColor com.example.mgriffin.listviewex:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeBackground com.example.mgriffin.listviewex:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.example.mgriffin.listviewex:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.example.mgriffin.listviewex:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.example.mgriffin.listviewex:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCutDrawable com.example.mgriffin.listviewex:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeFindDrawable com.example.mgriffin.listviewex:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePasteDrawable com.example.mgriffin.listviewex:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.example.mgriffin.listviewex:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.example.mgriffin.listviewex:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeShareDrawable com.example.mgriffin.listviewex:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSplitBackground com.example.mgriffin.listviewex:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeStyle com.example.mgriffin.listviewex:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.example.mgriffin.listviewex:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.example.mgriffin.listviewex:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.example.mgriffin.listviewex:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_activityChooserViewStyle com.example.mgriffin.listviewex:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogButtonGroupStyle com.example.mgriffin.listviewex:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogCenterButtons com.example.mgriffin.listviewex:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogStyle com.example.mgriffin.listviewex:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_alertDialogTheme com.example.mgriffin.listviewex:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarDivider com.vernong.development.simplybrackets:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground com.vernong.development.simplybrackets:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme com.vernong.development.simplybrackets:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSize com.vernong.development.simplybrackets:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSplitStyle com.vernong.development.simplybrackets:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle com.vernong.development.simplybrackets:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.vernong.development.simplybrackets:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle com.vernong.development.simplybrackets:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.vernong.development.simplybrackets:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme com.vernong.development.simplybrackets:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.vernong.development.simplybrackets:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionButtonStyle com.vernong.development.simplybrackets:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle com.vernong.development.simplybrackets:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.vernong.development.simplybrackets:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor com.vernong.development.simplybrackets:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground com.vernong.development.simplybrackets:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.vernong.development.simplybrackets:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.vernong.development.simplybrackets:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.vernong.development.simplybrackets:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable com.vernong.development.simplybrackets:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable com.vernong.development.simplybrackets:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable com.vernong.development.simplybrackets:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.vernong.development.simplybrackets:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.vernong.development.simplybrackets:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable com.vernong.development.simplybrackets:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground com.vernong.development.simplybrackets:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeStyle com.vernong.development.simplybrackets:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.vernong.development.simplybrackets:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.vernong.development.simplybrackets:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.vernong.development.simplybrackets:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle com.vernong.development.simplybrackets:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogButtonGroupStyle com.vernong.development.simplybrackets:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogCenterButtons com.vernong.development.simplybrackets:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogStyle com.vernong.development.simplybrackets:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_alertDialogTheme com.vernong.development.simplybrackets:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_autoCompleteTextViewStyle com.example.mgriffin.listviewex:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_borderlessButtonStyle com.example.mgriffin.listviewex:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.example.mgriffin.listviewex:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarNegativeButtonStyle com.example.mgriffin.listviewex:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarNeutralButtonStyle com.example.mgriffin.listviewex:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarPositiveButtonStyle com.example.mgriffin.listviewex:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarStyle com.example.mgriffin.listviewex:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonStyle com.example.mgriffin.listviewex:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonStyleSmall com.example.mgriffin.listviewex:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_checkboxStyle com.example.mgriffin.listviewex:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_checkedTextViewStyle com.example.mgriffin.listviewex:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorAccent com.example.mgriffin.listviewex:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorButtonNormal com.example.mgriffin.listviewex:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlActivated com.example.mgriffin.listviewex:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlHighlight com.example.mgriffin.listviewex:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlNormal com.example.mgriffin.listviewex:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimary com.example.mgriffin.listviewex:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimaryDark com.example.mgriffin.listviewex:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.example.mgriffin.listviewex:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_controlBackground com.example.mgriffin.listviewex:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dialogPreferredPadding com.example.mgriffin.listviewex:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dialogTheme com.example.mgriffin.listviewex:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerHorizontal com.example.mgriffin.listviewex:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerVertical com.example.mgriffin.listviewex:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropDownListViewStyle com.example.mgriffin.listviewex:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.example.mgriffin.listviewex:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextBackground com.example.mgriffin.listviewex:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextColor com.example.mgriffin.listviewex:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextStyle com.example.mgriffin.listviewex:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_homeAsUpIndicator com.example.mgriffin.listviewex:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_imageButtonStyle com.example.mgriffin.listviewex:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.example.mgriffin.listviewex:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listDividerAlertDialog com.example.mgriffin.listviewex:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPopupWindowStyle com.example.mgriffin.listviewex:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeight com.example.mgriffin.listviewex:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.example.mgriffin.listviewex:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.example.mgriffin.listviewex:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.example.mgriffin.listviewex:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.example.mgriffin.listviewex:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelBackground com.example.mgriffin.listviewex:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme com.example.mgriffin.listviewex:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth com.example.mgriffin.listviewex:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle com.example.mgriffin.listviewex:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupWindowStyle com.example.mgriffin.listviewex:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_radioButtonStyle com.example.mgriffin.listviewex:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_ratingBarStyle com.example.mgriffin.listviewex:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_searchViewStyle com.example.mgriffin.listviewex:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_seekBarStyle com.example.mgriffin.listviewex:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackground com.example.mgriffin.listviewex:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.example.mgriffin.listviewex:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.example.mgriffin.listviewex:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerStyle com.example.mgriffin.listviewex:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_switchStyle com.example.mgriffin.listviewex:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.example.mgriffin.listviewex:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItem com.example.mgriffin.listviewex:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.example.mgriffin.listviewex:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.example.mgriffin.listviewex:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.example.mgriffin.listviewex:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.example.mgriffin.listviewex:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorAlertDialogListItem com.example.mgriffin.listviewex:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorSearchUrl com.example.mgriffin.listviewex:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.example.mgriffin.listviewex:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarStyle com.example.mgriffin.listviewex:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBar com.example.mgriffin.listviewex:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBarOverlay com.example.mgriffin.listviewex:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionModeOverlay com.example.mgriffin.listviewex:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.example.mgriffin.listviewex:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.example.mgriffin.listviewex:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.example.mgriffin.listviewex:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.example.mgriffin.listviewex:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowMinWidthMajor com.example.mgriffin.listviewex:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowMinWidthMinor com.example.mgriffin.listviewex:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowNoTitle com.example.mgriffin.listviewex:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_autoCompleteTextViewStyle com.vernong.development.simplybrackets:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_borderlessButtonStyle com.vernong.development.simplybrackets:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.vernong.development.simplybrackets:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNegativeButtonStyle com.vernong.development.simplybrackets:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarNeutralButtonStyle com.vernong.development.simplybrackets:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarPositiveButtonStyle com.vernong.development.simplybrackets:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarStyle com.vernong.development.simplybrackets:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonStyle com.vernong.development.simplybrackets:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonStyleSmall com.vernong.development.simplybrackets:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_checkboxStyle com.vernong.development.simplybrackets:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_checkedTextViewStyle com.vernong.development.simplybrackets:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorAccent com.vernong.development.simplybrackets:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal com.vernong.development.simplybrackets:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated com.vernong.development.simplybrackets:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight com.vernong.development.simplybrackets:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal com.vernong.development.simplybrackets:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary com.vernong.development.simplybrackets:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark com.vernong.development.simplybrackets:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.vernong.development.simplybrackets:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_controlBackground com.vernong.development.simplybrackets:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dialogPreferredPadding com.vernong.development.simplybrackets:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dialogTheme com.vernong.development.simplybrackets:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal com.vernong.development.simplybrackets:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical com.vernong.development.simplybrackets:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle com.vernong.development.simplybrackets:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.vernong.development.simplybrackets:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground com.vernong.development.simplybrackets:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextColor com.vernong.development.simplybrackets:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextStyle com.vernong.development.simplybrackets:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator com.vernong.development.simplybrackets:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_imageButtonStyle com.vernong.development.simplybrackets:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.vernong.development.simplybrackets:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listDividerAlertDialog com.vernong.development.simplybrackets:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPopupWindowStyle com.vernong.development.simplybrackets:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight com.vernong.development.simplybrackets:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.vernong.development.simplybrackets:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.vernong.development.simplybrackets:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.vernong.development.simplybrackets:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.vernong.development.simplybrackets:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelBackground com.vernong.development.simplybrackets:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme com.vernong.development.simplybrackets:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth com.vernong.development.simplybrackets:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle com.vernong.development.simplybrackets:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle com.vernong.development.simplybrackets:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_radioButtonStyle com.vernong.development.simplybrackets:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_ratingBarStyle com.vernong.development.simplybrackets:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle com.vernong.development.simplybrackets:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_seekBarStyle com.vernong.development.simplybrackets:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground com.vernong.development.simplybrackets:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.vernong.development.simplybrackets:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.vernong.development.simplybrackets:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle com.vernong.development.simplybrackets:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_switchStyle com.vernong.development.simplybrackets:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.vernong.development.simplybrackets:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem com.vernong.development.simplybrackets:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.vernong.development.simplybrackets:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.vernong.development.simplybrackets:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.vernong.development.simplybrackets:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.vernong.development.simplybrackets:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorAlertDialogListItem com.vernong.development.simplybrackets:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl com.vernong.development.simplybrackets:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.vernong.development.simplybrackets:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle com.vernong.development.simplybrackets:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar com.vernong.development.simplybrackets:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBarOverlay com.vernong.development.simplybrackets:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionModeOverlay com.vernong.development.simplybrackets:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.vernong.development.simplybrackets:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.vernong.development.simplybrackets:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.vernong.development.simplybrackets:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.vernong.development.simplybrackets:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMajor com.vernong.development.simplybrackets:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowMinWidthMinor com.vernong.development.simplybrackets:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowNoTitle com.vernong.development.simplybrackets:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #Theme_actionBarDivider
            @see #Theme_actionBarItemBackground
@@ -6920,37 +6929,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010105, 0x7f010106
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionBarDivider
+          @attr name com.vernong.development.simplybrackets:actionBarDivider
         */
         public static final int Theme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionBarItemBackground
+          @attr name com.vernong.development.simplybrackets:actionBarItemBackground
         */
         public static final int Theme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionBarPopupTheme
+          @attr name com.vernong.development.simplybrackets:actionBarPopupTheme
         */
         public static final int Theme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionBarSize}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -6970,111 +6979,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:actionBarSize
+          @attr name com.vernong.development.simplybrackets:actionBarSize
         */
         public static final int Theme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionBarSplitStyle
+          @attr name com.vernong.development.simplybrackets:actionBarSplitStyle
         */
         public static final int Theme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionBarStyle
+          @attr name com.vernong.development.simplybrackets:actionBarStyle
         */
         public static final int Theme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionBarTabBarStyle
+          @attr name com.vernong.development.simplybrackets:actionBarTabBarStyle
         */
         public static final int Theme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionBarTabStyle
+          @attr name com.vernong.development.simplybrackets:actionBarTabStyle
         */
         public static final int Theme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionBarTabTextStyle
+          @attr name com.vernong.development.simplybrackets:actionBarTabTextStyle
         */
         public static final int Theme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionBarTheme
+          @attr name com.vernong.development.simplybrackets:actionBarTheme
         */
         public static final int Theme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionBarWidgetTheme
+          @attr name com.vernong.development.simplybrackets:actionBarWidgetTheme
         */
         public static final int Theme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionButtonStyle
+          @attr name com.vernong.development.simplybrackets:actionButtonStyle
         */
         public static final int Theme_actionButtonStyle = 49;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionDropDownStyle
+          @attr name com.vernong.development.simplybrackets:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionMenuTextAppearance
+          @attr name com.vernong.development.simplybrackets:actionMenuTextAppearance
         */
         public static final int Theme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7082,181 +7091,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionMenuTextColor
+          @attr name com.vernong.development.simplybrackets:actionMenuTextColor
         */
         public static final int Theme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionModeBackground
+          @attr name com.vernong.development.simplybrackets:actionModeBackground
         */
         public static final int Theme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionModeCloseButtonStyle
+          @attr name com.vernong.development.simplybrackets:actionModeCloseButtonStyle
         */
         public static final int Theme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionModeCloseDrawable
+          @attr name com.vernong.development.simplybrackets:actionModeCloseDrawable
         */
         public static final int Theme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionModeCopyDrawable
+          @attr name com.vernong.development.simplybrackets:actionModeCopyDrawable
         */
         public static final int Theme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionModeCutDrawable
+          @attr name com.vernong.development.simplybrackets:actionModeCutDrawable
         */
         public static final int Theme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionModeFindDrawable
+          @attr name com.vernong.development.simplybrackets:actionModeFindDrawable
         */
         public static final int Theme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionModePasteDrawable
+          @attr name com.vernong.development.simplybrackets:actionModePasteDrawable
         */
         public static final int Theme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionModePopupWindowStyle
+          @attr name com.vernong.development.simplybrackets:actionModePopupWindowStyle
         */
         public static final int Theme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionModeSelectAllDrawable
+          @attr name com.vernong.development.simplybrackets:actionModeSelectAllDrawable
         */
         public static final int Theme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionModeShareDrawable
+          @attr name com.vernong.development.simplybrackets:actionModeShareDrawable
         */
         public static final int Theme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionModeSplitBackground
+          @attr name com.vernong.development.simplybrackets:actionModeSplitBackground
         */
         public static final int Theme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionModeStyle
+          @attr name com.vernong.development.simplybrackets:actionModeStyle
         */
         public static final int Theme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionModeWebSearchDrawable
+          @attr name com.vernong.development.simplybrackets:actionModeWebSearchDrawable
         */
         public static final int Theme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionOverflowButtonStyle
+          @attr name com.vernong.development.simplybrackets:actionOverflowButtonStyle
         */
         public static final int Theme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:actionOverflowMenuStyle
+          @attr name com.vernong.development.simplybrackets:actionOverflowMenuStyle
         */
         public static final int Theme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:activityChooserViewStyle
+          @attr name com.vernong.development.simplybrackets:activityChooserViewStyle
         */
         public static final int Theme_activityChooserViewStyle = 57;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:alertDialogButtonGroupStyle
+          @attr name com.vernong.development.simplybrackets:alertDialogButtonGroupStyle
         */
         public static final int Theme_alertDialogButtonGroupStyle = 92;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7266,27 +7275,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:alertDialogCenterButtons
+          @attr name com.vernong.development.simplybrackets:alertDialogCenterButtons
         */
         public static final int Theme_alertDialogCenterButtons = 93;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:alertDialogStyle
+          @attr name com.vernong.development.simplybrackets:alertDialogStyle
         */
         public static final int Theme_alertDialogStyle = 91;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:alertDialogTheme
+          @attr name com.vernong.development.simplybrackets:alertDialogTheme
         */
         public static final int Theme_alertDialogTheme = 94;
         /**
@@ -7302,117 +7311,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:autoCompleteTextViewStyle
+          @attr name com.vernong.development.simplybrackets:autoCompleteTextViewStyle
         */
         public static final int Theme_autoCompleteTextViewStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:borderlessButtonStyle
+          @attr name com.vernong.development.simplybrackets:borderlessButtonStyle
         */
         public static final int Theme_borderlessButtonStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:buttonBarButtonStyle
+          @attr name com.vernong.development.simplybrackets:buttonBarButtonStyle
         */
         public static final int Theme_buttonBarButtonStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:buttonBarNegativeButtonStyle
+          @attr name com.vernong.development.simplybrackets:buttonBarNegativeButtonStyle
         */
         public static final int Theme_buttonBarNegativeButtonStyle = 97;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:buttonBarNeutralButtonStyle
+          @attr name com.vernong.development.simplybrackets:buttonBarNeutralButtonStyle
         */
         public static final int Theme_buttonBarNeutralButtonStyle = 98;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:buttonBarPositiveButtonStyle
+          @attr name com.vernong.development.simplybrackets:buttonBarPositiveButtonStyle
         */
         public static final int Theme_buttonBarPositiveButtonStyle = 96;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:buttonBarStyle
+          @attr name com.vernong.development.simplybrackets:buttonBarStyle
         */
         public static final int Theme_buttonBarStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#buttonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:buttonStyle
+          @attr name com.vernong.development.simplybrackets:buttonStyle
         */
         public static final int Theme_buttonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:buttonStyleSmall
+          @attr name com.vernong.development.simplybrackets:buttonStyleSmall
         */
         public static final int Theme_buttonStyleSmall = 101;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:checkboxStyle
+          @attr name com.vernong.development.simplybrackets:checkboxStyle
         */
         public static final int Theme_checkboxStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:checkedTextViewStyle
+          @attr name com.vernong.development.simplybrackets:checkedTextViewStyle
         */
         public static final int Theme_checkedTextViewStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#colorAccent}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7423,11 +7432,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:colorAccent
+          @attr name com.vernong.development.simplybrackets:colorAccent
         */
         public static final int Theme_colorAccent = 84;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7438,11 +7447,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:colorButtonNormal
+          @attr name com.vernong.development.simplybrackets:colorButtonNormal
         */
         public static final int Theme_colorButtonNormal = 88;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7453,11 +7462,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:colorControlActivated
+          @attr name com.vernong.development.simplybrackets:colorControlActivated
         */
         public static final int Theme_colorControlActivated = 86;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7468,11 +7477,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:colorControlHighlight
+          @attr name com.vernong.development.simplybrackets:colorControlHighlight
         */
         public static final int Theme_colorControlHighlight = 87;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7483,11 +7492,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:colorControlNormal
+          @attr name com.vernong.development.simplybrackets:colorControlNormal
         */
         public static final int Theme_colorControlNormal = 85;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#colorPrimary}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7498,11 +7507,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:colorPrimary
+          @attr name com.vernong.development.simplybrackets:colorPrimary
         */
         public static final int Theme_colorPrimary = 82;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7513,11 +7522,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:colorPrimaryDark
+          @attr name com.vernong.development.simplybrackets:colorPrimaryDark
         */
         public static final int Theme_colorPrimaryDark = 83;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7528,21 +7537,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:colorSwitchThumbNormal
+          @attr name com.vernong.development.simplybrackets:colorSwitchThumbNormal
         */
         public static final int Theme_colorSwitchThumbNormal = 89;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#controlBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:controlBackground
+          @attr name com.vernong.development.simplybrackets:controlBackground
         */
         public static final int Theme_controlBackground = 90;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7554,51 +7563,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:dialogPreferredPadding
+          @attr name com.vernong.development.simplybrackets:dialogPreferredPadding
         */
         public static final int Theme_dialogPreferredPadding = 43;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#dialogTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:dialogTheme
+          @attr name com.vernong.development.simplybrackets:dialogTheme
         */
         public static final int Theme_dialogTheme = 42;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:dividerHorizontal
+          @attr name com.vernong.development.simplybrackets:dividerHorizontal
         */
         public static final int Theme_dividerHorizontal = 56;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#dividerVertical}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:dividerVertical
+          @attr name com.vernong.development.simplybrackets:dividerVertical
         */
         public static final int Theme_dividerVertical = 55;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:dropDownListViewStyle
+          @attr name com.vernong.development.simplybrackets:dropDownListViewStyle
         */
         public static final int Theme_dropDownListViewStyle = 74;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7610,21 +7619,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:dropdownListPreferredItemHeight
+          @attr name com.vernong.development.simplybrackets:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 46;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#editTextBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:editTextBackground
+          @attr name com.vernong.development.simplybrackets:editTextBackground
         */
         public static final int Theme_editTextBackground = 63;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#editTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7632,71 +7641,71 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.mgriffin.listviewex:editTextColor
+          @attr name com.vernong.development.simplybrackets:editTextColor
         */
         public static final int Theme_editTextColor = 62;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#editTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:editTextStyle
+          @attr name com.vernong.development.simplybrackets:editTextStyle
         */
         public static final int Theme_editTextStyle = 104;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:homeAsUpIndicator
+          @attr name com.vernong.development.simplybrackets:homeAsUpIndicator
         */
         public static final int Theme_homeAsUpIndicator = 48;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:imageButtonStyle
+          @attr name com.vernong.development.simplybrackets:imageButtonStyle
         */
         public static final int Theme_imageButtonStyle = 64;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:listChoiceBackgroundIndicator
+          @attr name com.vernong.development.simplybrackets:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 81;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:listDividerAlertDialog
+          @attr name com.vernong.development.simplybrackets:listDividerAlertDialog
         */
         public static final int Theme_listDividerAlertDialog = 44;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:listPopupWindowStyle
+          @attr name com.vernong.development.simplybrackets:listPopupWindowStyle
         */
         public static final int Theme_listPopupWindowStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7708,11 +7717,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:listPreferredItemHeight
+          @attr name com.vernong.development.simplybrackets:listPreferredItemHeight
         */
         public static final int Theme_listPreferredItemHeight = 69;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7724,11 +7733,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:listPreferredItemHeightLarge
+          @attr name com.vernong.development.simplybrackets:listPreferredItemHeightLarge
         */
         public static final int Theme_listPreferredItemHeightLarge = 71;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7740,11 +7749,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:listPreferredItemHeightSmall
+          @attr name com.vernong.development.simplybrackets:listPreferredItemHeightSmall
         */
         public static final int Theme_listPreferredItemHeightSmall = 70;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7756,11 +7765,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:listPreferredItemPaddingLeft
+          @attr name com.vernong.development.simplybrackets:listPreferredItemPaddingLeft
         */
         public static final int Theme_listPreferredItemPaddingLeft = 72;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7772,31 +7781,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:listPreferredItemPaddingRight
+          @attr name com.vernong.development.simplybrackets:listPreferredItemPaddingRight
         */
         public static final int Theme_listPreferredItemPaddingRight = 73;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#panelBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:panelBackground
+          @attr name com.vernong.development.simplybrackets:panelBackground
         */
         public static final int Theme_panelBackground = 78;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:panelMenuListTheme
+          @attr name com.vernong.development.simplybrackets:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 80;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7808,181 +7817,181 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:panelMenuListWidth
+          @attr name com.vernong.development.simplybrackets:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 79;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:popupMenuStyle
+          @attr name com.vernong.development.simplybrackets:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:popupWindowStyle
+          @attr name com.vernong.development.simplybrackets:popupWindowStyle
         */
         public static final int Theme_popupWindowStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:radioButtonStyle
+          @attr name com.vernong.development.simplybrackets:radioButtonStyle
         */
         public static final int Theme_radioButtonStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:ratingBarStyle
+          @attr name com.vernong.development.simplybrackets:ratingBarStyle
         */
         public static final int Theme_ratingBarStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:searchViewStyle
+          @attr name com.vernong.development.simplybrackets:searchViewStyle
         */
         public static final int Theme_searchViewStyle = 68;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:seekBarStyle
+          @attr name com.vernong.development.simplybrackets:seekBarStyle
         */
         public static final int Theme_seekBarStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:selectableItemBackground
+          @attr name com.vernong.development.simplybrackets:selectableItemBackground
         */
         public static final int Theme_selectableItemBackground = 52;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:selectableItemBackgroundBorderless
+          @attr name com.vernong.development.simplybrackets:selectableItemBackgroundBorderless
         */
         public static final int Theme_selectableItemBackgroundBorderless = 53;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:spinnerDropDownItemStyle
+          @attr name com.vernong.development.simplybrackets:spinnerDropDownItemStyle
         */
         public static final int Theme_spinnerDropDownItemStyle = 47;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:spinnerStyle
+          @attr name com.vernong.development.simplybrackets:spinnerStyle
         */
         public static final int Theme_spinnerStyle = 108;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#switchStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:switchStyle
+          @attr name com.vernong.development.simplybrackets:switchStyle
         */
         public static final int Theme_switchStyle = 109;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:textAppearanceLargePopupMenu
+          @attr name com.vernong.development.simplybrackets:textAppearanceLargePopupMenu
         */
         public static final int Theme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:textAppearanceListItem
+          @attr name com.vernong.development.simplybrackets:textAppearanceListItem
         */
         public static final int Theme_textAppearanceListItem = 76;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:textAppearanceListItemSmall
+          @attr name com.vernong.development.simplybrackets:textAppearanceListItemSmall
         */
         public static final int Theme_textAppearanceListItemSmall = 77;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:textAppearanceSearchResultSubtitle
+          @attr name com.vernong.development.simplybrackets:textAppearanceSearchResultSubtitle
         */
         public static final int Theme_textAppearanceSearchResultSubtitle = 66;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:textAppearanceSearchResultTitle
+          @attr name com.vernong.development.simplybrackets:textAppearanceSearchResultTitle
         */
         public static final int Theme_textAppearanceSearchResultTitle = 65;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:textAppearanceSmallPopupMenu
+          @attr name com.vernong.development.simplybrackets:textAppearanceSmallPopupMenu
         */
         public static final int Theme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -7990,11 +7999,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.mgriffin.listviewex:textColorAlertDialogListItem
+          @attr name com.vernong.development.simplybrackets:textColorAlertDialogListItem
         */
         public static final int Theme_textColorAlertDialogListItem = 95;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8002,31 +8011,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.example.mgriffin.listviewex:textColorSearchUrl
+          @attr name com.vernong.development.simplybrackets:textColorSearchUrl
         */
         public static final int Theme_textColorSearchUrl = 67;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:toolbarNavigationButtonStyle
+          @attr name com.vernong.development.simplybrackets:toolbarNavigationButtonStyle
         */
         public static final int Theme_toolbarNavigationButtonStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:toolbarStyle
+          @attr name com.vernong.development.simplybrackets:toolbarStyle
         */
         public static final int Theme_toolbarStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#windowActionBar}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8036,11 +8045,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:windowActionBar
+          @attr name com.vernong.development.simplybrackets:windowActionBar
         */
         public static final int Theme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8050,11 +8059,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:windowActionBarOverlay
+          @attr name com.vernong.development.simplybrackets:windowActionBarOverlay
         */
         public static final int Theme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8064,11 +8073,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:windowActionModeOverlay
+          @attr name com.vernong.development.simplybrackets:windowActionModeOverlay
         */
         public static final int Theme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8083,11 +8092,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:windowFixedHeightMajor
+          @attr name com.vernong.development.simplybrackets:windowFixedHeightMajor
         */
         public static final int Theme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8102,11 +8111,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:windowFixedHeightMinor
+          @attr name com.vernong.development.simplybrackets:windowFixedHeightMinor
         */
         public static final int Theme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8121,11 +8130,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:windowFixedWidthMajor
+          @attr name com.vernong.development.simplybrackets:windowFixedWidthMajor
         */
         public static final int Theme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8140,11 +8149,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:windowFixedWidthMinor
+          @attr name com.vernong.development.simplybrackets:windowFixedWidthMinor
         */
         public static final int Theme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8159,11 +8168,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:windowMinWidthMajor
+          @attr name com.vernong.development.simplybrackets:windowMinWidthMajor
         */
         public static final int Theme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8178,11 +8187,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:windowMinWidthMinor
+          @attr name com.vernong.development.simplybrackets:windowMinWidthMinor
         */
         public static final int Theme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -8192,7 +8201,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:windowNoTitle
+          @attr name com.vernong.development.simplybrackets:windowNoTitle
         */
         public static final int Theme_windowNoTitle = 3;
         /** Attributes that can be used with a Toolbar.
@@ -8203,29 +8212,29 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription com.example.mgriffin.listviewex:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon com.example.mgriffin.listviewex:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd com.example.mgriffin.listviewex:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft com.example.mgriffin.listviewex:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight com.example.mgriffin.listviewex:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart com.example.mgriffin.listviewex:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo com.example.mgriffin.listviewex:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription com.example.mgriffin.listviewex:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight com.example.mgriffin.listviewex:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription com.example.mgriffin.listviewex:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon com.example.mgriffin.listviewex:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme com.example.mgriffin.listviewex:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle com.example.mgriffin.listviewex:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.example.mgriffin.listviewex:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor com.example.mgriffin.listviewex:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title com.example.mgriffin.listviewex:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom com.example.mgriffin.listviewex:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd com.example.mgriffin.listviewex:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart com.example.mgriffin.listviewex:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop com.example.mgriffin.listviewex:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins com.example.mgriffin.listviewex:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance com.example.mgriffin.listviewex:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor com.example.mgriffin.listviewex:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription com.vernong.development.simplybrackets:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon com.vernong.development.simplybrackets:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd com.vernong.development.simplybrackets:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft com.vernong.development.simplybrackets:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight com.vernong.development.simplybrackets:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart com.vernong.development.simplybrackets:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo com.vernong.development.simplybrackets:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription com.vernong.development.simplybrackets:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight com.vernong.development.simplybrackets:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription com.vernong.development.simplybrackets:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon com.vernong.development.simplybrackets:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme com.vernong.development.simplybrackets:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle com.vernong.development.simplybrackets:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.vernong.development.simplybrackets:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor com.vernong.development.simplybrackets:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title com.vernong.development.simplybrackets:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom com.vernong.development.simplybrackets:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd com.vernong.development.simplybrackets:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart com.vernong.development.simplybrackets:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop com.vernong.development.simplybrackets:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins com.vernong.development.simplybrackets:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance com.vernong.development.simplybrackets:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor com.vernong.development.simplybrackets:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -8275,7 +8284,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8285,21 +8294,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:collapseContentDescription
+          @attr name com.vernong.development.simplybrackets:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:collapseIcon
+          @attr name com.vernong.development.simplybrackets:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8311,11 +8320,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentInsetEnd
+          @attr name com.vernong.development.simplybrackets:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8327,11 +8336,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentInsetLeft
+          @attr name com.vernong.development.simplybrackets:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8343,11 +8352,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentInsetRight
+          @attr name com.vernong.development.simplybrackets:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8359,21 +8368,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:contentInsetStart
+          @attr name com.vernong.development.simplybrackets:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:logo
+          @attr name com.vernong.development.simplybrackets:logo
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8383,11 +8392,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:logoDescription
+          @attr name com.vernong.development.simplybrackets:logoDescription
         */
         public static final int Toolbar_logoDescription = 22;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8399,11 +8408,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:maxButtonHeight
+          @attr name com.vernong.development.simplybrackets:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 17;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8413,31 +8422,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:navigationContentDescription
+          @attr name com.vernong.development.simplybrackets:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:navigationIcon
+          @attr name com.vernong.development.simplybrackets:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:popupTheme
+          @attr name com.vernong.development.simplybrackets:popupTheme
         */
         public static final int Toolbar_popupTheme = 9;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8447,21 +8456,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:subtitle
+          @attr name com.vernong.development.simplybrackets:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:subtitleTextAppearance
+          @attr name com.vernong.development.simplybrackets:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 11;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8472,11 +8481,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:subtitleTextColor
+          @attr name com.vernong.development.simplybrackets:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 24;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#title}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8486,11 +8495,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:title
+          @attr name com.vernong.development.simplybrackets:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8502,11 +8511,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:titleMarginBottom
+          @attr name com.vernong.development.simplybrackets:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 16;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8518,11 +8527,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:titleMarginEnd
+          @attr name com.vernong.development.simplybrackets:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 14;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8534,11 +8543,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:titleMarginStart
+          @attr name com.vernong.development.simplybrackets:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 13;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8550,11 +8559,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:titleMarginTop
+          @attr name com.vernong.development.simplybrackets:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 15;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8566,21 +8575,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:titleMargins
+          @attr name com.vernong.development.simplybrackets:titleMargins
         */
         public static final int Toolbar_titleMargins = 12;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:titleTextAppearance
+          @attr name com.vernong.development.simplybrackets:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -8591,7 +8600,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:titleTextColor
+          @attr name com.vernong.development.simplybrackets:titleTextColor
         */
         public static final int Toolbar_titleTextColor = 23;
         /** Attributes that can be used with a View.
@@ -8602,9 +8611,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd com.example.mgriffin.listviewex:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart com.example.mgriffin.listviewex:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme com.example.mgriffin.listviewex:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.vernong.development.simplybrackets:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart com.vernong.development.simplybrackets:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme com.vernong.development.simplybrackets:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -8629,7 +8638,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -8641,11 +8650,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:paddingEnd
+          @attr name com.vernong.development.simplybrackets:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -8657,17 +8666,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:paddingStart
+          @attr name com.vernong.development.simplybrackets:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#theme}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.example.mgriffin.listviewex:theme
+          @attr name com.vernong.development.simplybrackets:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -8677,8 +8686,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.example.mgriffin.listviewex:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.example.mgriffin.listviewex:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.vernong.development.simplybrackets:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.vernong.development.simplybrackets:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -8694,7 +8703,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -8705,11 +8714,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.mgriffin.listviewex:backgroundTint
+          @attr name com.vernong.development.simplybrackets:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.mgriffin.listviewex.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.vernong.development.simplybrackets.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -8725,7 +8734,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.example.mgriffin.listviewex:backgroundTintMode
+          @attr name com.vernong.development.simplybrackets:backgroundTintMode
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.

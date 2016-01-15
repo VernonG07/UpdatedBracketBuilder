@@ -54,7 +54,7 @@ public class GameDataSource {
     public List<Game> getAllGames() {
         List<Game> games = new ArrayList<Game>();
 
-        Cursor cursor = database.query(DBHelper.TABLE_GAME, new String[] {DBHelper.COLUMN_ID, DBHelper.COLUMN_GAME_NAME, DBHelper.COLUMN_GAME_WINNER, DBHelper.COLUMN_DATE_CREATED}, null, null, null, null, null);
+        Cursor cursor = database.query(DBHelper.TABLE_GAME, new String[]{DBHelper.COLUMN_ID, DBHelper.COLUMN_GAME_NAME, DBHelper.COLUMN_GAME_WINNER, DBHelper.COLUMN_DATE_CREATED}, null, null, null, null, null);
 
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
@@ -108,6 +108,10 @@ public class GameDataSource {
         values.put(DBHelper.COLUMN_GAME_WINNER, winner);
 
         database.update(DBHelper.TABLE_GAME, values, DBHelper.COLUMN_ID + " = " + game.getGameId(), null);
+    }
+
+    public void deleteAllGames() {
+        database.delete(DBHelper.TABLE_GAME, null, null);
     }
 
     public String getGameWinner (long gameId) {
